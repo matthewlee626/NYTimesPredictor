@@ -2,6 +2,7 @@ import json
 import csv
 import requests
 
+
 fiction_input = open('fiction.csv', 'r')
 nonfiction_input = open('nonfiction.csv', 'r')
 fiction_reader = csv.reader(fiction_input, delimiter=',')
