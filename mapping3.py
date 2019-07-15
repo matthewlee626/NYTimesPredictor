@@ -6,26 +6,23 @@ import time
 # using isbnData.json
 # getting google books api data
 
-def getjson():
-    with open('isbnData.json', 'r') as jsonList:
-        isbnInfo = [line for line in jsonList if len(json.loads(line)) != 0]
+def getISBNs():
+    with open('listOfMissingDatesISBNs.csv', 'r') as csvList:
+        reader = csv.reader(csvList, delimiter=',')
+        isbnInfo = []
+        for line in reader:
+            isbnInfo.extend([i for i in line])
+        print(isbnInfo)
         return isbnInfo
 
 
 with open('googleBooksAPIData.json', mode='w', newline='', encoding="utf-8") as output:
-    jsonData = getjson()
 
-    ISBNs = []
-
-
-    for jsonLine in jsonData:
-        j = json.loads(jsonLine)
-        ISBN = list(j.keys())[0][5:]
-        ISBNs.append(ISBN)
+    ISBNs = getISBNs()
 
     print("beg")
     counter = 0
-    for masterISBN in ISBNs:
+    for masterISBN in ISBNs[1000:2000]:
         print(counter)
         counter += 1
         r = requests.get('https://www.googleapis.com/books/v1/volumes?q=isbn:' + masterISBN)
