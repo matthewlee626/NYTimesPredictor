@@ -1,2 +1,2 @@
 # NYTimesPredictor
-UCSB SERA 2019 Research Project. Predicts the NYT Bestsellers.
+This branch stores the JSONs of all the books from GoogleBooksAPI.
