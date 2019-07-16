@@ -13,43 +13,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mapping.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
-              <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/isbnData.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14093">
-              <caret line="829" column="17" selection-start-line="829" selection-start-column="7" selection-end-line="829" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mapping2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mapping3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
+            <state relative-caret-position="340">
               <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -59,12 +26,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sortedAuthorsFiction.csv">
-          <provider selected="true" editor-type-id="csv-text-editor" />
+        <entry file="file://$PROJECT_DIR$/googlejsontocsv.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="419">
+              <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/googleBooksAPIData.json">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitattributes">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -73,27 +47,6 @@
           <provider selected="true" editor-type-id="csv-text-editor" />
           <provider editor-type-id="csv-table-editor">
             <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrapper.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="59" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/books.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-            </state>
           </provider>
         </entry>
       </file>
@@ -146,6 +99,7 @@
     <option name="width" value="977" />
     <option name="height" value="1038" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -155,12 +109,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="NYTimesPredictor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NYTimesPredictor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NYTimesPredictor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="NYTimesPredictor-GoogleBooksAPIHarvester" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NYTimesPredictor-GoogleBooksAPIHarvester" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -324,12 +274,12 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14266843" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14266843" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24966975" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32673267" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21923621" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21923621" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3876967" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -370,13 +320,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nyt2.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/nyt2.json" />
     <entry file="file://$PROJECT_DIR$/../exercises.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -391,139 +335,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/isbnData.json" />
-    <entry file="file://$PROJECT_DIR$/isbntoname.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cleaner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/isbnToInfo.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fiction.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nonfiction.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="94" lean-forward="true" selection-start-line="7" selection-start-column="94" selection-end-line="7" selection-end-column="94" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bookIBSNInfoCSV.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/books.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bookIBSNInfoCSV.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-1016">
-          <caret line="303" column="33" selection-start-line="303" selection-start-column="27" selection-end-line="303" selection-end-column="33" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/isbntoname.py" />
+    <entry file="file://$PROJECT_DIR$/cleaner.py" />
+    <entry file="file://$PROJECT_DIR$/isbnToInfo.csv" />
+    <entry file="file://$PROJECT_DIR$/fiction.csv" />
+    <entry file="file://$PROJECT_DIR$/nonfiction.csv" />
+    <entry file="file://$PROJECT_DIR$/books.py" />
+    <entry file="file://$PROJECT_DIR$/bookIBSNInfoCSV.csv" />
+    <entry file="file://$PROJECT_DIR$/scrapper.py" />
     <entry file="file://$PROJECT_DIR$/listOfMissingDatesISBNs.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sortedRankingsFiction.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mapping2.py">
+    <entry file="file://$PROJECT_DIR$/sortedRankingsFiction.csv" />
+    <entry file="file://$PROJECT_DIR$/mapping2.py" />
+    <entry file="file://$PROJECT_DIR$/isbnData.json" />
+    <entry file="file://$PROJECT_DIR$/mapping.py" />
+    <entry file="file://$PROJECT_DIR$/sortedAuthorsFiction.csv" />
+    <entry file="file://$PROJECT_DIR$/googleBooksAPIData.json" />
+    <entry file="file://$PROJECT_DIR$/googlejsontocsv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="419">
+          <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/isbnData.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14093">
-          <caret line="829" column="17" selection-start-line="829" selection-start-column="7" selection-end-line="829" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/mapping3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
+        <state relative-caret-position="340">
           <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sortedAuthorsFiction.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/googleBooksAPIData.json">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
