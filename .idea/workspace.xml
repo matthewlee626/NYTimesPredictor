@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="677c217c-26d8-4e9d-a04a-6fb7c23ed5c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/googleBooksAPIData.json" beforeDir="false" afterPath="$PROJECT_DIR$/googleBooksAPIData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapping3.py" beforeDir="false" afterPath="$PROJECT_DIR$/mapping3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/googleBooksAPIData0150.json" beforeDir="false" afterPath="$PROJECT_DIR$/0150.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/googleBooksAPIData0300.json" beforeDir="false" afterPath="$PROJECT_DIR$/0300.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/googleBooksAPIData0450.json" beforeDir="false" afterPath="$PROJECT_DIR$/0450.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,10 +14,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mapping3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="198">
               <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -25,10 +26,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/googlejsontocsv.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
+            <state relative-caret-position="521">
               <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -343,35 +344,35 @@
     <entry file="file://$PROJECT_DIR$/books.py" />
     <entry file="file://$PROJECT_DIR$/bookIBSNInfoCSV.csv" />
     <entry file="file://$PROJECT_DIR$/scrapper.py" />
-    <entry file="file://$PROJECT_DIR$/listOfMissingDatesISBNs.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sortedRankingsFiction.csv" />
     <entry file="file://$PROJECT_DIR$/mapping2.py" />
     <entry file="file://$PROJECT_DIR$/isbnData.json" />
     <entry file="file://$PROJECT_DIR$/mapping.py" />
     <entry file="file://$PROJECT_DIR$/sortedAuthorsFiction.csv" />
     <entry file="file://$PROJECT_DIR$/googleBooksAPIData.json" />
-    <entry file="file://$PROJECT_DIR$/googlejsontocsv.py">
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/listOfMissingDatesISBNs.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mapping3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
+        <state relative-caret-position="198">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitattributes">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mapping3.py">
+    <entry file="file://$PROJECT_DIR$/googlejsontocsv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="521">
+          <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
