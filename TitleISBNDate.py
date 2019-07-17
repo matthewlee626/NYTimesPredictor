@@ -19,12 +19,17 @@ def getTitleISBN():
         return isbnList, titleList
 
 
-def getFirstDate(isbn):
+def getFirstLastDate(isbn):
     #print(isbn)
     global SEARCH_COUNTER
     global SEARCH_TIMES
     SEARCH_TIMES += 1
-    #print(SEARCH_TIMES)
+    print(SEARCH_TIMES)
+
+    firstAppearence = "Not Found"
+    lastAppearence = "Not Found"
+    firstfound = False
+
     with open('fiction.csv', mode='r', encoding='utf-8') as fiction:
         with open('nonfiction.csv', mode='r', encoding='utf-8') as nonfiction:
             fictionreader = csv.reader(fiction, delimiter=',')
@@ -34,31 +39,43 @@ def getFirstDate(isbn):
                     #print(SEARCH_COUNTER)
                     SEARCH_COUNTER += 1
                     if j == isbn:
-                        print("found")
-                        return line[0]
+                        if not firstfound:
+                            print("found")
+                            firstAppearence = line[0]
+                            firstfound = True
+                        else:
+                            lastAppearence = line[0]
             for line2 in nonfictionreader:
                 for k in line2:
                     #print(SEARCH_COUNTER)
                     SEARCH_COUNTER += 1
                     if k == isbn:
-                        print("found")
-                        return line2[0]
-    return "Not Found"
+                        if not firstfound:
+                            print("found")
+                            firstAppearence = line2[0]
+                            firstfound = True
+                        else:
+                            lastAppearence = line[0]
+
+    return firstAppearence, lastAppearence
 
 
 isbnInfo, titleInfo = getTitleISBN()
 
-publishDateInfo = []
+publishDateFirstInfo = []
+publishDateLastInfo = []
 
 for l in isbnInfo:
-    publishDateInfo.append(getFirstDate(l))
+    first, last = getFirstLastDate(l)
+    publishDateFirstInfo.append(first)
+    publishDateLastInfo.append(last)
 
-print(SEARCH_COUNTER)
 
 with open('titleISBNdate.csv', mode='w', encoding='utf-8', newline='') as result:
     writer = csv.writer(result)
-    header = ['ISBN', "Title", 'FirstDate']
+    header = ['ISBN', "Title", 'FirstDate', 'LastDate']
     writer.writerow(header)
     for i in range(len(isbnInfo)):
-        writer.writerow([isbnInfo[i], titleInfo[i], publishDateInfo[i]])
+        writer.writerow([isbnInfo[i], titleInfo[i], publishDateFirstInfo[i], publishDateLastInfo[i]])
 
+print(SEARCH_COUNTER)
