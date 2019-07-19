@@ -10,10 +10,10 @@ import matplotlib.pyplot as plt
 import csv
 
 
-fiction = pd.read_csv("/Users/johanl/Downloads/fiction.csv", delimiter= ",")
-nonfiction = pd.read_csv("/Users/johanl/Downloads/nonfiction.csv", delimiter= ",")
-isbnToInfo = pd.read_csv("/Users/johanl/Downloads/isbnToInfo.csv", delimiter= ",")
-genreData = pd.read_csv("/Users/johanl/PycharmProjects/ucsb/fiction/sortedGenresFiction.csv", delimiter= ",")
+fiction = pd.read_csv("fiction.csv", delimiter= ",")
+nonfiction = pd.read_csv("nonfiction.csv", delimiter= ",")
+isbnToInfo = pd.read_csv("isbnToInfo.csv", delimiter= ",")
+genreData = pd.read_csv("sortedGenresFiction.csv", delimiter= ",")
 genreData.fillna(0, inplace=True)
 
 def predict(given_csv, k):
@@ -52,6 +52,18 @@ def predict(given_csv, k):
     nList = []
     maeList = []
 
+    key_counter = 0
+    keys = []
+    keyindex = [73]
+
+    n = 3
+
+    # remove isbn
+    for i in clean.keys():
+        for neededindex in keyindex:
+            if key_counter == neededindex:
+                keys.append(i)
+        key_counter += 1
 
     for i in clean.keys():
         nX.append(clean[i][0:3])
@@ -67,7 +79,8 @@ def predict(given_csv, k):
         for i in range(len(nX)): # per book
 
             #ranking
-            slope, intercept, r_value, p_value, std_err = stats.linregress(list(range(len(nX[i]))), nX[i])
+            #slope, intercept, r_value, p_value, std_err = stats.linregress(list(range(len(nX[i]))), nX[i])
+            coefs = np.polyfit(list(range(len(nX[i]))), nX[i], 2)
             last = nX[i][len(nX[i]) - 1]
 
             #genre
@@ -90,10 +103,21 @@ def predict(given_csv, k):
                 prevGenrePercent.append(genreData[[curGenre]].iloc[j][0])
             gSlope, gIntercept, gR_value, gP_value, gStd_err = stats.linregress(list(range(len(prevGenrePercent))), prevGenrePercent)
 
-            params.append([slope, last, gSlope])
+            params.append([coefs[0], coefs[1], last, gSlope])
 
         #train
-        # print(params)
+        degree = 2
+        #print(parameters)
+        for param in params:
+            #print(param)
+            for e in range(2, degree+1):
+                #print(e)
+                for length in range(len(param)):
+                    #print(length)
+                    #print(pow(params[length], e))
+                    param.append(pow(param[length], e))
+            #print(params)
+        #print(parameters)
 
         classifier = RidgeCV()
         classifier.fit(params, nY)
@@ -101,9 +125,12 @@ def predict(given_csv, k):
         maeList.append((mae(nY, future)))
 
     print(maeList)
-    plt.plot(nList, maeList)
-    plt.show()
-
+    #plt.plot(nList, maeList)
+    #plt.show()
+    #print(keys)
+    #for key in range(len(keys)):
+        #print(clean[keys[key]][0:k])
+        #print(nX[keyindex[key]][0:k])
 
 predict(fiction, 10)
 
