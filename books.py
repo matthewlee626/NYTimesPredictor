@@ -7,13 +7,14 @@ from sklearn.linear_model import LinearRegression
 from scipy import stats
 from sklearn.metrics import r2_score
 import matplotlib.pyplot as plt
+import os.path
 import csv
 
 
-fiction = pd.read_csv("fiction.csv", delimiter= ",")
-nonfiction = pd.read_csv("nonfiction.csv", delimiter= ",")
-isbnToInfo = pd.read_csv("isbnToInfo.csv", delimiter= ",")
-genreData = pd.read_csv("sortedGenresFiction.csv", delimiter= ",")
+fiction = pd.read_csv("/Users/johanl/Downloads/fiction.csv", delimiter= ",")
+nonfiction = pd.read_csv("/Users/johanl/Downloads/nonfiction.csv", delimiter= ",")
+isbnToInfo = pd.read_csv("/Users/johanl/Downloads/isbnToInfo.csv", delimiter= ",")
+genreData = pd.read_csv("/Users/johanl/PycharmProjects/ucsb/fiction/sortedGenresFiction.csv", delimiter= ",")
 genreData.fillna(0, inplace=True)
 
 def predict(given_csv, k):
@@ -52,18 +53,6 @@ def predict(given_csv, k):
     nList = []
     maeList = []
 
-    key_counter = 0
-    keys = []
-    keyindex = [73]
-
-    n = 3
-
-    # remove isbn
-    for i in clean.keys():
-        for neededindex in keyindex:
-            if key_counter == neededindex:
-                keys.append(i)
-        key_counter += 1
 
     for i in clean.keys():
         nX.append(clean[i][0:3])
@@ -76,23 +65,23 @@ def predict(given_csv, k):
         for j in clean.keys():
             nY.append(clean[j][n])
 
+        badEntries = set()
         for i in range(len(nX)): # per book
 
             #ranking
-            #slope, intercept, r_value, p_value, std_err = stats.linregress(list(range(len(nX[i]))), nX[i])
-            coefs = np.polyfit(list(range(len(nX[i]))), nX[i], 2)
+            slope, intercept, r_value, p_value, std_err = stats.linregress(list(range(len(nX[i]))), nX[i])
             last = nX[i][len(nX[i]) - 1]
+
 
             #genre
             curISBN = isbns[i]
-
 
             listI = isbnToInfo[['isbn']].values.tolist()
             flattenedI = [item for sublist in listI for item in sublist]
             curi = flattenedI.index(curISBN)
             curGenre = isbnToInfo[['Category']].iloc[curi][0]
 
-            if "/" in curGenre:
+            if "/" in curGenre:  # take first genre if there are 2
                 curGenre = curGenre.split("/")[0]
             prevGenrePercent = []
             listG = fiction[['date']].values.tolist()
@@ -103,34 +92,76 @@ def predict(given_csv, k):
                 prevGenrePercent.append(genreData[[curGenre]].iloc[j][0])
             gSlope, gIntercept, gR_value, gP_value, gStd_err = stats.linregress(list(range(len(prevGenrePercent))), prevGenrePercent)
 
-            params.append([coefs[0], coefs[1], last, gSlope])
+
+            #searches
+
+            if os.path.isfile("/Users/johanl/Documents/GitHub/NYTimesPredictor/datadump/" + curISBN + ".csv"): # for now, until we get all the data
+                curSearchesDirty = pd.read_csv("/Users/johanl/Documents/GitHub/NYTimesPredictor/datadump/" + curISBN + ".csv", delimiter=",")  # cuz not clean
+            else:
+                badEntries.add(curISBN)
+                continue
+            curSearchesBusty = curSearchesDirty[['GT_SearchIndex']].values.tolist()  # busty cuz not flat
+            curSearches = [item for sublist in curSearchesBusty for item in sublist]  # flatten
+            if len(curSearches) == 0:  # if file empty
+                badEntries.add(curISBN)
+                continue
+            # // remember to leave in start form 1st week (start from 4)
+            # data starts from month before
+            count = 0
+            for j in curSearches:
+                if j == 0:  # if searches that day is 0
+                    count += 1
+
+            if count/len(curSearches) > 0.5:  # if more than searches the searches is 0, change to weekly
+                curSearchesWeekly = []
+                count = 0
+                accumalativeSearches = 0
+                totalIterations = 0
+                for j in curSearches:  # cursearches[4:]
+                    totalIterations += 1
+                    count += 1
+                    accumalativeSearches += j
+                    if count == 7:  # every 7 days (1 week), we record the sales that week
+                        curSearchesWeekly.append(accumalativeSearches)
+                        accumalativeSearches = 0
+                        count = 0
+                    if totalIterations == 7*(k+4):  # cuz start data starts from 1 month before
+                        break
+
+            elif count/len(curSearches) <= 0.5:
+                curSearchesWeekly = []
+                count = 0
+                accumalativeSearches = 0
+                totalIterations = 0
+                for j in curSearches:  # cursearches[4:]
+                    totalIterations += 1
+                    curSearchesWeekly.append(j)  # well its rly daily searches but too lazy to make another var
+                    if totalIterations == 7*(k+4):
+                        break
+
+            sSlope, sIntercept, sR_value, sP_value, sStd_err = stats.linregress(list(range(len(curSearchesWeekly))), curSearchesWeekly)
+
+
+            #append params
+            params.append([slope, last, gSlope, sSlope])
+
+        #remove bad entries from nY
+        for j in reversed(list(badEntries)):
+            del nY[isbns.index(j)]
 
         #train
-        degree = 2
-        #print(parameters)
-        for param in params:
-            #print(param)
-            for e in range(2, degree+1):
-                #print(e)
-                for length in range(len(param)):
-                    #print(length)
-                    #print(pow(params[length], e))
-                    param.append(pow(param[length], e))
-            #print(params)
-        #print(parameters)
+        # print(params)
 
         classifier = RidgeCV()
         classifier.fit(params, nY)
         future = classifier.predict(params).tolist()
         maeList.append((mae(nY, future)))
 
+    print(classifier.coef_)
     print(maeList)
-    #plt.plot(nList, maeList)
-    #plt.show()
-    #print(keys)
-    #for key in range(len(keys)):
-        #print(clean[keys[key]][0:k])
-        #print(nX[keyindex[key]][0:k])
+    plt.plot(nList, maeList)
+    plt.show()
+
 
 predict(fiction, 10)
 
