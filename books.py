@@ -66,7 +66,7 @@ def predict(given_csv, k):
             nY.append(clean[j][n])
 
         badEntries = set()
-        for i in range(len(nX)): # per book
+        for i in range(len(nX)):  # per book
 
             #ranking
             slope, intercept, r_value, p_value, std_err = stats.linregress(list(range(len(nX[i]))), nX[i])
@@ -146,8 +146,11 @@ def predict(given_csv, k):
             params.append([slope, last, gSlope, sSlope])
 
         #remove bad entries from nY
-        for j in reversed(list(badEntries)):
+        print('len', len(nY))
+        for j in reversed([value for value in list(clean.keys()) if value in list(badEntries)]):
+            # print(isbns.index(j))
             del nY[isbns.index(j)]
+        #we're not looping in order... i wonder why
 
         #train
         # print(params)
