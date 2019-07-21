@@ -75,7 +75,7 @@ with open('bookIBSNInfoCSV.csv', mode='w', newline='') as output:
         else:
             mAuthor = "Some Random Author"
 
-        # mapping values
+        #mapping values
         values = [mMasterISBN, mPublisher, mPublishDate, mAuthor]
 
         csvwriter.writerow(values)
