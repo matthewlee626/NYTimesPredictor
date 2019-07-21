@@ -1,5 +1,6 @@
 import pandas as pd
 import sklearn as skl
+from sklearn.linear_model import LinearRegression
 from sklearn.linear_model import RidgeCV
 from sklearn.metrics import mean_absolute_error as mae
 import matplotlib.pyplot as plt
@@ -70,7 +71,7 @@ def predict(given_csv, k, colorstart):
         #nY.append(clean[i][n])
 
     # training
-    classifier = RidgeCV()
+    classifier = LinearRegression()
 
     count = 0
     for n in range(3, k):
@@ -90,7 +91,6 @@ def predict(given_csv, k, colorstart):
             #futures.append(prediction)
             parameters.append([coefs[0], coefs[1], last])
 
-        '''
         degree = 1
         #print(parameters)
         for params in parameters:
@@ -103,7 +103,6 @@ def predict(given_csv, k, colorstart):
                     params.append(pow(params[length], e))
             #print(params)
         #print(parameters)
-        '''
 
         #training
         classifier.fit(parameters, nY)  # .fit(X, y)
@@ -154,6 +153,6 @@ predict(fiction, 10, 0)
 predict(nonfiction, 10, 4)
 plt.ylim(0, 20)
 plt.gca().invert_yaxis()
-plt.show()
+#plt.show()
 
 output.close()
