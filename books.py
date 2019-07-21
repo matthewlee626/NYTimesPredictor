@@ -199,7 +199,7 @@ def predict(given_csv, k):
         #print(nX)
         for p in range(len(nX)):
             nX[p].append(future[p])
-            
+
     print(classifier.coef_)
 
     print(maeList)

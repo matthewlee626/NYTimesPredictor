@@ -45,7 +45,7 @@ fiction_predicted = [1, 2, 3, 4, 5, 7, 8, 9, 11, 12]
 nonfiction_actual = [4, 4, 4, 7, 12, 14, 15, 14, 13, 12]
 nonfiction_predicted = [4, 4, 4, 5, 6, 6, 7, 8, 9, 10]
 
-
+#range of values
 ranges = [j + 3 for j in range(len(mae_past))]
 
 dif = []
@@ -73,3 +73,4 @@ plt.legend()
 #plt.plot(ranges, dif, label='difference')
 
 plt.show()
+

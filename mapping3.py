@@ -15,7 +15,7 @@ def getISBNs():
         print(isbnInfo)
         return isbnInfo
 
-
+#retrieving data
 with open('googleBooksAPIData.json', mode='w', newline='', encoding="utf-8") as output:
 
     ISBNs = getISBNs()
