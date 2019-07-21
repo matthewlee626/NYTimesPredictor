@@ -8,13 +8,14 @@ from scipy import stats
 from sklearn.metrics import r2_score
 import matplotlib.pyplot as plt
 import os.path
+import numpy as np
 import csv
 
 
-fiction = pd.read_csv("/Users/johanl/Downloads/fiction.csv", delimiter= ",")
-nonfiction = pd.read_csv("/Users/johanl/Downloads/nonfiction.csv", delimiter= ",")
-isbnToInfo = pd.read_csv("/Users/johanl/Downloads/isbnToInfo.csv", delimiter= ",")
-genreData = pd.read_csv("/Users/johanl/PycharmProjects/ucsb/fiction/sortedGenresFiction.csv", delimiter= ",")
+fiction = pd.read_csv("fiction.csv", delimiter= ",")
+nonfiction = pd.read_csv("nonfiction.csv", delimiter= ",")
+isbnToInfo = pd.read_csv("isbnToInfo.csv", delimiter= ",")
+genreData = pd.read_csv("sortedGenresFiction.csv", delimiter= ",")
 genreData.fillna(0, inplace=True)
 
 def predict(given_csv, k):
@@ -65,8 +66,9 @@ def predict(given_csv, k):
         for j in clean.keys():
             nY.append(clean[j][n])
 
-        badEntries = set()
-        for i in range(len(nX)): # per book
+        # badEntries = set()
+        badEntries = []
+        for i in range(len(nX)):  # per book
 
             #ranking
             slope, intercept, r_value, p_value, std_err = stats.linregress(list(range(len(nX[i]))), nX[i])
@@ -95,15 +97,19 @@ def predict(given_csv, k):
 
             #searches
 
-            if os.path.isfile("/Users/johanl/Documents/GitHub/NYTimesPredictor/datadump/" + curISBN + ".csv"): # for now, until we get all the data
-                curSearchesDirty = pd.read_csv("/Users/johanl/Documents/GitHub/NYTimesPredictor/datadump/" + curISBN + ".csv", delimiter=",")  # cuz not clean
+            if os.path.isfile("datadump/" + curISBN + ".csv"): # for now, until we get all the data
+                curSearchesDirty = pd.read_csv("datadump/" + curISBN + ".csv", delimiter=",")  # cuz not clean
             else:
-                badEntries.add(curISBN)
+                if curISBN not in badEntries:
+                    # badEntries.add(curISBN)
+                    badEntries.append(curISBN)
                 continue
             curSearchesBusty = curSearchesDirty[['GT_SearchIndex']].values.tolist()  # busty cuz not flat
             curSearches = [item for sublist in curSearchesBusty for item in sublist]  # flatten
             if len(curSearches) == 0:  # if file empty
-                badEntries.add(curISBN)
+                if curISBN not in badEntries:
+                    # badEntries.add(curISBN)
+                    badEntries.append(curISBN)
                 continue
             # // remember to leave in start form 1st week (start from 4)
             # data starts from month before
@@ -112,12 +118,14 @@ def predict(given_csv, k):
                 if j == 0:  # if searches that day is 0
                     count += 1
 
-            if count/len(curSearches) > 0.5:  # if more than searches the searches is 0, change to weekly
+            if count/len(curSearches) > 0.25:  # if more than 25% of the searches is 0, change to weekly
                 curSearchesWeekly = []
                 count = 0
                 accumalativeSearches = 0
                 totalIterations = 0
-                for j in curSearches:  # cursearches[4:]
+                for j in curSearches:
+                # for j in curSearches[4:]:
+
                     totalIterations += 1
                     count += 1
                     accumalativeSearches += j
@@ -128,173 +136,75 @@ def predict(given_csv, k):
                     if totalIterations == 7*(k+4):  # cuz start data starts from 1 month before
                         break
 
-            elif count/len(curSearches) <= 0.5:
+            elif count/len(curSearches) <= 0.25:
                 curSearchesWeekly = []
                 count = 0
                 accumalativeSearches = 0
                 totalIterations = 0
-                for j in curSearches:  # cursearches[4:]
+                for j in curSearches:
+                # for j in curSearches[4:]:
                     totalIterations += 1
                     curSearchesWeekly.append(j)  # well its rly daily searches but too lazy to make another var
                     if totalIterations == 7*(k+4):
                         break
 
-            sSlope, sIntercept, sR_value, sP_value, sStd_err = stats.linregress(list(range(len(curSearchesWeekly))), curSearchesWeekly)
+            coefsSearch = np.polyfit(list(range(len(curSearchesWeekly))), curSearchesWeekly, 3)
 
+            if i == len(nX) - 1:
+                f = np.poly1d(coefsSearch)
+                xi = range(len(curSearchesWeekly))
+                yi = f(xi)
+
+                #plt.plot(xi, curSearchesWeekly, 'o', xi, yi)
+
+            #print('data = ', curSearchesWeekly)
+            #print('slope = ', sSlope)
 
             #append params
-            params.append([slope, last, gSlope, sSlope])
+            params.append([slope, last, gSlope, coefsSearch[0], coefsSearch[1], coefsSearch[2]])
 
         #remove bad entries from nY
-        for j in reversed(list(badEntries)):
+        # print('len', len(nY))
+        # for j in reversed([value for value in list(clean.keys()) if value in list(badEntries)]):  #intersection of 2 lists, but reversed cuz deleting
+            # print(isbns.index(j))
+            # del nY[isbns.index(j)]
+        #we're not looping in order... i wonder why
+
+        for j in reversed(badEntries):
+            # print(isbns.index(j))
             del nY[isbns.index(j)]
 
-        #train
-        # print(params)
+        degree = 2
+        # print(parameters)
+        for param in params:
+            # print(param)
+            for e in range(2, degree + 1):
+                # print(e)
+                for length in range(len(param)):
+                    # print(length)
+                    # print(pow(params[length], e))
+                    param.append(pow(param[length], e))
+            # print(params)
+        # print(parameters)
 
         classifier = RidgeCV()
         classifier.fit(params, nY)
+        print(params)
         future = classifier.predict(params).tolist()
         maeList.append((mae(nY, future)))
 
+        for i in range(len(future)):
+            future[i] = round(future[i])
+        #print(future)
+        #print(nX)
+        for p in range(len(nX)):
+            nX[p].append(future[p])
+            
     print(classifier.coef_)
+
     print(maeList)
     plt.plot(nList, maeList)
     plt.show()
 
 
 predict(fiction, 10)
-
-
-
-# xSlope = []
-# realY = []
-#
-# # we pass in features of: slope of rankings + last rankings (pray) both weights are 1, then other features
-# # or we pass predicted
-#
-# # list.append model.coef
-# # model.coef_ = np.array(ARRAY)
-#
-# # slope of last ranking
-# for i in range(len(nX)):
-#     print(list(range(n)))
-#     print(nX[i])
-#     # print(np.array([list(range(n)), nX[i]]))
-#     # formattedX = pd.DataFrame(data=np.array([list(range(n)), nX[i]]), index=(2, 3), columns=['index', 'past'])
-#
-#     # formattedX = np.asarray(nX[i])
-#     # formattedX = pd.DataFrame(data=np.asarray(nX[i]), columns=['past'])
-#
-#     temp = []
-#     for j in range(n):
-#
-#
-#     formattedX = pd.DataFrame(columns=("index", 'rank_slope'))
-#     print(formattedX)
-#     formattedX.iloc[0] = list(range(n))
-#     formattedX.iloc[len(formattedX)] = nX[i]
-#     print(formattedX)
-#
-#     # testY = pd.DataFrame([np.asarray([n]), np.asarray(nY[i])], columns=['past'])
-#
-#     classifier = LinearRegression(fit_intercept=False)
-#     # print(testY)
-#     classifier.fit(formattedX, nY[i])  # .fit(X, y)
-#
-#     xSlope.append(classifier.coef_)
-#     future = classifier.predict(formattedX).tolist()
-#
-#
-#
-# # total model
-#
-# #add previous and slope
-# formattedX = pd.DataFrame(np.asarray(xSlope), columns=['prev_slope'])
-# prev = np.asarray(nX[:, len(nX[0])])
-# formattedX.insert(1, 'prev', prev)
-#
-# # add genre
-#
-# classifier = RidgeCV()
-# classifier.fit(formattedX, nY)
-# future = classifier.predict(formattedX).tolist()
-#
-# maeList.append((mae(nY, future)))
-#
-# # add pred value to X
-# for j in range(len(future)):
-#     future[j] = round(future[i])
-#
-# for k in range(len(nX)):
-#     nX[k].append(future[k])
-
-#
-# sortedFiction = {}
-#
-# for i in range(fiction.shape[0]): #per day
-#     for j in range(1, 21): #per entry
-#         if fiction.iloc[i, j] in sortedFiction: #if key exist
-#             sortedFiction[fiction.iloc[i, j]].append([fiction.iloc[i, 0], j])
-#         else: #key doesn't exist
-#             sortedFiction[fiction.iloc[i, j]] = [[fiction.iloc[i, 0], j]]
-#
-# print(sortedFiction)
-#
-# #remove ones that have less than k entries since hard to predict
-# k = 10
-#
-# cleanFiction = {}
-# for i in sortedFiction.keys():
-#     if len(sortedFiction[i]) >= k:
-#         cleanFiction[i] = []
-#         for j in sortedFiction[i]:
-#             cleanFiction[i].append(j[1])
-#
-# #print(cleanFiction)
-# print(len(cleanFiction.keys()))
-#
-# print(cleanFiction)
-#
-# #
-# # #save file
-# # csv_file = "sortedRankingsFiction.csv"
-# #
-# # with open(csv_file, 'w') as output:
-# #
-# #     for key in cleanFiction.keys():
-# #         output.write("%s,%s\n"%(key,cleanFiction[key]))
-#
-#
-# #ridge predict n+1th one
-#
-# #input data wiht n values
-#
-# nX = []
-# nY = []
-# nList = []
-# maeList = []
-#
-# for i in cleanFiction.keys():
-#     nX.append(cleanFiction[i][0:3])
-#
-# for n in range(3, k):
-#
-#     # nFictionY.append(cleanFiction[i][n])
-#
-#
-# # training
-# classifier = RidgeCV()
-# classifier.fit(nFictionX, nFictionY)  # .fit(X, y)
-#
-# print(classifier.coef_)
-#
-#
-#
-# # # save file
-# # csv_file = "cleanRankingsFiction.csv"
-# #
-# # with open(csv_file, 'w') as output:
-# #
-# #     for key in cleanFiction.keys():
-# #         output.write("%s,%s\n"%(key,cleanFiction[key]))

@@ -78,10 +78,10 @@ def predict(given_csv, k):
             nY.append(clean[j][n])
 
         for i in range(len(nX)): # per book
-
+            #print(nX)
             #ranking
             #slope, intercept, r_value, p_value, std_err = stats.linregress(list(range(len(nX[i]))), nX[i])
-            coefs = np.polyfit(list(range(len(nX[i]))), nX[i], 2)
+            coefs = np.polyfit(list(range(len(nX[i]))), nX[i], 1)
             last = nX[i][len(nX[i]) - 1]
 
             #genre
@@ -104,7 +104,7 @@ def predict(given_csv, k):
                 prevGenrePercent.append(genreData[[curGenre]].iloc[j][0])
             gSlope, gIntercept, gR_value, gP_value, gStd_err = stats.linregress(list(range(len(prevGenrePercent))), prevGenrePercent)
 
-            params.append([coefs[0], coefs[1], last, gSlope])
+            params.append([coefs[0], last, gSlope])
 
         #train
         degree = 1
@@ -120,10 +120,17 @@ def predict(given_csv, k):
             #print(params)
         #print(parameters)
 
-        classifier = LinearRegression()
+        classifier = RidgeCV()
         classifier.fit(params, nY)
         future = classifier.predict(params).tolist()
         maeList.append((mae(nY, future)))
+
+        for i in range(len(future)):
+            future[i] = round(future[i])
+        #print(future)
+        #print(nX)
+        for p in range(len(nX)):
+            nX[p].append(future[p])
 
     print(maeList)
     #plt.plot(nList, maeList)
