@@ -65,7 +65,8 @@ def predict(given_csv, k):
         for j in clean.keys():
             nY.append(clean[j][n])
 
-        badEntries = set()
+        # badEntries = set()
+        badEntries = []
         for i in range(len(nX)):  # per book
 
             #ranking
@@ -98,12 +99,16 @@ def predict(given_csv, k):
             if os.path.isfile("/Users/johanl/Documents/GitHub/NYTimesPredictor/datadump/" + curISBN + ".csv"): # for now, until we get all the data
                 curSearchesDirty = pd.read_csv("/Users/johanl/Documents/GitHub/NYTimesPredictor/datadump/" + curISBN + ".csv", delimiter=",")  # cuz not clean
             else:
-                badEntries.add(curISBN)
+                if curISBN not in badEntries:
+                    # badEntries.add(curISBN)
+                    badEntries.append(curISBN)
                 continue
             curSearchesBusty = curSearchesDirty[['GT_SearchIndex']].values.tolist()  # busty cuz not flat
             curSearches = [item for sublist in curSearchesBusty for item in sublist]  # flatten
             if len(curSearches) == 0:  # if file empty
-                badEntries.add(curISBN)
+                if curISBN not in badEntries:
+                    # badEntries.add(curISBN)
+                    badEntries.append(curISBN)
                 continue
             # // remember to leave in start form 1st week (start from 4)
             # data starts from month before
@@ -112,12 +117,14 @@ def predict(given_csv, k):
                 if j == 0:  # if searches that day is 0
                     count += 1
 
-            if count/len(curSearches) > 0.5:  # if more than searches the searches is 0, change to weekly
+            if count/len(curSearches) > 0.25:  # if more than 25% of the searches is 0, change to weekly
                 curSearchesWeekly = []
                 count = 0
                 accumalativeSearches = 0
                 totalIterations = 0
-                for j in curSearches:  # cursearches[4:]
+                for j in curSearches:
+                # for j in curSearches[4:]:
+
                     totalIterations += 1
                     count += 1
                     accumalativeSearches += j
@@ -128,12 +135,13 @@ def predict(given_csv, k):
                     if totalIterations == 7*(k+4):  # cuz start data starts from 1 month before
                         break
 
-            elif count/len(curSearches) <= 0.5:
+            elif count/len(curSearches) <= 0.25:
                 curSearchesWeekly = []
                 count = 0
                 accumalativeSearches = 0
                 totalIterations = 0
-                for j in curSearches:  # cursearches[4:]
+                for j in curSearches:
+                # for j in curSearches[4:]:
                     totalIterations += 1
                     curSearchesWeekly.append(j)  # well its rly daily searches but too lazy to make another var
                     if totalIterations == 7*(k+4):
@@ -141,16 +149,22 @@ def predict(given_csv, k):
 
             sSlope, sIntercept, sR_value, sP_value, sStd_err = stats.linregress(list(range(len(curSearchesWeekly))), curSearchesWeekly)
 
+            print('data = ', curSearchesWeekly)
+            print('slope = ', sSlope)
 
             #append params
             params.append([slope, last, gSlope, sSlope])
 
         #remove bad entries from nY
-        print('len', len(nY))
-        for j in reversed([value for value in list(clean.keys()) if value in list(badEntries)]):
+        # print('len', len(nY))
+        # for j in reversed([value for value in list(clean.keys()) if value in list(badEntries)]):  #intersection of 2 lists, but reversed cuz deleting
+            # print(isbns.index(j))
+            # del nY[isbns.index(j)]
+        #we're not looping in order... i wonder why
+
+        for j in reversed(badEntries):
             # print(isbns.index(j))
             del nY[isbns.index(j)]
-        #we're not looping in order... i wonder why
 
         #train
         # print(params)
