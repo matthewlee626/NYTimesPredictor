@@ -7,10 +7,10 @@ import matplotlib.pyplot as plt
 import os.path
 
 # read in data
-fiction = pd.read_csv("/Users/johanl/Downloads/fiction.csv", delimiter= ",")
-nonfiction = pd.read_csv("/Users/johanl/Downloads/nonfiction.csv", delimiter= ",")
-isbnToInfo = pd.read_csv("/Users/johanl/Downloads/isbnToInfo.csv", delimiter= ",")
-genreData = pd.read_csv("/Users/johanl/PycharmProjects/ucsb/fiction/sortedGenresFiction.csv", delimiter= ",")
+fiction = pd.read_csv("fiction.csv", delimiter= ",")
+nonfiction = pd.read_csv("nonfiction.csv", delimiter= ",")
+isbnToInfo = pd.read_csv("isbnToInfo.csv", delimiter= ",")
+genreData = pd.read_csv("sortedGenresFiction.csv", delimiter= ",")
 genreData.fillna(0, inplace=True)  # replace na with 0
 
 
@@ -53,11 +53,15 @@ def predict(given_csv, k):
         nList.append(n)
         nY.clear()
         for j in clean.keys():
+            #print(len(clean.keys()))
             nY.append(clean[j][n])
 
         badEntries = []
+        counter = 0
         for i in range(len(nX)):  # per book
-
+            #print(counter)
+            #counter += 1
+            #print(len(params))
             #ranking
             # slope, intercept, r_value, p_value, std_err = stats.linregress(list(range(len(nX[i]))), nX[i])
             model = np.polyfit(list(range(len(nX[i]))), nX[i], 2)
@@ -89,8 +93,8 @@ def predict(given_csv, k):
 
             #searches
 
-            if os.path.isfile("/Users/johanl/Documents/GitHub/NYTimesPredictor/datadump/" + curISBN + ".csv"): # for now, until we get all the data
-                curSearchesDirty = pd.read_csv("/Users/johanl/Documents/GitHub/NYTimesPredictor/datadump/" + curISBN + ".csv", delimiter=",")  # cuz not clean
+            if os.path.isfile("datadump/" + curISBN + ".csv"): # for now, until we get all the data
+                curSearchesDirty = pd.read_csv("datadump/" + curISBN + ".csv", delimiter=",")  # cuz not clean
             else:
                 if curISBN not in badEntries:
                     badEntries.append(curISBN)
@@ -103,8 +107,8 @@ def predict(given_csv, k):
                 continue
 
             count = 0
-            for j in curSearches:
-                if j == 0:  # if searches that day is 0
+            for m in curSearches:
+                if m == 0:  # if searches that day is 0
                     count += 1
 
             if count/len(curSearches) > 0.25:  # if more than 25% of the searches is 0, change to weekly
@@ -112,12 +116,12 @@ def predict(given_csv, k):
                 count = 0
                 accumalativeSearches = 0
                 totalIterations = 0
-                for j in curSearches:
+                for n in curSearches:
                 # for j in curSearches[4:]:
 
                     totalIterations += 1
                     count += 1
-                    accumalativeSearches += j
+                    accumalativeSearches += n
                     if count == 7:  # every 7 days (1 week), we record the sales that week
                         curSearchesWeekly.append(accumalativeSearches)
                         accumalativeSearches = 0
@@ -142,18 +146,22 @@ def predict(given_csv, k):
             # sSlope2 = model[2]
 
             # append params
-            params.append([slope, slope1, last, gSlope0, gSlope1, sSlope0, sSlope1])
+            if True:
+                params.append([slope, slope1, last, gSlope0, gSlope1, sSlope0, sSlope1])
+                counter += 1
+                print(counter)
 
+            #print(len(params))
         # remove bad entries from nY
-        for j in reversed(badEntries):
+        for s in reversed(badEntries):
             # print(isbns.index(j))
-            del nY[isbns.index(j)]
+            del nY[isbns.index(s)]
 
         degree = 2
         for param in params:
             for e in range(2, degree + 1):
                 for length in range(len(param)):
-                     param.append(pow(param[length], e))
+                    param.append(pow(param[length], e))
 
         # train final regression
         classifier = RidgeCV()
@@ -165,9 +173,11 @@ def predict(given_csv, k):
         for j in range(len(future)):
             future[j] = round(future[j])
 
+        #print(future)
+        #print(len(future))
         for p in range(len(nX)):
-            print(len(future))
-            print(len(nX))
+            #print(len(future))
+            #print(len(nX))
             nX[p].append(future[p])
 
     print(classifier.coef_)

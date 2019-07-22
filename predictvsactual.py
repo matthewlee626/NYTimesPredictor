@@ -76,6 +76,7 @@ def predict(given_csv, k, colorstart):
     count = 0
     for n in range(3, k):
         parameters = []
+        degree = 2
 
         nList.append(n)
         nY.clear()
@@ -89,9 +90,10 @@ def predict(given_csv, k, colorstart):
             #slopes.append(slope)
             last = nX[item][len(nX[item]) - 1]
             #futures.append(prediction)
-            parameters.append([coefs[0], coefs[1], last])
+            coefsFinal = list(coefs)[:len(coefs)-1]
+            coefsFinal.append(last)
+            parameters.append(coefsFinal)
 
-        degree = 1
         #print(parameters)
         for params in parameters:
             #print(params)
@@ -109,9 +111,11 @@ def predict(given_csv, k, colorstart):
         future = classifier.predict(parameters).tolist()
         for i in range(len(future)):
             future[i] = round(future[i])
-        print(future)
+        #print(future)
         #print(nX)
         for p in range(len(nX)):
+            print(len(future))
+            print(len(nX))
             nX[p].append(future[p])
         maeList.append((mae(nY, future)))
 

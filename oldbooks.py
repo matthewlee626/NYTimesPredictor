@@ -81,7 +81,7 @@ def predict(given_csv, k):
             #print(nX)
             #ranking
             #slope, intercept, r_value, p_value, std_err = stats.linregress(list(range(len(nX[i]))), nX[i])
-            coefs = np.polyfit(list(range(len(nX[i]))), nX[i], 1)
+            coefs = np.polyfit(list(range(len(nX[i]))), nX[i], 2)
             last = nX[i][len(nX[i]) - 1]
 
             #genre
@@ -104,10 +104,10 @@ def predict(given_csv, k):
                 prevGenrePercent.append(genreData[[curGenre]].iloc[j][0])
             gSlope, gIntercept, gR_value, gP_value, gStd_err = stats.linregress(list(range(len(prevGenrePercent))), prevGenrePercent)
 
-            params.append([coefs[0], last, gSlope])
+            params.append([coefs[0], coefs[1], last, gSlope])
 
         #train
-        degree = 1
+        degree = 2
         #print(parameters)
         for param in params:
             #print(param)

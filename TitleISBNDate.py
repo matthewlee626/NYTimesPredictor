@@ -16,6 +16,7 @@ def getTitleISBN():
             else:
                 isbnList.append(line[0])
                 titleList.append(line[4])
+                print(isbnList)
         return isbnList, titleList
 
 

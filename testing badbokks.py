@@ -7,10 +7,10 @@ import matplotlib.pyplot as plt
 import os.path
 
 # read in data
-fiction = pd.read_csv("/Users/johanl/Downloads/fiction.csv", delimiter=",")
-nonfiction = pd.read_csv("/Users/johanl/Downloads/nonfiction.csv", delimiter=",")
-isbnToInfo = pd.read_csv("/Users/johanl/Downloads/isbnToInfo.csv", delimiter=",")
-genreData = pd.read_csv("/Users/johanl/PycharmProjects/ucsb/fiction/sortedGenresFiction.csv", delimiter=",")
+fiction = pd.read_csv("fiction.csv", delimiter=",")
+nonfiction = pd.read_csv("nonfiction.csv", delimiter=",")
+isbnToInfo = pd.read_csv("isbnToInfo.csv", delimiter=",")
+genreData = pd.read_csv("sortedGenresFiction.csv", delimiter=",")
 genreData.fillna(0, inplace=True)  # replace na with 0
 
 
@@ -70,8 +70,8 @@ def predict(given_csv, k):
 
             #searches
 
-            if os.path.isfile("/Users/johanl/Documents/GitHub/NYTimesPredictor/datadump/" + curISBN + ".csv"): # for now, until we get all the data
-                curSearchesDirty = pd.read_csv("/Users/johanl/Documents/GitHub/NYTimesPredictor/datadump/" + curISBN + ".csv", delimiter=",")  # cuz not clean
+            if os.path.isfile("datadump/" + curISBN + ".csv"): # for now, until we get all the data
+                curSearchesDirty = pd.read_csv("datadump/" + curISBN + ".csv", delimiter=",")  # cuz not clean
             else:
                 badEntriesIndex.append(i)
                 # continue
