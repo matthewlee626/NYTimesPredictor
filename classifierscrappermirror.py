@@ -2,7 +2,7 @@ import csv
 import requests
 import json
 
-
+#ISBN scrapper function
 def main():
     isbn_list = []
     with open('isbns/unique_notNYT_isbn.csv', mode='r') as fiction_input:
