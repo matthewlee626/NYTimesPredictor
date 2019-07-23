@@ -122,7 +122,12 @@ with open(yesorno + ".json", mode='r') as inputs:
                 for place in entryloaded[key]["subject_places"]:
                     if place["name"] in places.keys():
                         placevalue += places[place["name"]]
-            params.append(placevalue)
+                if len(entryloaded[key]["subject_places"]) != 0:
+                    params.append(placevalue/len(entryloaded[key]["subject_places"]))
+                else:
+                    params.append(placevalue)
+            else:
+                params.append(placevalue)
 
             # subject hash value
             subjectvalue = 0
@@ -130,7 +135,12 @@ with open(yesorno + ".json", mode='r') as inputs:
                 for subject in entryloaded[key]["subjects"]:
                     if subject["name"] in subjects.keys():
                         subjectvalue += subjects[subject["name"]]
-            params.append(subjectvalue)
+                if len(entryloaded[key]["subjects"]) != 0:
+                    params.append(subjectvalue/len(entryloaded[key]["subjects"]))
+                else:
+                    params.append(subjectvalue)
+            else:
+                params.append(subjectvalue)
 
             writer.writerow(params)
 

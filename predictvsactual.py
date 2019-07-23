@@ -114,8 +114,8 @@ def predict(given_csv, k, colorstart):
         #print(future)
         #print(nX)
         for p in range(len(nX)):
-            print(len(future))
-            print(len(nX))
+            #print(len(future))
+            #print(len(nX))
             nX[p].append(future[p])
         maeList.append((mae(nY, future)))
 
@@ -140,9 +140,9 @@ def predict(given_csv, k, colorstart):
         color = colors[key+colorstart]
         plt.plot(nList, clean[keys[key]][0:k], label='Actual: ' + titles[key], color=color)
         plt.plot(nList, nX[keyindex[key]][0:k], label='Predicted: ' + titles[key], linestyle=':', color=color)
-        print(keys)
-        print(clean[keys[key]][0:k])
-        print(nX[keyindex[key]][0:k])
+        #print(keys)
+        #print(clean[keys[key]][0:k])
+        #print(nX[keyindex[key]][0:k])
     plt.title("First Model: Building NYTimes Best Seller Path by predicting the n+1th ranking from the first n rankings")
     print(maeList)
     #plt.plot(nList, maeList)
@@ -157,6 +157,6 @@ predict(fiction, 10, 0)
 predict(nonfiction, 10, 4)
 plt.ylim(0, 20)
 plt.gca().invert_yaxis()
-#plt.show()
+plt.show()
 
 output.close()
