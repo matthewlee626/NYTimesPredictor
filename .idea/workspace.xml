@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="677c217c-26d8-4e9d-a04a-6fb7c23ed5c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/classifier/fictionsingle.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/jsoncleaner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/jsoncleanerforv2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TitleISBNDateFiction.py" beforeDir="false" afterPath="$PROJECT_DIR$/TitleISBNDateFiction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isbnData.json" beforeDir="false" afterPath="$PROJECT_DIR$/classifier/isbnData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/titleISBNdateFiction.csv" beforeDir="false" afterPath="$PROJECT_DIR$/titleISBNdateFiction.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unique_isbn_v2.json" beforeDir="false" afterPath="$PROJECT_DIR$/classifier/unique_isbn_v2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniqueisbncounter.py" beforeDir="false" afterPath="$PROJECT_DIR$/uniqueisbncounter.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +30,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TitleISBNDateFiction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="374">
               <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
             </state>
           </provider>
@@ -47,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/titleISBNdateFiction.csv">
           <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="31756">
-              <caret line="1868" column="54" selection-start-line="1868" selection-start-column="52" selection-end-line="1868" selection-end-column="54" />
+            <state relative-caret-position="-26875">
+              <caret line="271" column="52" selection-start-line="271" selection-start-column="52" selection-end-line="271" selection-end-column="52" />
             </state>
           </provider>
           <provider editor-type-id="csv-table-editor">
@@ -159,9 +151,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="1064" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1132" />
+    <option name="width" value="795" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
@@ -361,17 +353,18 @@
       <workItem from="1563780211045" duration="2338000" />
       <workItem from="1563782841326" duration="293000" />
       <workItem from="1563786800022" duration="9159000" />
-      <workItem from="1563834035559" duration="8488000" />
+      <workItem from="1563834035559" duration="8769000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26248000" />
+    <option name="totallyTimeSpent" value="26529000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="906" y="0" width="636" height="830" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13069706" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33737025" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24966975" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32673267" />
@@ -384,7 +377,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32956153" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="11" visible="true" weight="0.32531825" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="11" visible="true" weight="0.32904148" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -781,15 +774,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TitleISBNDateFiction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="374">
           <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/titleISBNdateFiction.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="31756">
-          <caret line="1868" column="54" selection-start-line="1868" selection-start-column="52" selection-end-line="1868" selection-end-column="54" />
+        <state relative-caret-position="-26875">
+          <caret line="271" column="52" selection-start-line="271" selection-start-column="52" selection-end-line="271" selection-end-column="52" />
         </state>
       </provider>
       <provider editor-type-id="csv-table-editor">
