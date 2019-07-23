@@ -4,10 +4,8 @@ from sklearn.linear_model import LinearRegression
 from sklearn.linear_model import RidgeCV
 from sklearn.metrics import mean_absolute_error as mae
 import matplotlib.pyplot as plt
-import math
 from scipy import stats
 import csv
-import random as rd
 import numpy as np
 
 fiction = pd.read_csv("fiction.csv", delimiter=",")
@@ -114,8 +112,8 @@ def predict(given_csv, k, colorstart):
         #print(future)
         #print(nX)
         for p in range(len(nX)):
-            print(len(future))
-            print(len(nX))
+            # print(len(future))
+            # print(len(nX))
             nX[p].append(future[p])
         maeList.append((mae(nY, future)))
 
@@ -157,6 +155,6 @@ predict(fiction, 10, 0)
 predict(nonfiction, 10, 4)
 plt.ylim(0, 20)
 plt.gca().invert_yaxis()
-#plt.show()
+plt.show()
 
 output.close()
