@@ -163,9 +163,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
-    <option name="width" value="1219" />
+    <option name="width" value="1064" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
@@ -222,7 +222,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.csvmaker">
+  <component name="RunManager" selected="Python.books">
     <configuration name="TitleISBNDateFiction" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="NYTimesPredictor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -342,9 +342,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.books" />
         <item itemvalue="Python.csvmaker" />
         <item itemvalue="Python.predictvsactual" />
-        <item itemvalue="Python.books" />
         <item itemvalue="Python.TitleISBNDateFiction" />
         <item itemvalue="Python.jsoncleanerforv2" />
       </list>

@@ -16,12 +16,6 @@ genreData.fillna(0, inplace=True)  # replace na with 0
 
 def predict(given_csv, k):
 
-    #graphing a specific book
-    wannaCheckIsbn = '0399156399'
-    wannaCheckIsbnIndex = 0
-    wannaCheckIsbnPredictions = []
-    wannaCheckIsbnActual = []
-
     sorted = {}
 
     # format into dictionary
@@ -52,10 +46,18 @@ def predict(given_csv, k):
     nY = []
     nList = []
     maeList = []
+
     for i in clean.keys():
         nX.append(clean[i][0:3])
 
     print('nx length = ', len(nX))
+
+
+    # graphing a specific book
+    wannaCheckIsbn = '0525952926'
+    wannaCheckIsbnIndex = 0
+    wannaCheckIsbnPredictions = []
+    wannaCheckIsbnActual = clean[wannaCheckIsbn][0:k]
 
     # model
     for n in range(3, k):
@@ -153,27 +155,37 @@ def predict(given_csv, k):
             sSlope1 = model[1]
             # sSlope2 = model[2]
 
-            # append params
+            #append params
             params.append([slope, slope1, last, gSlope0, gSlope1, sSlope0, sSlope1])
+            # params.append([slope, slope1, last, gSlope0, gSlope1])
 
-            #graphing a specific book
-            if curISBN == wannaCheckIsbn:
-                wannaCheckIsbnIndex = i
-
+            if n == k-1:
+                if curISBN == wannaCheckIsbn:
+                    wannaCheckIsbnIndex = i
+                    print('index = ', i)
+                    print('curISBN = ', curISBN)
 
         # remove bad entries
-        print('nX', len(nY), len(nX))
+        print('lenght of nX = ', len(nX))
         print('number of bad books = ', len(badEntriesIndex))
+
 
         for i in reversed(badEntriesIndex):
             del nX[i]
             del nY[i]
+            del isbns[i]
 
+            if n == k-1:
+                if i < wannaCheckIsbnIndex:
+                    wannaCheckIsbnIndex = wannaCheckIsbnIndex - 1
+
+        # to make ridge cv degree 2
         degree = 2
         for param in params:
+
             for e in range(2, degree + 1):
                 for length in range(len(param)):
-                     param.append(pow(param[length], e))
+                    param.append(pow(param[length], e))
 
         # train final regression
         classifier = RidgeCV()
@@ -188,24 +200,33 @@ def predict(given_csv, k):
             nX[p].append(future[p])
 
         if n == k-1:
-            wannaCheckIsbnPredictions.append(nX[i])
+            wannaCheckIsbnPredictions = nX[wannaCheckIsbnIndex]
 
-    wannaCheckIsbnActual = clean[wannaCheckIsbn][:k]
+
 
     print('coef', classifier.coef_)
     print('errors', maeList)
     plt.plot(nList, maeList)
 
+    print(wannaCheckIsbnIndex)
+    # wannaCheckIsbnPredictions = nX[wannaCheckIsbnIndex]
+
+    # print('pos', test)
+    # print('actual', clean[recordISBN])
+    # print('predictions', nX[record])
     print('actual', wannaCheckIsbnActual)
-    wannaCheckIsbnPredictions = wannaCheckIsbnPredictions[0]
     print('predictions', wannaCheckIsbnPredictions)
-    plt.plot(range(k), wannaCheckIsbnPredictions, label='predicted', color='#ff0000')
-    plt.plot(range(k), wannaCheckIsbnActual, label='actual', color='#00ff00')
+
+    # plt.plot(range(k), nX[record][0:k], label='predicted', color='red')
+    # plt.plot(range(k), clean[recordISBN][0:k], label='actual', color='green')
+
+    plt.plot(range(k), wannaCheckIsbnPredictions, label='predicted', color='red')
+    plt.plot(range(k), wannaCheckIsbnActual, label='actual', color='green')
     plt.gca().set_ylim([1, 20])
     plt.show()
 
 
-predict(fiction, 7)
+predict(fiction, 9)
 
 
 #
