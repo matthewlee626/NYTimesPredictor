@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 from sklearn.linear_model import RidgeCV
 from sklearn.metrics import mean_absolute_error as mae
-from scipy import stats
 import matplotlib.pyplot as plt
 import os.path
 
@@ -223,6 +222,9 @@ def predict(given_csv, k):
     plt.plot(range(k), wannaCheckIsbnPredictions, label='predicted', color='red')
     plt.plot(range(k), wannaCheckIsbnActual, label='actual', color='green')
     plt.gca().set_ylim([1, 20])
+
+    print(nX)
+
     plt.show()
 
 
