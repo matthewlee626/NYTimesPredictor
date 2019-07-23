@@ -39,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/titleISBNdateFiction.csv">
           <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="-26875">
-              <caret line="271" column="52" selection-start-line="271" selection-start-column="52" selection-end-line="271" selection-end-column="52" />
+            <state relative-caret-position="578">
+              <caret line="1871" selection-start-line="1871" selection-end-line="1871" />
             </state>
           </provider>
           <provider editor-type-id="csv-table-editor">
@@ -148,12 +148,13 @@
         <option value="$PROJECT_DIR$/classifier/jsoncleanerforv2.py" />
         <option value="$PROJECT_DIR$/classifier/jsoncleaner.py" />
         <option value="$PROJECT_DIR$/TitleISBNDateFiction.py" />
+        <option value="$PROJECT_DIR$/titleISBNdateFiction.csv" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1132" />
-    <option name="width" value="795" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="width" value="1064" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
@@ -353,21 +354,21 @@
       <workItem from="1563780211045" duration="2338000" />
       <workItem from="1563782841326" duration="293000" />
       <workItem from="1563786800022" duration="9159000" />
-      <workItem from="1563834035559" duration="8769000" />
+      <workItem from="1563834035559" duration="9011000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26529000" />
+    <option name="totallyTimeSpent" value="26771000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="906" y="0" width="636" height="830" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33737025" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13069706" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24966975" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32673267" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32248938" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.21923621" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38755304" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -377,7 +378,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32956153" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="11" visible="true" weight="0.32904148" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="11" visible="true" weight="0.3281471" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -745,13 +746,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classifier/csvmaker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/titleISBNdate.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-56404">
@@ -772,6 +766,13 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/classifier/csvmaker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TitleISBNDateFiction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -781,8 +782,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/titleISBNdateFiction.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-26875">
-          <caret line="271" column="52" selection-start-line="271" selection-start-column="52" selection-end-line="271" selection-end-column="52" />
+        <state relative-caret-position="578">
+          <caret line="1871" selection-start-line="1871" selection-end-line="1871" />
         </state>
       </provider>
       <provider editor-type-id="csv-table-editor">
