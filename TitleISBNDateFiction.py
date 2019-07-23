@@ -20,6 +20,7 @@ with open('fictionsingle.csv', mode='r', encoding='utf-8') as input:
                     writer.writerow(line)
                     line_count += 1
                 else:
+                    print(line[0])
                     if line[0] in isbnInfo:
                         writer.writerow(line)
 
