@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 import os.path
 
 # read in data
-fiction = pd.read_csv("/Users/johanl/Downloads/fiction.csv", delimiter=",")
-nonfiction = pd.read_csv("/Users/johanl/Downloads/nonfiction.csv", delimiter=",")
+fiction = pd.read_csv("fiction.csv", delimiter=",")
+nonfiction = pd.read_csv("nonfiction.csv", delimiter=",")
 isbnToInfo = pd.read_csv("/Users/johanl/Downloads/isbnToInfo.csv", delimiter=",")
 genreData = pd.read_csv("/Users/johanl/PycharmProjects/ucsb/fiction/sortedGenresFiction.csv", delimiter=",")
 genreData.fillna(0, inplace=True)  # replace na with 0

@@ -3,7 +3,7 @@ import csv
 import json
 import numpy as np
 
-yesorno = "no"
+yesorno = "yes"
 
 subjectHash = open(yesorno + "SubjectHash.csv", mode='w', encoding='utf-8', newline='')
 placeHash = open(yesorno + "PlaceHash.csv", mode='w', encoding='utf-8', newline='')
@@ -66,13 +66,14 @@ with open(yesorno + ".json", mode='r') as inputs:
             placewriter.writerow([k, v])
         # writing the csv
 
-        writer.writerow(["Publisher", "Dewey", "LC", "Title", "Number of Pages", "Publish Place", "Subject Place", "Subject"])
+        writer.writerow(["ISBN", "Publisher", "Dewey", "LC", "Title", "Number of Pages", "Publish Place", "Subject Place", "Subject"])
 
         for entry in isbnInfo:
             params = []
 
             entryloaded = json.loads(entry)
             key = list(entryloaded.keys())[0]
+            params.append(key[5:])
 
             # publisher
             if "publishers" in entryloaded[key]:
