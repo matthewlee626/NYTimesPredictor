@@ -1,5 +1,7 @@
 const XLSX = require('xlsx')
 const googleTrends = require('google-trends-api');
+const fs = require('fs') 
+
 
 function to_json(workbook) {
     var result = {};
@@ -54,7 +56,7 @@ function write(json_raw, isbn) {
 }
 
 async function execute() {
-	var wb = XLSX.readFile('final_title-isbn-date.2005-end.csv')
+	var wb = XLSX.readFile('titleISBNdateFiction.csv')
 	//var wb = XLSX.readFile('book_info.csv')
 
 	var sheetJSON = to_json(wb)
@@ -62,11 +64,23 @@ async function execute() {
 
 	//console.log(wsJSON)
 
+	var count = 0
+
 	for (i in wsJSON) {
 		//initial variables
 		var book = wsJSON[i]
 		var title = book['Title'].toString()
 		var isbn = (book['ISBN']).toString()
+
+		if (fs.existsSync('C:\\Users\\Siddhant\\Desktop\\sera\\nytimes_books\\js\\datadump\\' + isbn + '.csv')) { // or fs.existsSync
+    		count++;
+    		console.log(count)
+    		continue;
+		}
+
+		//if (book['LastDate'].toString().trim() !== 'Not Found') {
+		//	continue;
+		//}
 
 		var first_date_raw = new Date(1900, 0, book['FirstDate'] - 1)
 		//console.log(book['LastDate'] !== 'Not Found')
@@ -132,7 +146,7 @@ async function execute() {
 		  console.error(err);
 		});
 
-		await sleep(250);
+		await sleep(750);
 	}
 }
 
@@ -156,7 +170,7 @@ async function research(u_keyword, u_startTime, u_endTime, u_geo, isbn) {
 		  console.error(err);
 		});
 
-		await sleep(250);
+		await sleep(750);
 }
 
 execute()
