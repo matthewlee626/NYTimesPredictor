@@ -17,7 +17,7 @@ genreData.fillna(0, inplace=True)  # replace na with 0
 def predict(given_csv, k):
 
     #graphing a specific book
-    wannaCheckIsbn = '0316036269'
+    wannaCheckIsbn = '0399156399'
     wannaCheckIsbnIndex = 0
     wannaCheckIsbnPredictions = []
     wannaCheckIsbnActual = []
