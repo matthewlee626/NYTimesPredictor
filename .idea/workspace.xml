@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="677c217c-26d8-4e9d-a04a-6fb7c23ed5c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books.py" beforeDir="false" afterPath="$PROJECT_DIR$/books.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classifier/csvmaker.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifier/csvmaker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classifier/no.csv" beforeDir="false" afterPath="$PROJECT_DIR$/classifier/no.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classifier/yes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/classifier/yes.csv" afterDir="false" />
@@ -25,7 +23,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/books.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2703">
+            <state relative-caret-position="-2550">
               <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
             </state>
           </provider>
@@ -35,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/classifier/csvmaker.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding>
                 <element signature="e#99#109#0" expanded="true" />
               </folding>
@@ -45,21 +43,34 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classifier/no.csv">
-          <provider selected="true" editor-type-id="csv-text-editor" />
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="150">
+              <caret line="386" column="51" selection-start-line="386" selection-start-column="38" selection-end-line="386" selection-end-column="51" />
+            </state>
+          </provider>
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classifier/yes.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="27149">
+              <caret line="1597" column="66" lean-forward="true" selection-start-line="1595" selection-start-column="73" selection-end-line="1597" selection-end-column="66" />
+            </state>
+          </provider>
           <provider editor-type-id="csv-table-editor">
             <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/classifier/yes.csv">
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        <entry file="file://$PROJECT_DIR$/classifier/no.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="385" column="262" selection-start-line="385" selection-start-column="246" selection-end-line="385" selection-end-column="262" />
             </state>
-          </provider>
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
           </provider>
         </entry>
       </file>
@@ -74,8 +85,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>0385535139</find>
-      <find>date 0</find>
       <find>count</find>
       <find>open</find>
       <find>ISBN</find>
@@ -104,6 +113,8 @@
       <find>isbnInfo.extend([line for line in jsonList</find>
       <find>places</find>
       <find>publish_date</find>
+      <find>new</find>
+      <find>The Great Gat</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -357,18 +368,18 @@
       <workItem from="1563780211045" duration="2338000" />
       <workItem from="1563782841326" duration="293000" />
       <workItem from="1563786800022" duration="9159000" />
-      <workItem from="1563834035559" duration="19203000" />
+      <workItem from="1563834035559" duration="20564000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36963000" />
+    <option name="totallyTimeSpent" value="38324000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13069706" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13069706" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24966975" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32248938" />
@@ -381,14 +392,14 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32956153" />
-      <window_info anchor="bottom" id="Python Console" order="11" visible="true" weight="0.27015558" />
+      <window_info anchor="bottom" id="Python Console" order="11" visible="true" weight="0.24752475" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info active="true" anchor="right" id="SciView" order="4" visible="true" weight="0.3297587" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.3297587" />
       <window_info anchor="right" x="0" y="0" width="145" height="630" id="Documentation" order="5" side_tool="true" weight="0.32908848" />
     </layout>
     <layout-to-restore>
@@ -425,7 +436,6 @@
     <SUITE FILE_PATH="coverage/NYTimesPredictor$predictvsactual.coverage" NAME="predictvsactual Coverage Results" MODIFIED="1563772128783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nonfiction.csv" />
     <entry file="file://$PROJECT_DIR$/records.csv" />
     <entry file="file://$PROJECT_DIR$/.gitignore" />
     <entry file="file://$PROJECT_DIR$/data scrapers/js/fetch_google-trends_data.js">
@@ -765,30 +775,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classifier/no.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="4020" column="601" selection-start-line="4020" selection-start-column="589" selection-end-line="4020" selection-end-column="601" />
+    <entry file="file://$PROJECT_DIR$/classifier/noSubjectHash.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="145">
+          <caret line="36" column="3" selection-start-line="36" selection-end-line="36" selection-end-column="3" />
         </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/books.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2703">
+        <state relative-caret-position="-2550">
           <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classifier/no.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classifier/csvmaker.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="e#99#109#0" expanded="true" />
           </folding>
@@ -797,12 +804,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classifier/yes.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        <state relative-caret-position="27149">
+          <caret line="1597" column="66" lean-forward="true" selection-start-line="1595" selection-start-column="73" selection-end-line="1597" selection-end-column="66" />
         </state>
       </provider>
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classifier/no.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="150">
+          <caret line="386" column="51" selection-start-line="386" selection-start-column="38" selection-end-line="386" selection-end-column="51" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classifier/no.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="385" column="262" selection-start-line="385" selection-start-column="246" selection-end-line="385" selection-end-column="262" />
+        </state>
       </provider>
     </entry>
   </component>
