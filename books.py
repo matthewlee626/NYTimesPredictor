@@ -5,24 +5,28 @@ from sklearn.metrics import mean_absolute_error as mae
 from scipy import stats
 import matplotlib.pyplot as plt
 import os.path
+from sklearn.metrics import r2_score
+from sklearn.metrics.scorer import make_scorer
+
 
 # read in data
-fiction = pd.read_csv("fiction.csv", delimiter=",")
-nonfiction = pd.read_csv("nonfiction.csv", delimiter=",")
+fiction = pd.read_csv("/Users/johanl/Downloads/fiction.csv", delimiter=",")
+nonfiction = pd.read_csv("/Users/johanl/Downloads/nonfiction.csv", delimiter=",")
 isbnToInfo = pd.read_csv("/Users/johanl/Downloads/isbnToInfo.csv", delimiter=",")
 genreData = pd.read_csv("/Users/johanl/PycharmProjects/ucsb/fiction/sortedGenresFiction.csv", delimiter=",")
 genreData.fillna(0, inplace=True)  # replace na with 0
 
 
 def predict(given_csv, k):
+
     sorted = {}
 
     # format into dictionary
-    for i in range(given_csv.shape[0]): # per day
-        for j in range(1, 21): # per entry
-            if given_csv.iloc[i, j] in sorted: # if key exist
+    for i in range(given_csv.shape[0]):  # per day
+        for j in range(1, 21):  # per entry
+            if given_csv.iloc[i, j] in sorted:  # if key exist
                 sorted[given_csv.iloc[i, j]].append([given_csv.iloc[i, 0], j])
-            else: # key doesn't exist
+            else:  # key doesn't exist
                 sorted[given_csv.iloc[i, j]] = [[given_csv.iloc[i, 0], j]]
 
     # remove ones that have less than k entries since hard to predict
@@ -38,41 +42,38 @@ def predict(given_csv, k):
 
     isbns = list(clean.keys())
 
+    print(clean)
+
     # add first 3
     nX = []
     nY = []
     nList = []
     maeList = []
+    goodISBNs = []
+    badEntriesIndex = []
+
     for i in clean.keys():
         nX.append(clean[i][0:3])
 
-    isbnsY = []
-
-    badEntries = []
-    badEntriesIndexY = []
-
     print('nx length = ', len(nX))
+
+    # graphing a specific book
+    wannaCheckIsbn = '0525952926'
+    wannaCheckIsbnIndex = 0
+    wannaCheckIsbnPredictions = []
+    wannaCheckIsbnActual = clean[wannaCheckIsbn][0:k]
 
     # model
     for n in range(3, k):
-        badEntriesIndexY.append([])
-        tempcount = 0
+
         params = []
         nList.append(n)
-        if n == 3:
-            nY.clear()
+        nY.clear()
 
-            for j in clean.keys():
-                nY.append(clean[j][n])
-        # elif n > 3:
-        #     for j in isbnsY:
-        #         nY.append(clean[j][n])
+        for j in clean.keys():
+            nY.append(clean[j][n])
+            goodISBNs.append(j)
 
-# remember to only append from the list of ok'd ones already,
-
-
-        newBadEntries = []
-        badEntriesIndex = []
         for i in range(len(nX)):  # per book
 
             #ranking
@@ -99,6 +100,7 @@ def predict(given_csv, k):
 
             for j in range(curWeek-3, curWeek):
                 prevGenrePercent.append(genreData[[curGenre]].iloc[j][0])
+
             # gSlope, gIntercept, gR_value, gP_value, gStd_err = stats.linregress(list(range(len(prevGenrePercent))), prevGenrePercent)
             model = np.polyfit(list(range(len(prevGenrePercent))), prevGenrePercent, 2)
             gSlope0 = model[0]
@@ -111,16 +113,17 @@ def predict(given_csv, k):
             elif os.path.isfile("/Users/johanl/Documents/GitHub/NYTimesPredictor/datadump/" + curISBNnoZero + ".csv"):
                 curSearchesDirty = pd.read_csv("/Users/johanl/Documents/GitHub/NYTimesPredictor/datadump/" + curISBNnoZero + ".csv", delimiter=",")
             else:
+                goodISBNs.remove(curISBN)
+                if n > 3:
+                    print('suprise!')
                 badEntriesIndex.append(i)
                 continue
             curSearchesBusty = curSearchesDirty[['GT_SearchIndex']].values.tolist()  # busty cuz not flat
             curSearches = [item for sublist in curSearchesBusty for item in sublist]  # flatten
             if len(curSearches) == 0:  # if file empty
-                # print(curSearches)
                 badEntriesIndex.append(i)
                 continue
 
-            isbnsY.append(curISBN)
             count = 0
             for j in curSearches:
                 if j == 0:  # if searches that day is 0
@@ -138,12 +141,10 @@ def predict(given_csv, k):
                     count += 1
                     accumalativeSearches += j
                     if count == 7:  # every 7 days (1 week), we record the sales that week
-                        if totalIterations < 7 * (k + 4):
+                        if totalIterations < 7 * (k + 4):  # cuz start data starts from 1 month before
                             curSearchesWeekly.append(accumalativeSearches)
                             accumalativeSearches = 0
                             count = 0
-                    # if totalIterations == 7*(k+4):  # cuz start data starts from 1 month before
-                    #     break
 
             elif count/len(curSearches) <= 0.25:
                 curSearchesWeekly = []
@@ -155,56 +156,90 @@ def predict(given_csv, k):
                         totalIterations += 1
                         curSearchesWeekly.append(j)  # well its rly daily searches but too lazy to make another var
 
-                        # break
-
             # sSlope, sIntercept, sR_value, sP_value, sStd_err = stats.linregress(list(range(len(curSearchesWeekly))), curSearchesWeekly)
             model = np.polyfit(list(range(len(curSearchesWeekly))), curSearchesWeekly, 2)
             sSlope0 = model[0]
             sSlope1 = model[1]
             # sSlope2 = model[2]
 
-            # append params
+            #append params
             params.append([slope, slope1, last, gSlope0, gSlope1, sSlope0, sSlope1])
+            # params.append([slope, last, gSlope0, gSlope1])
 
-        print('number of bad books = ', len(badEntriesIndex))
+            if n == k-1:
+                if curISBN == wannaCheckIsbn:
+                    wannaCheckIsbnIndex = i
+                    print('index = ', i)
+                    print('curISBN = ', curISBN)
 
         # remove bad entries
-        print('before', len(nY), len(nX))
+        if n == 3:
+            print('lenght of nX = ', len(nX))
+            print('number of bad books = ', len(badEntriesIndex))
 
-        for i in reversed(badEntriesIndex):
-            del nX[i]
-            del nY[i]
+        if n == 3:
+            for i in reversed(badEntriesIndex):
+                del nX[i]
+                del nY[i]
+                del isbns[i]
 
-        print('after', len(nY), len(nX))
+                if n == k-1:
+                    if i < wannaCheckIsbnIndex:
+                        wannaCheckIsbnIndex = wannaCheckIsbnIndex - 1
 
+        if n > 3:
+            print(len(nY), max(badEntriesIndex))
+            for i in reversed(badEntriesIndex):
+                del nY[i]
+
+        # to make ridge cv degree 2
         degree = 2
         for param in params:
+
             for e in range(2, degree + 1):
                 for length in range(len(param)):
-                     param.append(pow(param[length], e))
+                    param.append(pow(param[length], e))
 
         # train final regression
-        classifier = RidgeCV()
+        mate = make_scorer(mae, greater_is_better=False)
+        classifier = RidgeCV(scoring=mate)
+
         classifier.fit(params, nY)
         future = classifier.predict(params).tolist()
+        print(future)
         maeList.append((mae(nY, future)))
-
-# error cuz nX is appending all, including the bad isbn ones
 
         for j in range(len(future)):
             future[j] = round(future[j])
 
         for p in range(len(nX)):
-            # print(len(future))
-            # print(len(nX))
             nX[p].append(future[p])
 
-    print(classifier.coef_)
-    print(maeList)
+        if n == k-1:
+            wannaCheckIsbnPredictions = nX[wannaCheckIsbnIndex]
+
+    print('coef', classifier.coef_)
+    print('errors', maeList)
+    plt.subplot(2, 1, 1)
     plt.plot(nList, maeList)
+
+    # print(wannaCheckIsbnIndex)
+    # print('actual', wannaCheckIsbnActual)
+    # print('predictions', wannaCheckIsbnPredictions)
+
+    plt.subplot(2, 1, 2)
+    plt.plot(range(k), wannaCheckIsbnPredictions, label='predicted', color='red', linestyle=':')
+    plt.plot(range(k), wannaCheckIsbnActual, label='actual', color='green')
+    plt.gca().set_ylim([1, 20])
+
+    print(nX)
+
     plt.show()
 
-predict(fiction, 7)
+
+predict(fiction, 9)
+
+
 #
 #
 # import pandas as pd
