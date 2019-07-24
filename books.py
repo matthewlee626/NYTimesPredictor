@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import RidgeCV
+from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error as mae
 from scipy import stats
 import matplotlib.pyplot as plt
@@ -8,12 +9,11 @@ import os.path
 from sklearn.metrics import r2_score
 from sklearn.metrics.scorer import make_scorer
 
-
 # read in data
-fiction = pd.read_csv("/Users/johanl/Downloads/fiction.csv", delimiter=",")
-nonfiction = pd.read_csv("/Users/johanl/Downloads/nonfiction.csv", delimiter=",")
-isbnToInfo = pd.read_csv("/Users/johanl/Downloads/isbnToInfo.csv", delimiter=",")
-genreData = pd.read_csv("/Users/johanl/PycharmProjects/ucsb/fiction/sortedGenresFiction.csv", delimiter=",")
+fiction = pd.read_csv("fiction.csv", delimiter=",")
+nonfiction = pd.read_csv("nonfiction.csv", delimiter=",")
+isbnToInfo = pd.read_csv("isbnToInfo.csv", delimiter=",")
+genreData = pd.read_csv("sortedGenresFiction.csv", delimiter=",")
 genreData.fillna(0, inplace=True)  # replace na with 0
 
 
@@ -108,10 +108,10 @@ def predict(given_csv, k):
 
             #searches
             curISBNnoZero = curISBN[1:]
-            if os.path.isfile("/Users/johanl/Documents/GitHub/NYTimesPredictor/datadump/" + curISBN + ".csv"): # for now, until we get all the data
-                curSearchesDirty = pd.read_csv("/Users/johanl/Documents/GitHub/NYTimesPredictor/datadump/" + curISBN + ".csv", delimiter=",")  # cuz not clean
-            elif os.path.isfile("/Users/johanl/Documents/GitHub/NYTimesPredictor/datadump/" + curISBNnoZero + ".csv"):
-                curSearchesDirty = pd.read_csv("/Users/johanl/Documents/GitHub/NYTimesPredictor/datadump/" + curISBNnoZero + ".csv", delimiter=",")
+            if os.path.exists("C:\\Users\\matth\\Desktop\\NYTimesPredictor\\datadump\\" + curISBN + ".csv"): # for now, until we get all the data
+                curSearchesDirty = pd.read_csv("C:\\Users\\matth\\Desktop\\NYTimesPredictor\\datadump\\" + curISBN + ".csv", delimiter=",")  # cuz not clean
+            elif os.path.exists("C:\\Users\\matth\\Desktop\\NYTimesPredictor\\datadump\\" + curISBNnoZero + ".csv"):
+                curSearchesDirty = pd.read_csv("C:\\Users\\matth\\Desktop\\NYTimesPredictor\\datadump\\" + curISBNnoZero + ".csv", delimiter=",")
             else:
                 goodISBNs.remove(curISBN)
                 if n > 3:
@@ -203,7 +203,7 @@ def predict(given_csv, k):
         # train final regression
         mate = make_scorer(mae, greater_is_better=False)
         classifier = RidgeCV(scoring=mate)
-
+        #classifier = LinearRegression()
         classifier.fit(params, nY)
         future = classifier.predict(params).tolist()
         print(future)
@@ -220,24 +220,28 @@ def predict(given_csv, k):
 
     print('coef', classifier.coef_)
     print('errors', maeList)
-    plt.subplot(2, 1, 1)
-    plt.plot(nList, maeList)
+    #plt.subplot(2, 1, 1)
+    #plt.plot(nList, maeList)
 
     # print(wannaCheckIsbnIndex)
     # print('actual', wannaCheckIsbnActual)
     # print('predictions', wannaCheckIsbnPredictions)
 
-    plt.subplot(2, 1, 2)
+    #plt.subplot(2, 1, 2)
+    plt.title(wannaCheckIsbn)
     plt.plot(range(k), wannaCheckIsbnPredictions, label='predicted', color='red', linestyle=':')
     plt.plot(range(k), wannaCheckIsbnActual, label='actual', color='green')
     plt.gca().set_ylim([1, 20])
-
+    plt.gca().invert_yaxis()
+    print(maeList)
+    print(wannaCheckIsbnActual)
+    print(wannaCheckIsbnPredictions)
     print(nX)
 
     plt.show()
 
 
-predict(fiction, 9)
+predict(fiction, 10)
 
 
 #

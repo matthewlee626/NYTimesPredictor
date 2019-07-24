@@ -7,12 +7,13 @@ import matplotlib.pyplot as plt
 from scipy import stats
 import csv
 import numpy as np
+from sklearn.metrics.scorer import make_scorer
 
 fiction = pd.read_csv("fiction.csv", delimiter=",")
 nonfiction = pd.read_csv("nonfiction.csv", delimiter=",")
 isbnToInfo = pd.read_csv("isbnToInfo.csv", delimiter=",")
-output = open("records.csv", mode='w', encoding='utf-8', newline='')
-writer = csv.writer(output)
+genreData = pd.read_csv("sortedGenresFiction.csv", delimiter=",")
+genreData.fillna(0, inplace=True)  # replace na with 0
 
 
 def predict(given_csv, k, colorstart):
@@ -30,11 +31,14 @@ def predict(given_csv, k, colorstart):
 
     #remove ones that have less than k entries since hard to predict
     clean = {}
+    weeks = {}
     for i in sorted.keys():
         if len(sorted[i]) >= k:
             clean[i] = []
+            weeks[i] = []
             for j in sorted[i]:
                 clean[i].append(j[1])
+                weeks[i].append(j[0])
 
     #print(sorted)
     #print(clean)
@@ -54,22 +58,27 @@ def predict(given_csv, k, colorstart):
     # purely for graphing
     key_counter = 0
     keys = []
-    keyindex = [73]
+    keyindex = 0
+
+    isbns = list(clean.keys())
+
+    wantedISBN = '0525952926'
 
     n = 3
 
     # remove isbn
     for i in clean.keys():
-        for neededindex in keyindex:
-            if key_counter == neededindex:
-                keys.append(i)
+        if i == wantedISBN:
+            keyindex = key_counter
         key_counter += 1
 
         nX.append(clean[i][0:n])
         #nY.append(clean[i][n])
 
     # training
-    classifier = LinearRegression()
+    #classifier = LinearRegression()
+    mate = make_scorer(mae, greater_is_better=False)
+    classifier = RidgeCV(scoring=mate)
 
     count = 0
     for n in range(3, k):
@@ -90,7 +99,29 @@ def predict(given_csv, k, colorstart):
             #futures.append(prediction)
             coefsFinal = list(coefs)[:len(coefs)-1]
             coefsFinal.append(last)
-            parameters.append(coefsFinal)
+
+            # genre
+            curISBN = isbns[item]
+
+            listI = isbnToInfo[['isbn']].values.tolist()
+            flattenedI = [item for sublist in listI for item in sublist]
+            curi = flattenedI.index(curISBN)
+            curGenre = isbnToInfo[['Category']].iloc[curi][0]
+
+            if "/" in curGenre:  # take first genre if there are 2
+                curGenre = curGenre.split("/")[0]
+            prevGenrePercent = []
+            listG = fiction[['date']].values.tolist()
+            flattened = [item for sublist in listG for item in sublist]
+            curWeek = flattened.index(weeks[curISBN][0])
+
+            for j in range(curWeek - 3, curWeek):
+                prevGenrePercent.append(genreData[[curGenre]].iloc[j][0])
+            # gSlope, gIntercept, gR_value, gP_value, gStd_err = stats.linregress(list(range(len(prevGenrePercent))), prevGenrePercent)
+            gcoefs = np.polyfit(list(range(len(prevGenrePercent))), prevGenrePercent, 2)
+            gcoefsFinal = list(gcoefs)[:len(gcoefs) - 1]
+
+            parameters.append(coefsFinal + gcoefsFinal)
 
         #print(parameters)
         for params in parameters:
@@ -134,17 +165,17 @@ def predict(given_csv, k, colorstart):
                     titles.append(line[1])
 
     colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#00ffff', '#ff00ff', '#ffff99']
-    for key in range(len(keys)):
-        color = colors[key+colorstart]
-        plt.plot(nList, clean[keys[key]][0:k], label='Actual: ' + titles[key], color=color)
-        plt.plot(nList, nX[keyindex[key]][0:k], label='Predicted: ' + titles[key], linestyle=':', color=color)
-        #print(keys)
-        #print(clean[keys[key]][0:k])
-        #print(nX[keyindex[key]][0:k])
+    #for key in range(len(keys)):
+    color = colors[colorstart]
+    plt.plot(nList, clean[wantedISBN][0:k], label='Actual: ' + wantedISBN, color=color)
+    plt.plot(nList, nX[keyindex][0:k], label='Predicted: ' + wantedISBN, linestyle=':', color=color)
+    #print(keys)
+    #print(clean[keys[key]][0:k])
+    #print(nX[keyindex[key]][0:k])
     plt.title("First Model: Building NYTimes Best Seller Path by predicting the n+1th ranking from the first n rankings")
     print(maeList)
-    #plt.plot(nList, maeList)
-
+    print(clean[wantedISBN][0:k])
+    print(nX[keyindex][0:k])
     print(count)
 
     plt.legend()
@@ -152,9 +183,9 @@ def predict(given_csv, k, colorstart):
 
 
 predict(fiction, 10, 0)
-predict(nonfiction, 10, 4)
+#predict(nonfiction, 10, 4)
 plt.ylim(0, 20)
 plt.gca().invert_yaxis()
 plt.show()
 
-output.close()
+#output.close()

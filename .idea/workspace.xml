@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="677c217c-26d8-4e9d-a04a-6fb7c23ed5c5" name="Default Changelist" comment="" />
+    <list default="true" id="677c217c-26d8-4e9d-a04a-6fb7c23ed5c5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books.py" beforeDir="false" afterPath="$PROJECT_DIR$/books.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/finalmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictvsactual.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictvsactual.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,11 +21,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classifier/unique_isbn_v2.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="13706" column="73" selection-start-line="13706" selection-end-line="13707" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scrapper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="33" column="121" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="121" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/books.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="824">
+              <caret line="203" column="8" selection-start-line="203" selection-start-column="8" selection-end-line="203" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classifier/books_dataset_v4.csv">
+          <provider selected="true" editor-type-id="csv-text-editor" />
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/quickgraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+            <state relative-caret-position="272">
+              <caret line="31" column="43" lean-forward="true" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/predictvsactual.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1693">
+              <caret line="75" column="31" lean-forward="true" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/finalmodel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="155" selection-start-line="155" selection-end-line="156" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -36,8 +106,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Not Found</find>
-      <find>0547386079</find>
       <find>nY</find>
       <find>nX</find>
       <find>plt</find>
@@ -66,7 +134,12 @@
       <find>9707311</find>
       <find>The Power of</find>
       <find>The Value of X</find>
+      <find>\\</find>
+      <find>/</find>
     </findStrings>
+    <replaceStrings>
+      <replace>\\</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -111,17 +184,17 @@
         <option value="$PROJECT_DIR$/classifier/jsoncleaner.py" />
         <option value="$PROJECT_DIR$/TitleISBNDateFiction.py" />
         <option value="$PROJECT_DIR$/titleISBNdateFiction.csv" />
+        <option value="$PROJECT_DIR$/classifier/no.csv" />
+        <option value="$PROJECT_DIR$/classifier/csvmaker.py" />
+        <option value="$PROJECT_DIR$/finalmodel.py" />
         <option value="$PROJECT_DIR$/predictvsactual.py" />
         <option value="$PROJECT_DIR$/books.py" />
-        <option value="$PROJECT_DIR$/finalmodel.py" />
-        <option value="$PROJECT_DIR$/classifier/csvmaker.py" />
-        <option value="$PROJECT_DIR$/classifier/no.csv" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="width" value="1064" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
@@ -135,6 +208,11 @@
             <path>
               <item name="NYTimesPredictor" type="b2602c69:ProjectViewProjectNode" />
               <item name="NYTimesPredictor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NYTimesPredictor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NYTimesPredictor" type="462c0819:PsiDirectoryNode" />
+              <item name="classifier" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -173,7 +251,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.csvmaker">
+  <component name="RunManager" selected="Python.predictvsactual">
     <configuration name="TitleISBNDateFiction" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="NYTimesPredictor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -293,10 +371,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.csvmaker" />
-        <item itemvalue="Python.finalmodel" />
         <item itemvalue="Python.predictvsactual" />
+        <item itemvalue="Python.finalmodel" />
         <item itemvalue="Python.books" />
+        <item itemvalue="Python.csvmaker" />
         <item itemvalue="Python.TitleISBNDateFiction" />
       </list>
     </recent_temporary>
@@ -316,15 +394,15 @@
       <workItem from="1563780211045" duration="2338000" />
       <workItem from="1563782841326" duration="293000" />
       <workItem from="1563786800022" duration="9159000" />
-      <workItem from="1563834035559" duration="28783000" />
+      <workItem from="1563834035559" duration="34879000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46543000" />
+    <option name="totallyTimeSpent" value="52639000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13069706" />
@@ -340,14 +418,14 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32956153" />
-      <window_info anchor="bottom" id="Python Console" order="11" visible="true" weight="0.10466761" />
+      <window_info anchor="bottom" id="Python Console" order="11" visible="true" weight="0.39321074" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="4" visible="true" weight="0.14477211" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.60924935" />
       <window_info anchor="right" x="0" y="0" width="145" height="630" id="Documentation" order="5" side_tool="true" weight="0.32908848" />
     </layout>
     <layout-to-restore>
@@ -385,12 +463,6 @@
     <SUITE FILE_PATH="coverage/NYTimesPredictor$predictvsactual.coverage" NAME="predictvsactual Coverage Results" MODIFIED="1563772128783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data scrapers/master/final_title-isbn-date.ALL.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data scrapers/master/final_title-isbn-date.2005-end.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
@@ -536,16 +608,6 @@
     <entry file="file://$PROJECT_DIR$/googleBooksAPIData.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/singlecolumn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -649,16 +711,6 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classifier/yes.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="100" lean-forward="true" selection-start-line="12" selection-start-column="100" selection-end-line="12" selection-end-column="100" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/records.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
@@ -701,23 +753,6 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classifier/unique_isbn_v2.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="13706" column="73" selection-start-line="13706" selection-end-line="13707" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classifier/csvmaker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="77" column="10" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="46" />
-          <folding>
-            <element signature="e#99#109#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classifier/yesSubjectHash.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="34">
@@ -735,26 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classifier/no.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="45657">
-          <caret line="3112" column="105" selection-start-line="3112" selection-start-column="105" selection-end-line="3112" selection-end-column="105" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/books.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="62" column="7" lean-forward="true" selection-start-line="61" selection-end-line="65" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fiction.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state>
@@ -765,10 +780,47 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/classifier/yes.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="100" lean-forward="true" selection-start-line="12" selection-start-column="100" selection-end-line="12" selection-end-column="100" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classifier/csvmaker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1292">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding>
+            <element signature="e#99#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classifier/no.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="2411">
+          <caret line="1136" column="95" lean-forward="true" selection-start-line="1136" selection-start-column="95" selection-end-line="1136" selection-end-column="95" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quickgraph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="31" column="43" lean-forward="true" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/predictvsactual.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="115" column="28" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
+        <state relative-caret-position="-1693">
+          <caret line="75" column="31" lean-forward="true" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -777,18 +829,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/finalmodel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="835">
-          <caret line="221" column="16" selection-start-line="221" selection-start-column="16" selection-end-line="221" selection-end-column="16" />
+        <state relative-caret-position="248">
+          <caret line="155" selection-start-line="155" selection-end-line="156" selection-end-column="28" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quickgraph.py">
+    <entry file="file://$PROJECT_DIR$/books.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        <state relative-caret-position="824">
+          <caret line="203" column="8" selection-start-line="203" selection-start-column="8" selection-end-line="203" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classifier/books_dataset_v4.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classifier/unique_isbn_v2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="13706" column="73" selection-start-line="13706" selection-end-line="13707" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="33" column="121" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="121" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

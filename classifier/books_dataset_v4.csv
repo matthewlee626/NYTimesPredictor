@@ -18,7 +18,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 034541005X,Ballantine Books,823,PR9619.3.C5964 P69 1996,The  power of one,518,New York,0,47.78571429,1996,0,449,270,247,59,729,1,Bryce Courtenay,2230,0
 006076287X,Perennial Currents,658.8/7,HF5478 .G56 2005,"How to buy, sell and profit on eBay",317,New York,0,70.25,2005,0,1012,270,158,0,729,0,Adam Ginsberg,126,0
 1593080271,Barnes & Noble Classics,891.73/3,PG3366 .A6 2003,Anna Karenina,803,New York,1,7.631578947,2003,0,1520,270,454,0,729,0,Tolstoy,911,0
-1593081774,Barnes & Noble Classics,,,Anna Karenina (Barnes & Noble Classics),803,,0,0,2004,0,1520,0,0,0,0,0,,0,0
+1593081774,Barnes & Noble Classics,,,Anna Karenina ,803,,0,0,2004,0,1520,0,0,0,0,0,,0,0
 1568491980,Buccaneer Books,,,The Untouchables,,,0,0,1993,0,514,0,0,0,0,0,,0,0
 1557344035,Teacher Created Materials,,,A guide for using A wrinkle in time in the classroom,48,"Westminster, Calif",0,0,2000,0,1450,123,0,0,0,0,John Carratello,168,0
 043927169X,Scholastic Professional Books,,,Literature Circle Guide,32,,0,0,2002,0,1206,0,0,0,0,0,Tara McCarthy,1226,0
@@ -27,19 +27,19 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1400032482,Vintage Books,813/.54,PS3545.I464 S5 2005,Sideswipe,215,New York,5.333333333,30.33333333,2005,0,940,270,345,0,729,667,Charles Ray Willeford,568,0
 1400032466,Vintage Books,813/.54,PS3545.I464 M5 2004,Miami blues,191,New York,5.333333333,93.71428571,2004,0,940,270,345,0,729,667,Charles Ray Willeford,568,0
 080213016X,,,,Quiet days in Clichy,154,New York,0,0,,0,0,270,0,0,729,0,Henry Miller,1237,0
-1593080964,Barnes & Noble Classics,,,The Portrait of a Lady (Barnes & Noble Classics Series) (Barnes & Noble Classics),672,,0,0,2004,0,1520,0,0,0,0,0,,0,0
+1593080964,Barnes & Noble Classics,,,The Portrait of a Lady ,672,,0,0,2004,0,1520,0,0,0,0,0,,0,0
 1565842219,New Press,,,The War,192,,0,52.625,1994,0,1349,0,0,0,0,0,"Duras, Marguerite.",1214,0
 080215154X,Grove Press,,,"Destroy, she said ; Destruction and language",,New York,0,0,1986,0,1252,270,0,0,729,0,Marguerite Duras,636,0
 2070388093,Gallimard,,,L' amant de la Chine du Nord,,[Paris],0,0,1991,0,721,262,0,0,0,0,Marguerite Duras,636,0
 1851681825,Oneworld,892.76,,Love letters,178,"Oxford, England",17.5,0.666666667,1999,0,402,36,176,0,0,0,Kahlil Gibran,1698,0
 156656249X,Interlink Publishing Group,,,Kahlil Gibran,456,,0,0,1998,0,1082,0,0,0,0,0,,0,0
 014019553X,Arkana Penguin Books,892.71/5,PJ7826.I2 A277 1997,The beloved,101,London,0,0.6,1997,0,355,188,147,0,0,0,Kahlil Gibran,1698,0
-067943920X,Knopf,,,Sand and Foam (Kahlil Gibran Pocket Library),96,,0,0,1995,0,1147,0,0,13,0,0,Kahlil Gibran,1698,0
+067943920X,Knopf,,,Sand and Foam ,96,,0,0,1995,0,1147,0,0,13,0,0,Kahlil Gibran,1698,0
 1402714572,Sterling,,,Treasure Island (Unabridged Classics),232,,0,11.1,2004,0,145,0,0,0,0,0,Robert Louis Stevenson,1613,0
 1416500294,Pocket,,,Treasure Island (Enriched Classics),304,,0,11.1,2005,0,696,0,0,1,0,0,Robert Louis Stevenson,1613,0
 1577658051,ABDO Pub.,[Fic],PZ7.S8482 Ts 2002,Treasure Island,232,"Edina, Minn",0,11.1,2002,0,904,13,236,0,0,4,Robert Louis Stevenson,1613,0
 037576013X,Modern Library,823/.8,PR4658 .A1 2002,Daniel Deronda,796,New York,59,6.666666667,2002,0,1343,270,138,0,729,0,George Eliot,1897,0
-8423919005,Elliot's Books,,,"Cien Años de Soledad/ 100 Years of Solitude (Nueva Austral Series, Vol. 100)",448,,0,167,1982,0,59,0,0,0,0,0,Gabriel Garcia Márquez,778,0
+8423919005,Elliot's Books,,,Cien Años de Soledad/ 100 Years of Solitude ,448,,0,167,1982,0,59,0,0,0,0,0,Gabriel Garcia Márquez,778,0
 8432216062,Seix Barral,,,El perfume,,Barcelona,0,0,2001,0,1417,204,0,0,0,0,Patrick Süskind,1325,0
 1582881847,Science Fiction Book Club,,,Off the Main Sequence,738,"New York, NY",0,167,2005,0,1341,53,0,0,19,0,Robert A. Heinlein,2131,0
 074348844X,Baen,,,The Notebooks of Lazarus Long,64,,0,0,2004,0,230,0,0,2,0,0,Robert A. Heinlein,2131,0
@@ -83,11 +83,11 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 006019250X,HarperFlamingo,869.3,PQ9698.13.O3546 A4513 1998,The illustrated Alchemist,198,"New York, NY",0,167,1998,0,1703,53,285,0,19,0,Paulo Coelho,2211,1
 1591169232,Viz,741.5/952,PN6790.J33 A74 2005,Fullmetal Alchemist Volume 2,179,San Francisco,0,27.375,2005,0,1219,201,222,0,1,0,Hiromu Arakawa,1423,0
 158715739X,Wildside Press,,,The Last Days of Pompeii,360,,0,81.42857143,2003,0,475,0,0,0,0,0,Edward Bulwer Lytton,1067,0
-014240120X,Puffin,,,The Westing Game (Puffin Modern Classics),192,,6,20.38461538,2004,0,1639,0,0,0,0,0,Ellen Raskin,2232,0
+014240120X,Puffin,,,The Westing Game ,192,,6,20.38461538,2004,0,1639,0,0,0,0,0,Ellen Raskin,2232,0
 1400096898,Vintage,,,Memoirs of a Geisha,512,,0,284.5,2005,0,902,0,0,0,0,0,Arthur Golden,1645,0
 1557046832,Newmarket Press,791.43/72,PN1997.2.M45 J36 2005,Memoirs of a geisha,144,New York,0,83.5,2005,0,473,270,173,0,729,0,"James, David",1217,0
 074343059X,Pocket Books,,,Geisha of Gion,304,,0,0,2003,0,1379,0,0,5,0,0,,0,0
-1932664394,Oni Press,,,Love As A Foreign Language #5 (Love as a Foreign Language),64,,0,0,2006,0,457,0,0,0,0,0,,0,0
+1932664394,Oni Press,,,Love As A Foreign Language #5,64,,0,0,2006,0,457,0,0,0,0,0,,0,0
 1416524797,Pocket Books,813/.54,PS3552.R685434 A82 2006,Angels & Demons,713,"New York, USA",0.818181818,20.63793103,2006,0,1379,367,345,5,51,667,Dan Brown,32,2
 849561877X,Umbriel,,,Angeles y Demonios/Angels and Demons,508,,0.818181818,20.63793103,2005,0,1092,0,0,0,0,0,Dan Brown,32,2
 076792603X,Broadway Books,813/.54,2004055276,The Da Vinci Code,467,"New York, USA",3.214285714,17.96153846,2004,0,479,367,345,0,51,667,Dan Brown,32,2
@@ -112,7 +112,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 8423335127,Destino Ediciones,,,Vida De Pi,352,,0,0,2003,0,1330,0,0,0,0,0,,0,0
 1411677315,Lulu Press,,,A Million Little Pieces of Feces,260,,0,0,2006,0,157,0,0,0,0,0,Python Bonkers,1494,0
 1401359299,Miramax Books,,,Leadership Through the Ages,,,0,93.83333333,2003,0,705,0,0,0,0,0,Rudolph W. Giuliani,2192,0
-006123205X,HarperAudio,,,"Men are From Mars, Women are From Venus Low Price CD",,,0,167,2007,0,1007,0,0,0,0,0,John Gray,645,0
+006123205X,HarperAudio,,,"Men are From Mars, Women are From Venus ",,,0,167,2007,0,1007,0,0,0,0,0,John Gray,645,0
 055338368X,Bantam,,,Gates of Fire,400,,1,16.33333333,2005,0,160,0,0,7,0,0,Steven Pressfield,975,0
 038551641X,Doubleday,813/.54,PS3566.R3944 A69 2006,The Afghan campaign,,New York,0,0.333333333,2006,0,1337,270,345,38,729,667,Steven Pressfield,975,0
 189031823X,St. Augustine's Press,184,B380 .P51313 2000,Enthusiasm and divine madness,109,"South Bend, Ind",0,0.5,2000,0,1156,4,329,0,0,0,Josef Pieper,1376,0
@@ -126,7 +126,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 067499566X,Harvard University Press,882/.01,PA3975 .A2 1998,Suppliant women,455,"Cambridge, Mass",0,20.25,1998,0,693,355,385,0,0,0,Euripides,1938,0
 090651598X,Bristol Classical Press,,,Helen,,Bristol,0,47,1981,0,1001,320,0,0,0,0,Euripides,1938,0
 071563187X,Duckworth,882/.01,PA3973.M43 A55 2002,Euripides,143,London,0,0,2002,0,619,188,385,0,0,0,"Allan, William",1032,0
-019513592X,"Oxford University Press, USA",,,The Oresteia (Greek Tragedy in New Translations),304,,0,167,2004,0,1427,0,0,0,0,0,Aeschylus,68,0
+019513592X,"Oxford University Press, USA",,,The Oresteia,304,,0,167,2004,0,1427,0,0,0,0,0,Aeschylus,68,0
 081221627X,University of Pennsylvania Press,882/.01,PA3827 .A657 1998,Aeschylus,,Philadelphia,0,1.75,1998,0,1504,178,385,0,0,0,Aeschylus,68,0
 1400041929,Everyman's Library,882/.01,PA3827.A7 T3913 2004,The Oresteia,127,New York,0,35.25,2004,0,763,270,385,0,729,0,Aeschylus,68,0
 1419150014,Kessinger Publishing,,,Four Plays Of Aeschylus,208,,0,0,2004,0,937,0,0,0,0,0,Aeschylus,68,0
@@ -135,20 +135,20 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1416500332,Pocket,,,Oedipus the King,144,,0,0.5,2005,0,696,0,0,1,0,0,Sophocles,1379,0
 1585100870,Focus Pub./R. Pullins,882/.01,PA3877 .A6 2003,Acharnians,86,"Newburyport, MA",0.5,5.8,2003,0,1230,223,385,0,0,0,Aristophanes,686,0
 1400032717,Vintage Contemporaries,,,The curious incident of the dog in the night-time,226,New York,29.5,9.875,2004,0,188,270,0,0,729,0,Mark Haddon,1029,0
-843392463X,Editorial Anagrama,,,"Formas Breves (Narrativas Hispanicas, 293)",142,,0,0,2001,0,983,0,0,0,0,0,Ricardo Piglia,1534,0
+843392463X,Editorial Anagrama,,,Formas Breves ,142,,0,0,2001,0,983,0,0,0,0,0,Ricardo Piglia,1534,0
 8433968777,Editorial Anagrama,,PN3324 .P54 2005,El último lector,190,Barcelona,0,0,2005,0,983,204,0,0,0,0,Ricardo Piglia,1534,0
 1862076650,Granta Books,,,Money to burn,256,London,0,0.666666667,2003,0,1100,188,0,0,0,0,Ricardo Piglia,1534,0
 8433924710,Editorial Anagrama,,,Respiración artificial,218,Barcelona,2,17,2001,0,983,204,0,0,0,0,Ricardo Piglia,1534,0
 8433924621,Editorial Anagrama,,,Plata quemada,227,,0,0,2000,0,983,0,0,0,0,0,Ricardo Piglia,1534,0
 8432216429,Planeta,,,El Tunel / The Tunnel,,,0,0.4,2003,0,299,0,0,0,0,0,Ernesto Sabato,916,0
 9500716054,Sudamericana,,,Sobre Heroes y Tumbas - Sin Sobrecubierta,,,0,0,1999,0,1501,0,0,0,0,0,Ernesto Sabato,916,0
-1565480848,New City Press,,,"The Confessions: Saint Augustine (Works of Saint Augustine, a Translation for the 21st Century: Part 1- Books)",416,,0,0,2002,0,915,0,0,0,0,0,Augustine of Hippo,448,0
+1565480848,New City Press,,,The Confessions: Saint Augustine ,416,,0,0,2002,0,915,0,0,0,0,0,Augustine of Hippo,448,0
 1565481240,New City Press,230/.14,BR65.A73 E5 1999,The Augustine catechism,144,"Hyde Park, N.Y",0,55.66666667,1999,0,915,264,21,0,0,0,Augustine of Hippo,448,0
 1565482018,New City Press,,,On Genesis,540,,0,0,2004,0,915,0,0,0,0,0,Augustine of Hippo,448,0
 8466308954,Santillana USA Publishing Company,,,Confesiones de un chef = Kitchen Confidential,478,,0,0,2002,0,193,0,0,0,0,0,Anthony Bourdain,1837,0
 014044789X,Penguin,,PA6522.M2 R33 2004,Metamorphoses,723,London,0.333333333,10.43333333,2004,0,1300,188,0,1,0,0,Ovid,431,0
 069101597X,Princeton University Press,,,Dionysiac poetics and Euripides' Bacchae,420,"Princeton, N.J",0,0,1997,0,939,15,0,0,0,0,Charles Segal,2210,0
-1857150600,Everyman's Library,,,The Iliad (Everyman's Library Classics),594,,0.666666667,0.37037037,1992,0,763,0,0,0,0,0,Homer,2248,0
+1857150600,Everyman's Library,,,The Iliad ,594,,0.666666667,0.37037037,1992,0,763,0,0,0,0,0,Homer,2248,0
 1585424838,Jeremy P. Tacher/Penguin,191,BP605.N48 P56 2006,2012,,New York,0,0,2006,0,932,270,258,0,729,0,Daniel Pinchbeck,1044,0
 848306667X,Debate Editorial,,,"Armas, germenes y acero/ Guns, Germs and Steel",588,,0,0,2006,0,51,0,0,0,0,0,Jared Diamond,881,0
 044657967X,Warner Books,,PS3554.E472 W55 2006,Wild fire,519,New York,0,13.125,2006,0,430,270,0,0,729,0,Nelson DeMille,923,5
@@ -165,7 +165,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1593081383,Barnes & Noble Classics,,,A Tale of Two Cities,448,"New York, USA",17.57142857,6.571428571,2004,0,1520,367,0,0,51,0,Charles Dickens,466,0
 158663352X,Spark Publishing,,,A Tale of Two Cities,85,"New York, USA",24,4.578947368,2002,0,957,367,0,0,51,0,SparkNotes,2002,0
 1593080557,Barnes & Noble Classics,823/.8,PR4571 .A1 2003,A tale of two cities,429,New York,17.57142857,6.571428571,2003,0,1520,270,138,0,729,0,Charles Dickens,466,0
-1857151437,Everyman's Library,,,A Tale of Two Cities (Everyman's Library Classics),432,,17.57142857,6.571428571,1993,0,763,0,0,0,0,0,Charles Dickens,466,0
+1857151437,Everyman's Library,,,A Tale of Two Cities,432,,17.57142857,6.571428571,1993,0,763,0,0,0,0,0,Charles Dickens,466,0
 079450390X,Usborne Books,,,A Tale of Two Cities,160,"London, England",24,3.8,2004,0,53,268,0,0,0,0,Lucinda Hawksley,936,0
 067179227X,Simon & Schuster,,,Den of thieves,587,New York,35,3,1992,0,470,270,0,62,729,0,James B. Stewart,714,0
 8483066483,Debate,,,Colapso,747,Barcelona,0,2.542857143,2006,0,1633,204,0,0,0,0,Jared Diamond,881,0
@@ -194,7 +194,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1883011949,Library of America,813/.52,PS3545.H16 A6 2001b,"Collected stories, 1911-1937",848,New York,38,93.75,2001,0,654,270,69,0,729,0,Edith Wharton,483,0
 1597770078,Phoenix Audio,,,Dirk Gently,,,0,0,2005,0,461,0,0,0,0,0,Douglas Adams,2158,0
 067002922X,Viking Books,,,Whitethorn,1,,0,28.5,2005,0,964,0,0,1,0,0,Bryce Courtenay,2230,0
-8466305130,"Suma de letras, Punto de Lectura",,,El coleccionista de huesos (The Bone Collector),640,,0,402,2001,0,75,0,0,0,0,0,Jeffery Deaver,1270,10
+8466305130,"Suma de letras, Punto de Lectura",,,El coleccionista de huesos,640,,0,402,2001,0,75,0,0,0,0,0,Jeffery Deaver,1270,10
 9626343583,Naxos Audiobooks,,,Moby Dick,,,12.5,3.46875,2006,0,774,0,0,0,0,0,Herman Melville,837,0
 1593080182,Barnes & Noble Classics,,,Moby-Dick (Barnes & Noble Classics Series) (Barnes & Noble Classics),752,,12.5,3.46875,2003,0,1520,0,0,0,0,0,Herman Melville,837,0
 019274156X,Oxford University Press,[Fic],PZ7.M1286 Mo 1996,"Moby Dick, or, The white whale",103,Oxford,0,0,1996,0,152,16,236,0,0,4,Geraldine McCaughrean,1354,0
@@ -203,7 +203,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1842124021,"Phoenix Press, WC2",,,Complete Short Stories of H. G. Wells,864,,25,36.8,2001,0,1550,0,0,0,0,0,H. G. Wells,963,0
 1400083117,Three Rivers Press,,,Blood Done Sign My Name,368,,4.333333333,25.75,2005,0,1234,0,0,0,0,0,Timothy B. Tyson,2283,0
 1860465021,Harvill Pr,,,Year of the Death of Ricardo Reis,384,,0,0,1998,0,1180,0,0,0,0,0,José Saramago,1355,0
-8466312803,Punto de Lectura,,,El Hombre Duplicado/the Double (Punto de Lectura),448,,0,0,2004,0,533,0,0,0,0,0,,0,0
+8466312803,Punto de Lectura,,,El Hombre Duplicado/the Double ,448,,0,0,2004,0,533,0,0,0,0,0,,0,0
 8466314741,Punto de Lectura,,,Ensayo Sobre la Lucidez / Awakening,464,,0,0,2005,0,533,0,0,0,0,0,,0,0
 846630679X,Punto de Lectura,,,La caverna = A caverna,441,,0,0,2002,0,533,0,0,0,0,0,José Saramago,1355,0
 9587043642,Alfaguara,,,Las intermitencias de la muerte,280,,0,3,2005,0,1066,0,0,0,0,0,José Saramago,1355,0
@@ -216,7 +216,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 193108288X,Library of America,813/.4,PS2112 2006,"Novels, 1901-1902",,New York,0,11.72727273,2006,0,654,270,214,0,729,0,Henry James Jr.,475,0
 1883011094,Library of America,,,"Complete stories, 1892-1898",948,New York,19.5,33.42857143,1996,0,654,270,0,0,729,0,Henry James Jr.,475,0
 1590171624,New York Review Books,813/.4,PS2112 .T65 2005,The New York stories of Henry James,,New York,38,7.5,2005,0,58,270,214,0,729,0,Henry James Jr.,475,0
-019283360X,"Oxford University Press, USA",,,The Canterbury Tales (Oxford World's Classics),412,,21.2,12.7826087,1998,0,1427,0,0,0,0,0,Geoffrey Chaucer,22,0
+019283360X,"Oxford University Press, USA",,,The Canterbury Tales ,412,,21.2,12.7826087,1998,0,1427,0,0,0,0,0,Geoffrey Chaucer,22,0
 014042234X,Penguin Classics,,,The Canterbury Tales,1328,,21.2,12.7826087,2005,0,196,0,0,0,0,0,Geoffrey Chaucer,22,0
 039475526X,Vintage Books,892/.736,PJ7850.U514 M8413 1989,Cities of salt,627,New York,0,7.666666667,1989,0,940,270,383,0,729,0,ʻAbd al-Raḥmān Munīf,2267,0
 1568813074,AK Peters,,,Advanced Global Illumination,366,,0,0,2006,0,991,0,0,0,0,0,,0,0
@@ -293,9 +293,9 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 159052201X,Multnomah Publishers,248.4,BV4598.3 .W54 2003,The dream giver,157,"Sisters, Or",0,40.25,2003,0,1085,175,177,0,0,0,Bruce Wilkinson,596,0
 1400097029,Vintage Books,,,The sea,195,New York,59,21.52173913,2006,0,940,270,0,0,729,0,John Banville,1595,0
 037572530X,Vintage,,,Shroud,272,,0,50.8,2004,0,902,0,0,0,0,0,John Banville,1595,0
-014018533X,Penguin Classics,,,The Third Man and The Fallen Idol (Penguin Twentieth-Century Classics),160,,0,58.42857143,1992,0,196,0,0,0,0,0,Graham Greene,1267,0
+014018533X,Penguin Classics,,,The Third Man and The Fallen Idol ,160,,0,58.42857143,1992,0,196,0,0,0,0,0,Graham Greene,1267,0
 037570387X,Vintage Books,FIC,PR6069.M59 A97 2002,The autograph man,347,New York,0,0.2,2003,0,940,270,408,0,729,0,Zadie Smith,1073,1
-8478886869,Salamandra,,,Dientes Blancos / White Teeth (Narrativa (Salamandra Publisher).),528,,0,402,2005,0,1183,0,0,0,0,0,Zadie Smith,1073,1
+8478886869,Salamandra,,,Dientes Blancos / White Teeth ,528,,0,402,2005,0,1183,0,0,0,0,0,Zadie Smith,1073,1
 3426195461,"Droemersche Verlagsanstalt Th. Knaur Nachf., GmbH & Co.",,,Zähne zeigen.,,,0,0,2001,0,740,0,0,0,0,0,Zadie Smith,1073,1
 1567922694,D.R. Godine,,PS2382 .W3 2004,Selected poems of Herman Melville,465,"Jaffrey, N.H",0,167,2004,0,1578,338,0,0,0,0,Herman Melville,837,0
 014200202X,Penguin Books,823/.914,PR6056.L4 C37 2002,Casino royale,181,New York,18.5,7.625,2002,0,397,270,324,1,729,89,Ian Fleming,110,0
@@ -312,7 +312,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 2266052357,European Book Co,,,Laffaire Toutankhamon,,,0,0,,0,1104,0,0,0,0,0,Jacq,743,0
 070112766X,Chatto & Windus,813/.52,PS3515.A4347Z/,The life of Dashiell Hammett,344,London,0,1,1984,0,1533,188,69,0,0,0,"Johnson, Diane",271,0
 8420466557,Alfaguara,,,Divorcio a la francesa,388,,0,0,2003,0,1066,0,0,0,0,0,,0,0
-408873453X,Shueisha,,,Dragonball  (Perfect version) Vol. 10 (Dragon Ball (Kanzen ban)),218,,0,0,,0,365,0,0,0,0,0,Akira Toriyama,2175,0
+408873453X,Shueisha,,,Dragonball  (Perfect version) Vol. 10 ,218,,0,0,,0,365,0,0,0,0,0,Akira Toriyama,2175,0
 8466617353,Ediciones B,,,Hyperion (Spanish edition),624,,0,0.2,2005,0,744,0,0,0,0,0,Dan Simmons,404,1
 1568651759,Guildamerica Books,,,Hyperion Cantos,936,,0,0,1996,0,202,0,0,0,0,0,Dan Simmons,404,1
 074720344X,Headline,823.914,,The fall of Hyperion.,468,,0,201,1991,0,166,0,119,0,0,0,Dan Simmons,404,1
@@ -357,7 +357,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 3462030639,Kiepenheuer & Witsch Verlag,,,Hin und weg.,207,,0,0,2001,0,805,0,0,0,0,0,,0,0
 2226126260,Distribooks,,,Monsieur Ibraham Er Les Fleurs Du Coran,129,,0,0,2007,0,816,0,0,0,0,0,Eric-Emmanuel Schmitt,2068,0
 9774248449,American University in Cairo Press,,,Zaat,344,,0,0,2004,0,907,0,0,0,0,0,Sonallah Ibrahim,1983,0
-1568821573,Chaosium,,,H. P. Lovecraft's Dreamlands (Call of Cthulhu Horror Roleplaying),260,,0,0,2004,0,1194,0,0,0,0,0,,0,0
+1568821573,Chaosium,,,H. P. Lovecraft's Dreamlands,260,,0,0,2004,0,1194,0,0,0,0,0,,0,0
 1594480117,Riverhead Books,967/.00971241,DT352.7 .H378 2003,The Zanzibar chest,479,New York,9,107.8333333,2004,0,1526,270,401,9,729,0,Aidan Hartley,1707,0
 9500725878,Editorial Sudamericana / Mondadori,,,Memoria de mis putas tristes,112,"Buenos Aires, Argentina",0,1.47826087,2004,0,543,184,0,0,0,0,Gabriel Garcia Márquez,778,0
 968131574X,Diana,,,Cien años de soledad,432,"México, D.F",0,40.71428571,1986,0,1476,229,0,0,0,0,Gabriel Garcia Márquez,778,0
@@ -403,7 +403,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1578660394,Galahad,,,Dale Carnegie's Lifetime Plan for Success,538,,0,167,1998,0,718,0,0,0,0,0,Dale Carnegie,135,0
 046501691X,"Basic Books, Inc.",,,The Drama of the Gifted Child,118,,0,33.91666667,1981,0,1487,0,0,0,0,0,Alice Miller,245,0
 1591396190,Harvard Business School Press,,HF5415.153 .K53 2005,Blue ocean strategy,240,"Boston, Mass",0,0,2005,0,577,129,0,0,1,0,W. Chan Kim,303,0
-1892295490,Green Integer,,,Heart of Darkness (Green Integer Books),200,,0.666666667,5.964285714,2002,0,1453,0,0,0,0,0,Joseph Conrad,243,0
+1892295490,Green Integer,,,Heart of Darkness,200,,0.666666667,5.964285714,2002,0,1453,0,0,0,0,0,Joseph Conrad,243,0
 184391008X,Hesperus,823.912,,"Heart of darkness ; with, The Congo diary ; and, Up-river book",137,London,1,0.142857143,2002,0,1551,188,166,0,0,0,Joseph Conrad,243,0
 1904919529,Collector's Library,,,Three Men in a Boat,272,,16.8,22.36363636,2005,0,1540,0,0,0,0,0,Jerome Klapka Jerome,1689,0
 1400079276,Vintage,,,Kafka on the shore,480,,0,1,2006,0,902,0,0,0,0,0,春樹 村上,1183,2
@@ -415,7 +415,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1400033543,Vintage,813/.6,PS3605.G48 Y68 2003,You shall know our velocity!,401,New York,0,6.125,2003,0,902,270,287,0,729,205,Dave Eggers,1207,2
 1400095565,Vintage,,,How We Are Hungry,218,,0,136.3333333,2005,0,902,0,0,0,0,0,Dave Eggers,1207,2
 1932416137,McSweeney's Books,,,How we are hungry,224,San Francisco,0,136.3333333,2004,0,645,201,0,1,1,0,Dave Eggers,1207,2
-141651693X,Pocket,,,"Wolves of the Calla (The Dark Tower, Book 5)",960,,3.692307692,19.63157895,2006,0,696,0,0,1,0,0,Stephen King,235,10
+141651693X,Pocket,,,Wolves of the Calla ,960,,3.692307692,19.63157895,2006,0,696,0,0,1,0,0,Stephen King,235,10
 081297736X,Random House Trade Paperbacks,813/.54,PS3572.O5 Z473 2007,A man without a country,145,New York,35,1.6,2007,0,683,270,345,0,729,667,Kurt Vonnegut,2231,0
 1857988841,Gollancz,,,The Sirens of Titan,224,,0,0,1999,0,790,0,0,0,0,0,Kurt Vonnegut,2231,0
 8478883975,Emece Editores,,,La Tienda Roja/The Red Tent,,,0,0,2002,0,901,0,0,0,0,0,Anita Diamant,1474,2
@@ -503,7 +503,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 093244055X,Oberlin College Press,,PL2658.E3 F58 1990,Five Tʻang poets,182,[S.l.],0,0.333333333,1990,0,1483,235,0,0,0,0,"Young, David",1327,0
 1880823195,North Star Publications (MA),,,"The Long Road Back, A Survivors Guide to Anorexia",208,,0,402,1999,0,1678,0,0,0,0,0,Judy Tam Sargent,2198,0
 1931541744,Simon Publications,,,The Road Back,352,,0,113.8,2002,0,472,0,0,0,0,0,Erich Maria Remarque,1377,0
-1593080115,Barnes & Noble Classics,,,Robinson Crusoe (Barnes & Noble Classics Series) (B&N Classics),352,,0,3.597014925,2003,0,1520,0,0,0,0,0,Daniel Defoe,2119,0
+1593080115,Barnes & Noble Classics,,,Robinson Crusoe,352,,0,3.597014925,2003,0,1520,0,0,0,0,0,Daniel Defoe,2119,0
 3596132517,Fischer,,,"Mr. Cruso, Mrs. Barton und Mr. Foe",,,0,53.4,1998,0,611,0,0,0,0,0,J. M. Coetzee,81,0
 2253008486,Grasset,,,Siddhartha,,Paris,3,6.269230769,1978,0,1154,182,0,0,0,0,Hermann Hesse,1692,0
 1400033411,Vintage International,813/.54,PS3563.O8749 B4 2004,Beloved,321,New York,19,11.07142857,2004,0,1128,270,345,0,729,667,Toni Morrison,451,3
@@ -514,7 +514,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 014026566X,Penguin (Non-Classics),,,Boyhood,176,,0,56.4,1998,0,569,0,0,0,0,0,J. M. Coetzee,81,0
 158642050X,Steerforth Press,839.8/2372,PT8950.U5 .J413 2002,Jenny,310,"South Royalton, Vt",3,2.666666667,2002,0,306,220,261,0,0,0,Sigrid Undset,562,0
 1586420216,Steerforth Press,839.8/2372,PT8950.U5 A6 2001,The unknown Sigrid Undset,406,"South Royalton, Vt",0,140.5,2001,0,306,220,261,0,0,0,Sigrid Undset,562,0
-014118020X,Penguin Classics,,,Gunnar's Daughter (Penguin Twentieth-Century Classics),208,,0,0,1998,0,196,0,0,0,0,0,,0,0
+014118020X,Penguin Classics,,,Gunnar's Daughter ,208,,0,0,1998,0,196,0,0,0,0,0,,0,0
 1566917662,Avalon Travel Publishing,,,Road Trip USA,889,,35,134.3333333,2006,0,134,0,0,0,0,0,Jamie Jensen,441,0
 006441034X,Eos,,,Howl's Moving Castle,336,,0.25,40.25,2001,0,1089,0,0,3,0,0,Diana Wynne Jones,674,0
 1421500493,VIZ Media LLC,,,The Art of Howl's Moving Castle,256,,0,167,2005,0,1354,0,0,0,0,0,Hayao Miyazaki,1358,0
@@ -622,7 +622,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1570421129,Warner Adult,,,A Study Guide to Gabriel Garcia Marquez' One Hundred Years of Solitude,,,0,0,1994,0,1114,0,0,0,0,0,,0,0
 006112009X,Harper Perennial Modern Classics,863,PQ8180.17.A73 C513 2006,One hundred years of solitude,417,New York,0,0.5,2006,0,607,270,268,0,729,0,Gabriel Garcia Márquez,778,0
 081297106X,Random House,,,Reading Lolita in Tehran,356,New York,1.5,3,2004,0,803,270,0,32,729,0,Azar Nafisi,242,0
-185715133X,Everyman's Library,,,Lolita (Everyman's Library Classics),368,,0,27.44827586,1992,0,763,0,0,0,0,0,Vladimir Nabokov,1345,0
+185715133X,Everyman's Library,,,Lolita,368,,0,27.44827586,1992,0,763,0,0,0,0,0,Vladimir Nabokov,1345,0
 1585004286,1stBooks,,,"The Fateful Adventures of the Good Soldier Svejk During the World War, Book One",260,,0,0,2000,0,804,0,0,0,0,0,,0,0
 1593082681,Barnes & Noble Classics,,,The Good Soldier,256,,0,0,2005,0,1520,0,0,0,0,0,Ford Maddox Ford,134,0
 8445074873,Del Rey,,,Farenheit 451,,,0,0.444444444,2004,0,446,0,0,7,0,0,Ray Bradbury,1917,0
@@ -643,7 +643,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1859843824,Verso,,,Late Victorian Holocausts,470,,0,9.444444444,2002,0,1152,0,0,0,0,0,Mike Davis,1020,0
 1931859353,Haymarket Books,304.873072 A33n 2006,JV6456 .A38 2006,No one is illegal,333,"Chicago, Ill",18,19.55555556,2006,0,1000,339,113,0,0,0,Justin Akers Chacón,436,0
 006440546X,HarperTrophy,,,Betsy and Joe (Betsy-Tacy),282,,0,61.42857143,1995,0,1022,0,0,0,0,0,Maud Hart Lovelace,982,0
-1416916172,Aladdin,,,Five Little Peppers and How They Grew (Aladdin Classics),352,,2,52.23076923,2006,0,590,0,0,0,0,0,Margaret Sidney,678,0
+1416916172,Aladdin,,,Five Little Peppers and How They Grew ,352,,2,52.23076923,2006,0,590,0,0,0,0,0,Margaret Sidney,678,0
 044040035X,Yearling,,,Five Little Peppers at School,,,0,41.5,1988,0,1402,0,0,0,0,0,Margaret Sidney,678,0
 059033221X,Scholastic Book Services,,,Baby Island,,,0,58.8,1965,0,557,0,0,0,0,0,Carol Ryrie Brink,26,0
 1841490326,Orbit,,,Heartfire (The Tales of Alvin Maker),336,,0,0,2001,0,89,0,0,2,0,0,Orson Scott Card,1266,4
@@ -812,7 +812,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 3492207006,Piper,,,Die entdeckung der Langsamkeit,358,Munchen,0,0,2001,0,1032,131,0,0,0,0,Sten Nadolny,1536,0
 3423026189,Dtv,,,Der Schimmelreiter. Berlin 1888.,187,,0,0,1997,0,598,0,0,0,0,0,Theodor Storm,2251,0
 1594481938,Penguin,,,Long Way Down,,,0,0,2006,0,1300,0,0,1,0,0,Nick Hornby,1343,2
-185549695X,BBC Audiobooks,,,Clockwork (Cover to Cover),,,0,0,2002,0,1531,0,0,0,0,0,Philip Pullman,379,0
+185549695X,BBC Audiobooks,,,Clockwork ,,,0,0,2002,0,1531,0,0,0,0,0,Philip Pullman,379,0
 038531129X,Delta Trade Paperbacks,941.105/092,DA787.A1 F74 2001,"Mary, Queen of Scots",613,New York,14.5,19,2001,0,996,270,343,0,729,0,Antonia Fraser,84,0
 043999926X,Scholastic Hippo,,,Mary Queen of Scots and Her Hopeless Husbands (Dead Famous),208,,0,167,2001,0,205,0,0,0,0,0,Margaret Simpson,2165,0
 1841490644,Orbit,,,Otherland,1312,,0,94.33333333,2002,0,89,0,0,2,0,0,Tad Williams,1411,0
@@ -838,7 +838,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 031242602X,Picador,,,The Argumentative Indian,409,,0,134.3333333,2006,0,1244,0,0,0,0,0,Amartya Kumar Sen,1647,0
 1584795425,"Stewart, Tabori & Chang",305.40973/09045,HQ1221 .R59 2006,"Things to bring, s#!t to do ... and other inventories of anxiety",158,New York,0,5.25,2006,0,1322,270,85,0,729,0,Karen Rizzo,408,0
 043916592X,Scholastic,,,The last of the really great whangdoodles,277,,0,0,2000,0,1273,0,0,0,0,0,Julie Andrews Edwards,199,0
-1846162661,Orchard Books,,,Giraffes Can't Dance (Book & CD),32,,0,0,2007,0,622,0,0,0,0,0,,0,0
+1846162661,Orchard Books,,,Giraffes Can't Dance,32,,0,0,2007,0,622,0,0,0,0,0,,0,0
 141694740X,Simon Spotlight Entertainment,306.7,HQ801 .B37 2006,He's just not that into you,187,New York,0,48.66666667,2006,0,303,270,219,0,729,0,Greg Behrendt,883,0
 1558322450,Harvard Common Press,,,Not Your Mother's Slow Cooker Cookbook,512,,0,83.5,2005,0,1377,0,0,0,0,0,Beth Hensperger,492,0
 1575420775,Free Spirit Publishing,,,Hands Are Not for Hitting,35,,0,402,2000,0,1052,0,0,0,0,0,Martine Agassi Ph.D.,818,0
@@ -862,7 +862,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1402561016,Recorded Books,,,The Art of War,,,0,7.25,2003,0,1224,0,0,0,0,0,Sunzi,1432,0
 043977439X,Scholastic,[Fic],PZ7.B131358 Lon 2006,The long-lost map,,New York,3,46.88888889,2006,0,1273,270,236,0,729,4,Pierdomenico Baccalario,1830,0
 1879582414,Platinum Press Inc.,,,Stories For Christmas,478,,0,402,2000,0,1628,0,0,0,0,0,Charles Dickens,466,0
-1596009705,Brilliance Audio on CD Unabridged,,,The Three Musketeers (The Classic Collection),,,12.33333333,29.72727273,2005,0,545,0,0,0,0,0,Alexandre Dumas,2132,0
+1596009705,Brilliance Audio on CD Unabridged,,,The Three Musketeers ,,,12.33333333,29.72727273,2005,0,545,0,0,0,0,0,Alexandre Dumas,2132,0
 1416524517,Pocket Star Books,,,Cell,480,"New York, USA",2.3,32.74074074,2006,0,141,367,0,0,51,0,Stephen King,235,10
 8497593790, Debolsillo,,,It-eso. - 14. ed.,,,0,0,2013,0,1655,0,0,0,0,0,,0,0
 1416524355,Pocket,,,Everything's Eventual,608,,3.038461538,15.90196078,2005,0,696,0,0,1,0,0,Stephen King,235,10
@@ -872,16 +872,16 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 067102423X,Pocket Books,,,Bag of Bones,732,"New York, USA",1.142857143,23.4375,1999,0,1379,367,0,5,51,0,Stephen King,235,10
 1587671166,Cemetery Dance Publications,,,The Illustrated Stephen King Trivia Book,404,,0,0,2005,0,382,0,0,0,0,0,Brian Freeman,1693,0
 055347183X,Random House Audio,,,Gray Matter,,,0,167,1993,0,1369,0,0,0,0,0,Stephen King,235,10
-1582881804,Bookspan,,,The Body Snatchers (The Stephen King Horror Library),,,0,0,2005,0,1499,0,0,0,0,0,,0,0
+1582881804,Bookspan,,,The Body Snatchers ,,,0,0,2005,0,1499,0,0,0,0,0,,0,0
 034547063X,Ballantine Books,,,Black House,688,,3.833333333,26.53333333,2003,0,449,0,0,59,0,0,Stephen King,235,10
 1580631606,Renaissance Books,813.54,,The Stephen King universe,478,"Los Angeles, Calif",0,28.66666667,2001,0,362,23,452,0,0,6,Stan Wiater,1435,0
 074323359X,Simon & Schuster Libros en Español,,,Misery,368,"New York, USA",0,2.904761905,2002,0,351,367,0,0,51,0,Stephen King,235,10
 1841155047,Fourth Estate,,,When Genius Failed,275,,35,0.090909091,2002,0,541,0,0,0,0,0,Roger Lowenstein,1872,0
 857302710X,Suma de Letras,,,"Historiador, O",,,0,0,2005,0,917,0,0,0,0,0,,0,0
-1593081928,Barnes & Noble Classics,,,Kim (Barnes & Noble Classics),320,,3,4.4,2003,0,1520,0,0,0,0,0,Rudyard Kipling,250,0
+1593081928,Barnes & Noble Classics,,,Kim (Barnes & Noble Classics,320,,3,4.4,2003,0,1520,0,0,0,0,0,Rudyard Kipling,250,0
 1879794063,Archie Comic Publications,741.5/973,PN6728.A72 G58 1991,Archie Americana series,,"[Mamaroneck, N.Y",0,2.5,1991,0,1486,245,262,0,0,0,John L. Goldwater,1935,0
 1560764988,Wizards of the Coast,,,Sword and Shield,210,,0,0,1992,0,1265,0,0,8,0,0,John Terra,212,0
-1415930686,Random House Audio,,,"Cant Wait to Get to Heaven (Can,t Wait until I get to Heaven)",,,0,167,2006,0,1369,0,0,0,0,0,Fannie Flagg,1076,2
+1415930686,Random House Audio,,,Cant Wait to Get to Heaven ,,,0,167,2006,0,1369,0,0,0,0,0,Fannie Flagg,1076,2
 184195795X,Canongate U.S.,,,Adios Hemingway,240,,0,0,2006,0,636,0,0,0,0,0,Leonardo Padura Fuentes,454,0
 1892145022,Little Bookroom,974.7/1,F128.5 .W58 1999,Here is New York,56,New York,38,33.6,1999,0,377,270,111,0,729,0,E. B. White,1350,0
 1585421774,Jeremy P. Tarcher,,,In search of Captain Zero,328,New York,0,0,2001,0,1589,270,0,0,729,0,A. C. Weisbecker,2115,0
@@ -1057,14 +1057,14 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1414243677,IndyPublish.com,,,Swann's Way (Remembrance of Things Past),380,,0,0,2005,0,129,0,0,0,0,0,Marcel Proust,1609,0
 014011890X,Penguin Books Ltd,,,The Satanic Verses,560,,9.222222222,32.88888889,1988,0,1543,0,0,0,0,0,Salman Rushdie,1521,2
 1933618086,Millipede Press,,,Falling Angel,302,,0,0,2006,0,1368,0,0,0,0,0,William Hjortsberg,1874,0
-1857151003,Everyman's Library,,,Ulysses (Everyman's Library Classics),1076,,7,3.09375,1992,0,763,0,0,0,0,0,James Joyce,1088,0
+1857151003,Everyman's Library,,,Ulysses,1076,,7,3.09375,1992,0,763,0,0,0,0,0,James Joyce,1088,0
 9571341274,Shi bao wen hua chu ban qi ye gu fen you xian gong si,,,Feng kuang,300,Taibei Shi,6,46.55555556,2004,0,42,312,0,0,0,0,Ha Jin,1855,0
 184115749X,Fourth Estate,,,Strong Motion,528,,6.5,80.6,2003,0,541,0,0,0,0,0,Jonathan Franzen,340,2
 006092960X,HarperPerennial,,,The active side of infinity,272,New York,3,0.6,2000,0,583,270,0,0,729,0,Carlos Castaneda,917,0
 074341280X,Washington Square Press,,,The Wheel Of Time,304,,0,0.25,2001,0,949,0,0,0,0,0,Carlos Castaneda,917,0
 067173248X,Washington Square Press,,,Power of Silence,265,,3,0.066666667,1991,0,949,0,0,0,0,0,Carlos Castaneda,917,0
 1855384272,HarperCollins Publishers Ltd,,,The Art of Dreaming,272,,0,0.375,2004,0,1455,0,0,0,0,0,Carlos Castaneda,917,0
-1593080581,Barnes & Noble Classics,,,The Idiot (Barnes & Noble Classics Series) (Barnes & Noble Classics),608,,0,5.666666667,2004,0,1520,0,0,0,0,0,Fyodor Dostoevsky,1876,0
+1593080581,Barnes & Noble Classics,,,The Idiot,608,,0,5.666666667,2004,0,1520,0,0,0,0,0,Fyodor Dostoevsky,1876,0
 1567180701,Llewellyn Publications,,,Celtic Tree Mysteries,304,,0,0,2002,0,1191,0,0,0,0,0,Stephen Blamires,806,0
 1844080382,Virago,,,Rebecca,429,London,21.25,44.0952381,2003,0,1393,188,0,0,0,0,Daphne Du Maurier,2250,0
 042520961X,Berkley,,,"Shadow of the Moon (The Moon Series, Book 5)",352,,0,26,2006,0,1371,0,0,2,0,0,Rebecca York,394,0
@@ -1083,7 +1083,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1932219161,The Audio Partners,,,Julius Caesar,,,1,4.305555556,2005,0,858,0,0,0,0,0,William Shakespeare,1811,0
 1586638475,SparkNotes,,,Julius Caesar,256,,0,56.375,2003,0,384,0,0,0,0,0,SparkNotes Editors,998,0
 1904271359,Arden,,,"King Henry IV, Part 1 (Arden Shakespeare: Third Series)",400,,0,167,2002,0,21,0,0,0,0,0,William Shakespeare,1811,0
-1857159047,Everyman's Library,,,Alice in Wonderland (Everyman's Library Children's Classics),336,,28,13.46153846,1992,0,763,0,0,0,0,0,Lewis Carroll,339,0
+1857159047,Everyman's Library,,,Alice in Wonderland,336,,28,13.46153846,1992,0,763,0,0,0,0,0,Lewis Carroll,339,0
 050013037X,Thames and Hudson,848/.5/09,PQ2043 .D4,Jean-Jacques Rousseau and his world,117,London,0,0,1972,0,808,188,370,0,0,0,"De Beer, Gavin Sir",1015,0
 044669570X,Grand Central Publishing,,,Native Tongue,448,,2,72.375,2005,0,311,0,0,17,0,0,Carl Hiaasen,1522,2
 044669567X,Grand Central Publishing,,,Strip Tease,464,,17.5,34.38461538,2005,0,311,0,0,17,0,0,Carl Hiaasen,1522,2
@@ -1368,7 +1368,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 9570823364,Lian jing chu ban shi ye gong si,,,魔戒首部曲,591,Taipei Shi,0,35,2001,0,307,216,0,0,0,0,J. R. R. Tolkien,937,2
 8425514290,Hispano Europea Editorial,,,Tolkien y el senor de los anillos / Tolkien and the Lord of the Rings,320,,0,0,2002,0,1211,0,0,0,0,0,,0,0
 9570823372,"Tsai Fong Books, Inc",,,雙城奇謀,,,0,39.13043478,2001,0,849,0,0,0,0,0,J. R. R. Tolkien,937,2
-156865233X,Henry Holt,,,'C' is for corpse,,New York,46,84.66666667,1986,0,1696,270,0,0,729,0,Sue Grafton,246,5
+156865233X,Henry Holt,,,C' is for corpse,,New York,46,84.66666667,1986,0,1696,270,0,0,729,0,Sue Grafton,246,5
 061808357X,Houghton Mifflin,,,The Return of the Shadow,512,,0,44.77777778,2000,0,280,0,0,0,0,0,J. R. R. Tolkien,937,2
 2266118013,Pocket,,,Les Deux Tours,344,,0,39.13043478,2001,0,696,0,0,1,0,0,J. R. R. Tolkien,937,2
 8445071777,Minotauro,,,El Retorno del Rey,413,,0,3.384615385,2002,0,243,0,0,0,0,0,J. R. R. Tolkien,937,2
@@ -1376,31 +1376,31 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 044173118X,Ace,,,"Robot Adept (Apprentice Adept Series, Book Five) (Apprentice Adept)",341,,0,402,1989,0,1127,0,0,2,0,0,Piers Anthony,2259,0
 034545328X,Ballantine,813/.54,,The quest for magic,414,New York,0,167,2002,0,679,270,345,1,729,667,Piers Anthony,2259,0
 1857232569,Orbit,,,Magic Kingdom for Sale/Sold (Magic Kingdom of Landover),352,,0,0,1992,0,89,0,0,2,0,0,Terry Brooks,254,6
-034543577X,Del Rey,,,"Tanequil (High Druid of Shannara, Book 2)",368,,0,0,2005,0,446,0,0,7,0,0,Terry Brooks,254,6
+034543577X,Del Rey,,,Tanequi,368,,0,0,2005,0,446,0,0,7,0,0,Terry Brooks,254,6
 1841492876,Orbit,,,The Sword of Shannara Omnibus,1200,,0,167,2007,0,89,0,0,2,0,0,Terry Brooks,254,6
 1857237382,Orbit,,,A knight of the word,421,London,0,17.33333333,1999,0,89,188,0,2,0,0,Terry Brooks,254,6
 1857239709,Orbit,,,Angel Fire East (Word & the Void),440,,0,0,2006,0,89,0,0,2,0,0,Terry Brooks,254,6
-1841491543,Orbit,,,Witches' Brew (A Magic Kingdom of Landover Novel),304,,0,0,1996,0,89,0,0,2,0,0,Terry Brooks,254,6
+1841491543,Orbit,,,Witches' Brew,304,,0,0,1996,0,89,0,0,2,0,0,Terry Brooks,254,6
 1857231104,Orbit,,,The Elfstones of Shannara,640,,0,0,2006,0,89,0,0,2,0,0,Terry Brooks,254,6
-1857238273,Orbit,,,The Elf Queen of Shannara (Heritage of Shannara),480,,0,0,2006,0,89,0,0,2,0,0,Terry Brooks,254,6
-1857231325,Orbit,,,The Wishsong of Shannara (The Shannara Series),576,,0,0,2006,0,89,0,0,2,0,0,Terry Brooks,254,6
-1857233808,Del Rey,,,The Druid of Shannara (Book Two of the Heritage of Shannara),480,,0,0,2006,0,446,0,0,7,0,0,Terry Brooks,254,6
+1857238273,Orbit,,,The Elf Queen of Shannara (Heritage of Shannara,480,,0,0,2006,0,89,0,0,2,0,0,Terry Brooks,254,6
+1857231325,Orbit,,,The Wishsong of Shannara,576,,0,0,2006,0,89,0,0,2,0,0,Terry Brooks,254,6
+1857233808,Del Rey,,,The Druid of Shannara,480,,0,0,2006,0,446,0,0,7,0,0,Terry Brooks,254,6
 1857231511,Orbit,,,The Sword of Shannara,736,,0,0,2006,0,89,0,0,2,0,0,Terry Brooks,254,6
 1558007431,Audio Literature,,,The Sword of Shannara/the Elfstones of Shannara/the Wishsong of Shannara,,,0,0,1993,0,482,0,0,0,0,0,Terry Brooks,254,6
 1932416064,McSweeney's Quarterly Concern,,,McSweeney's.,273,"San Francisco, Calif",0,136.3333333,2003,0,1336,192,0,0,0,0,,0,0
 006440630X,HarperTrophy,[Fic],PZ7.C962 Mi 1995,The midwife's apprentice,122,New York,0,0.333333333,1996,0,1022,270,236,0,729,4,Karen Cushman,770,0
 1587612216,Celestial Arts,618.2,RG950 .D38 2004,Heart & hands,312,"Berkeley, Calif",0,93.66666667,2004,0,225,209,232,0,0,0,"Davis, Elizabeth",1993,0
 1905177046,Pinter & Martin,618.20092,RG950 .A67 2006,A midwife's story,194,London,2.25,52.375,2006,0,571,188,441,0,0,0,Penny Armstrong,740,0
-1932416773,McSweeney's,,,McSweeney's Issue 24 (Mcsweeney's Quarterly Concern),300,,0,0,2007,0,1516,0,0,0,0,0,Dave Eggers,1207,2
+1932416773,McSweeney's,,,McSweeney's Issue 24,300,,0,0,2007,0,1516,0,0,0,0,0,Dave Eggers,1207,2
 1416523723,Pocket,,,"Billy Budd, Sailor",160,,0,1.333333333,2006,0,696,0,0,1,0,0,Herman Melville,837,0
-006083756X,Harper Perennial Modern Classics,,,Native Son (Perennial Classics),504,,0,1,2005,0,607,0,0,0,0,0,"Wright, Richard",318,0
+006083756X,Harper Perennial Modern Classics,,,Native Son,504,,0,1,2005,0,607,0,0,0,0,0,"Wright, Richard",318,0
 2253005673,Livre De Poche French,,,Cyrano De Bergerac,287,,12,5.25,1972,0,966,0,0,0,0,0,Edmond Rostand,994,0
 1854591177,Random House UK Distribution,,,Cyrano De Bergerac,192,,12,5.25,1992,0,747,0,0,0,0,0,Edmond Rostand,994,0
 1892597268,Abstract Studio,,,Strangers in paradise.,,"Houston, Texas",35,26.54545455,2004,0,1145,90,0,0,0,0,"Moore, Terry",1619,0
 1892597381,Abstract Studio,,,Strangers In Paradise Pocket Book 5,376,,0,38.71428571,2005,0,1145,0,0,0,0,0,Terry Moore,174,0
 1930235321,Babbage Press,,,On Stranger Tides,388,,0,4.5,2006,0,1575,0,0,0,0,0,Tim Powers,86,0
 1590171942,New York Review Books,843/.912,PQ2637.I53 I513 2006,Strangers in the house,,New York,12,83.5,2006,0,58,270,185,0,729,0,Georges Simenon,1126,0
-068980444X,Simon Pulse,,,Come a Stranger (The Tillerman Series #5),256,,0,7,1995,0,1312,0,0,0,0,0,Cynthia Voigt,227,0
+068980444X,Simon Pulse,,,Come a Stranger,256,,0,7,1995,0,1312,0,0,0,0,0,Cynthia Voigt,227,0
 2070360024,Gallimard,,,L'e ́tranger,185,Paris,0,0,2000,0,721,182,0,0,0,0,Albert Camus,183,0
 081912141X,University Press of America,843/.914,PQ2605.A3734 E813 1982,The stranger,100,"Washington, D.C",0,78,1982,0,895,237,464,0,0,0,Albert Camus,183,0
 039440520X,Knopf,,,"Caligula, and three other plays",,New York,0,101,,0,1147,270,0,13,729,0,Albert Camus,183,0
@@ -1412,7 +1412,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 950042777X,Emece Editores,,,El Extranjero,,,0,24.33333333,2006,0,901,0,0,0,0,0,Albert Camus,183,0
 2070322882,Gallimard,,,Le mythe de Sisyphe,187,[Paris],0,101,1985,0,721,262,0,0,0,0,Albert Camus,183,0
 1895176409,University of Calgary Press,508.866/5,,"Galapagos, a natural history",315,Calgary,0,0,1993,0,865,247,254,0,0,0,Michael H. Jackson,1532,0
-174104295X,Lonely Planet Publications,,,Lonely Planet Ecuador & the Galapagos Islands (Lonely Planet Ecuador and the Galapagos Islands),440,,0,0,2006,0,1050,0,0,0,0,0,,0,0
+174104295X,Lonely Planet Publications,,,Lonely Planet Ecuador & the Galapagos Islands,440,,0,0,2006,0,1050,0,0,0,0,0,,0,0
 2246371929,Grasset,,,Galápagos,282,,0,63.11111111,1994,0,1154,0,0,0,0,0,Kurt Vonnegut,2231,0
 1594160007,Westholme Pub.,,,Seabiscuit,64,"Yardley, Pa",35,33.8,2003,0,310,207,0,0,0,0,Brainerd Kellogg Beckwith,449,0
 8466307605,Punto de Lectura,,,El matrimonio amateur (The Amateur Marriage),464,,0,0,2006,0,533,0,0,0,0,0,Anne Tyler,470,3
@@ -1452,7 +1452,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1841932515,Book Sales,,,Milton's Paradise Lost,384,,1,14.225,2006,0,1281,0,0,0,0,0,John Milton,1745,0
 159448175X,Riverhead Trade,,,The Portrait,224,,0,0.5,2006,0,146,0,0,0,0,0,Iain Pears,1103,0
 1425910394,AuthorHouse,,,The Trouble with the Pears,272,,0,0,2006,0,84,0,0,0,0,0,Gia Bathory Al Babel,1461,0
-140253938X,"Recorded Books, LLC",,,One for the Money (Stephanie Plum Series #1),,,1,131.2,1995,0,410,0,0,0,0,0,Janet Evanovich,624,16
+140253938X,"Recorded Books, LLC",,,One for the Money (Stephanie Plum Series #1,,,1,131.2,1995,0,410,0,0,0,0,0,Janet Evanovich,624,16
 1857028155,Fourth Estate,,,The magician's assistant,357,London,11,38,1998,0,541,188,0,0,0,0,Ann Patchett,638,1
 1931082219,Library of America,813/.4,PS1294.C63 A15 2002,Complete novels and stories,1071,New York,6,60.66666667,2002,0,654,270,214,0,729,0,Kate Chopin,1480,0
 1842931539,WATKINS PUBLISHING LTD,,,TRUTH BEHIND ENGLAND'S OLDEST LEGEND: BEOWULF & GRENDEL.,,LONDON,0,0,,0,612,230,0,0,0,0,JOHN GRIGSBY,541,0
@@ -1485,12 +1485,12 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 157912626X,Black Dog & Leventhal Publishers,823/.912,PR6005.H66 B7 2006,The body in the library,191,New York,59,100.5555556,2006,0,1605,270,252,0,729,0,Agatha Christie,1965,0
 000649045X,HarperCollins,822.912,,Witness for the prosecution and selected plays,348,London,0,0,1995,0,1347,188,314,15,0,0,Agatha Christie,1965,0
 1579126243,Black Dog & Leventhal Publishers,,,ABC Murders,256,,29.5,48.35714286,2006,0,1605,0,0,0,0,0,Agatha Christie,1965,0
-000711933X,HarperCollins Publishers Ltd,,,Death in the Clouds (Hercule Poirot),333,,0,18.5,2001,0,1455,0,0,0,0,0,Agatha Christie,1965,0
+000711933X,HarperCollins Publishers Ltd,,,Death in the Clouds ,333,,0,18.5,2001,0,1455,0,0,0,0,0,Agatha Christie,1965,0
 1579126278,Black Dog & Leventhal : Distributed by Workman Pub. Co.,823/.912,PR6005.H66 M85 2006,The murder of Roger Ackroyd,,New York,14.75,41.95652174,2006,0,788,270,252,0,729,0,Agatha Christie,1965,0
 1572705477,"The Audio Partners, Mystery Masters",,,Dead Man's Folly: A Hercule Poirot Mystery,,,0,167,2006,0,1327,0,0,0,0,0,Agatha Christie,1965,0
 1572704721,"The Audio Partners, Mystery Masters",,,Poirot's Early Cases,,,59,41.33333333,2005,0,1327,0,0,0,0,0,Agatha Christie,1965,0
 1579126251,Black Dog & Leventhal Publishers,,,Murder at the Vicarage,288,,39.5,78,2006,0,1605,0,0,0,0,0,Agatha Christie,1965,0
-1572704977,"The Audio Partners, Mystery Masters",,,The Listerdale Mystery and Eleven Other Stories (Mystery Masters),,,0,167,2006,0,1327,0,0,0,0,0,Agatha Christie,1965,0
+1572704977,"The Audio Partners, Mystery Masters",,,The Listerdale Mystery and Eleven Other Stories,,,0,167,2006,0,1327,0,0,0,0,0,Agatha Christie,1965,0
 1579126952,Black Dog & Leventhal Publishers,,,The Mystery of the Blue Train,320,,35.5,41.52380952,2007,0,1605,0,0,0,0,0,Agatha Christie,1965,0
 1579126235,Black Dog & Leventhal Publishers,,,Murder on the Orient Express,272,,20,15.52631579,2006,0,1605,0,0,0,0,0,Agatha Christie,1965,0
 1579126898,Black Dog & Leventhal Publishers,,,Death on the Nile,352,,3,64.5,2007,0,1605,0,0,0,0,0,Agatha Christie,1965,0
@@ -1541,24 +1541,24 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 3423124172,Dtv,,,Wonderboys.,383,,0,82,1998,0,598,0,0,0,0,0,Michael Chabon,1717,1
 1400076811,Vintage,,,The Disappointment Artist,160,,0,0,2006,0,902,0,0,0,0,0,Jonathan Lethem,1822,1
 342661247X,Droemer Knaur,,,Hör mich rufen.,,,0,0,2000,0,1424,0,0,0,0,0,Sarah MacDonald,2076,0
-073854339X,Arcadia Publishing,,,"Cypress Gardens, FL  (Images of America)",128,,0,42.5,2006,0,1697,0,0,0,0,0,Randall M. MacDonald,2045,0
+073854339X,Arcadia Publishing,,,"Cypress Gardens, FL  (Images of America",128,,0,42.5,2006,0,1697,0,0,0,0,0,Randall M. MacDonald,2045,0
 340412801X,Lübbe,,,Der Gesang des Meeres. Beach Music.,,,0,0,1998,0,1570,0,0,0,0,0,Pat Conroy,221,1
 9500420104,Emece Editores,,,"Mundo Perdido, El",,,0,30.03225806,1999,0,901,0,0,0,0,0,Michael Crichton,1773,2
-034537147X,Fawcett,,,The Case of the Half-Wakened Wife (A Perry Mason Mystery),45,,0,0,1991,0,466,0,0,0,0,0,Erle Stanley Gardner,1317,0
-034591483X,Ballantine Books,,,The Case of the Terrified Typist (Perry Mason Mysteries (Fawcett Books)),,,0,0,1999,0,449,0,0,59,0,0,Erle Stanley Gardner,1317,0
+034537147X,Fawcett,,,The Case of the Half-Wakened Wife ,45,,0,0,1991,0,466,0,0,0,0,0,Erle Stanley Gardner,1317,0
+034591483X,Ballantine Books,,,The Case of the Terrified Typist ,,,0,0,1999,0,449,0,0,59,0,0,Erle Stanley Gardner,1317,0
 1933368365,Soft Skull Press,,,The Good Fairies of New York,256,,0,135.6666667,2006,0,920,0,0,0,0,0,Martin Millar,2184,0
 1852864982,Titan Books,741.5942,,Death,104,London,0,33.4,1994,0,389,188,256,0,0,0,Neil Gaiman,945,2
 1563892464,Vertigo/DC Comics,,,The tragical comedy or comical tragedy of Mr. Punch,,New York,0,9.2,1995,0,1709,270,0,0,729,0,Neil Gaiman,945,2
 1593076673,Dark Horse,741.5,,The  facts in the departure of Miss Finch,,"Milwaukie, Or",40,42.75,2006,0,728,330,229,0,0,0,Neil Gaiman,945,2
 019280409X,Oxford University Press,821/.4,PR3552 .O74 2003,John Milton,966,Oxford,30,27.33333333,2003,0,152,16,294,0,0,0,John Milton,1745,0
 2010080874,Hachette Littérature,,,"Christopher et son monde, 1929-1939",343,,0,0,1981,0,1701,0,0,0,0,0,,0,0
-1406509566,Dodo Press,,,Flappers and Philosophers (Dodo Press),232,,35,139,2006,0,1535,0,0,0,0,0,F. Scott Fitzgerald,272,0
+1406509566,Dodo Press,,,Flappers and Philosophers ,232,,35,139,2006,0,1535,0,0,0,0,0,F. Scott Fitzgerald,272,0
 1400075122,Vintage,,,Field Notes,176,,0,0,2004,0,902,0,0,0,0,0,Barry Lopez,787,0
 037571393X,Vintage,,,John James Audubon,528,,35,16.1,2006,0,902,0,0,0,0,0,Richard Rhodes,1415,0
 1883011957,Library of America,818/.309,PS3042 2001,Collected essays and poems,703,New York,0,167,2001,0,654,270,102,0,729,0,Henry David Thoreau,155,0
 1558964908,Skinner House Books,818/.309,BL624.2 .T48 2005,True harvest,,Boston,0,1,2005,0,1164,6,102,0,3,0,Henry David Thoreau,155,0
 1420925229,Digireads.com,,,Civil Disobedience And Other Essays the Collected Essays of Henry David Thoreau,188,,0,0,2005,0,1488,0,0,0,0,0,Henry David Thoreau,155,0
-072789160X,Severn House Publishers,,,Touchy and Feely (Sissy Sawyer),208,,0,101.5,2007,0,60,0,0,0,0,0,"Masterton, Graham.",27,0
+072789160X,Severn House Publishers,,,Touchy and Feely ,208,,0,101.5,2007,0,60,0,0,0,0,0,"Masterton, Graham.",27,0
 1405151412,BLACKWELL,,,HOW TO READ A POEM.,,OXFORD,0,167,,0,641,282,0,0,0,0,Terry Eagleton,1291,0
 1844670554,Verso,,PN86 .E34 2005,The function of criticism,133,London,59,14.16666667,2005,0,1152,188,0,0,0,0,Terry Eagleton,1291,0
 044900483X,Fawcett Books,,,Children of God,438,New York,0,80.71428571,1999,0,680,270,0,0,729,0,Mary Doria Russell,2138,0
@@ -1609,7 +1609,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1402714521,Sterling Pub.,[Fic],PZ10.3.S38 Bl 2004,Black Beauty,199,New York,0,0.666666667,2004,0,873,270,236,0,729,4,Anna Sewell,467,0
 048629272X,Dover Publications,,,Black Beauty Coloring Book,48,,0,0,1996,0,1004,0,0,0,0,0,Anna Sewell,467,0
 1405201711,Egmont Books Ltd,,,The Faraway Tree Stories,560,,0,0,2002,0,594,0,0,0,0,0,Enid Blyton,402,0
-1405203951,Egmont Books Ltd,,,The Mystery of the Secret Room (Mysteries),224,,0,56.33333333,2003,0,594,0,0,0,0,0,Enid Blyton,402,0
+1405203951,Egmont Books Ltd,,,The Mystery of the Secret Room,224,,0,56.33333333,2003,0,594,0,0,0,0,0,Enid Blyton,402,0
 9812468234,Berlitz Kids,,,La gata perdida / The Missing Cat (Las Aventuras De Nicolas / Adventures With Nicholas),64,,0,0,2006,0,1363,0,0,0,0,0,Chris L. Demarest,412,0
 981246820X,Berlitz Kids,,,La Chatte Perdue / The Missing Cat (Les Aventures Avec Nicolas / Adventures With Nicholas),64,,0,0,2006,0,1363,0,0,0,0,0,Chris L. Demarest,412,0
 2831557437,Berlitz,438,,German language pack,,,0,0.1,1998,0,1279,0,366,0,0,0,Chris L. Demarest,412,0
@@ -1622,7 +1622,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 041592913X,Routledge,,,Where We Stand,176,,35,4,2000,0,424,0,0,0,0,0,bell hooks,335,0
 1565847857,New Press,,D,The darker nations,364,"New York, NY",0,162.3333333,2007,0,1349,53,0,0,19,0,Vijay Prashad,1725,0
 1594200297,The Penguin Press,,JC423 .W384 2004,Democracy matters,229,New York,35,32,2004,0,1462,270,0,1,729,0,Cornel West,839,0
-044023784X,Laurel Leaf,,,Before We Were Free (Readers Circle),192,,0,0,2004,0,1223,0,0,0,0,0,Julia Alvarez,357,0
+044023784X,Laurel Leaf,,,Before We Were Free,192,,0,0,2004,0,1223,0,0,0,0,0,Julia Alvarez,357,0
 1841957178,Canongate,,PR9199.3.A8 P46 2005,The Penelopiad,199,New York,0,41.75,2005,0,1280,270,0,0,729,0,Margaret Atwood,882,2
 1844080277,Virago Press,,,Negotiating with the dead,198,London,0,0.333333333,2003,0,333,188,0,0,0,0,Margaret Atwood,882,2
 3453036972,Wilhelm Heyne,,,Das Monstrum.,675,München,3,5.833333333,,0,1577,156,0,0,0,0,Stephen King,235,10
@@ -1648,7 +1648,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 5040019521,ĖKSMO-Press,,PG3476.B78,Мастер и Маргарита,669,"Moskva, Russia",0.5,12.375,2000,0,743,152,0,0,0,0,Михаил Булгаков,2257,0
 015603297X,Harvest Books,,,Foucault's Pendulum,623,,0,36.1875,2007,0,796,0,0,0,0,0,Umberto Eco,419,1
 9035107004,Bert Baker,,,De Slinger Van Foucault,,,0,36.1875,1988,0,1171,0,0,0,0,0,Umberto Eco,419,1
-1593081537,Barnes & Noble Classics,,,The House of Mirth (Barnes & Noble Classics Series) (Barnes & Noble Classics),400,,38,10.18181818,2004,0,1520,0,0,0,0,0,Edith Wharton,483,0
+1593081537,Barnes & Noble Classics,,,The House of Mirth ,400,,38,10.18181818,2004,0,1520,0,0,0,0,0,Edith Wharton,483,0
 1884612466,AudioText,,,Lobsters,,,0,0,2005,0,229,0,0,0,0,0,Charles Stross,838,0
 1884612474,AudioText,,,Antibodies,,,0,0,2005,0,229,0,0,0,0,0,Charles Stross,838,0
 184391123X,HESPERUS PRESS,,,GAMBLER: A NOVEL (FROM A YOUNG MAN'S NOTES); TRANS. BY HUGH APLIN.,,LONDON,0,0,,0,1590,230,0,0,0,0,Fyodor Dostoevsky,1876,0
@@ -1665,7 +1665,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1585676608,Overlook Press,823/.912,PR6045.O53,Jill the reckless,414,"Woodstock, NY",0.5,0,2005,0,385,101,252,0,0,0,P. G. Wodehouse,1466,0
 1572705485,The Audio Partners,,,The Code of the Woosters,,,59,0.857142857,2006,0,858,0,0,0,0,0,P. G. Wodehouse,1466,0
 1585673935,Overlook Press,823/.912,PR6045.O53 A6 2003,"P.G. Wodehouse, in his own words",300,"Woodstock, NY",0,24,2003,0,385,101,252,0,0,0,P. G. Wodehouse,1466,0
-1572703199,The Audio Partners,,,Jeeves and the Mating Season (Audio Editions),,,0,167,2003,0,858,0,0,0,0,0,P. G. Wodehouse,1466,0
+1572703199,The Audio Partners,,,Jeeves and the Mating Season ,,,0,167,2003,0,858,0,0,0,0,0,P. G. Wodehouse,1466,0
 1585676586,Overlook Press,823/.912,PR6045.O53 S66 2005,Something fresh,260,"Woodstock, NY",0,1.5,2005,0,385,101,252,0,0,0,P. G. Wodehouse,1466,0
 1406929980,Hard Press,,,The Clicking of Cuthbert,162,,0,0,2006,0,67,0,0,0,0,0,P. G. Wodehouse,1466,0
 1585675245,Overlook Press,823/.912,PR6045.O53 R4 2004,Ring for Jeeves,240,"Woodstock, N.Y",59,80.28571429,2004,0,385,167,252,0,0,0,P. G. Wodehouse,1466,0
@@ -1693,7 +1693,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 3895086908,Konemann,,,War & Peace (Konemann Classics),1500,,0,0,2000,0,133,0,0,0,0,0,,0,0
 067003469X,Viking,891.73/3,PG3366 .V6 2006,War and peace,,New York,0.875,3.677419355,2006,0,63,270,454,25,729,0,Tolstoy,911,0
 1590172183,New York Review Books,965/.046,DT295 .H64 2006,A savage war of peace,608,New York,0,85,2006,0,58,270,253,0,729,0,Alistair Horne,759,0
-1593082061,Barnes & Noble Classics,,,Oliver Twist (Barnes & Noble Classics Series) (Barnes & Noble Classics),512,,27.66666667,4.333333333,2004,0,1520,0,0,0,0,0,Charles Dickens,466,0
+1593082061,Barnes & Noble Classics,,,Oliver Twist ,512,,27.66666667,4.333333333,2004,0,1520,0,0,0,0,0,Charles Dickens,466,0
 025320478X,Indiana U.P.,,,Basic Problems of Phenomenology.,430,,0,0,1982,0,162,0,0,0,0,0,Martin Heidegger,920,0
 1596057734,Cosimo,,,The phenomenology of mind,,New York,0,9,2005,0,1384,270,0,0,729,0,Georg Wilhelm Friedrich Hegel,2114,0
 1933330104,Stone Bridge Press,791.43/340952,NC1766.J3 C53 2007,The anime encyclopedia,867,"Berkeley, Calif",1,0,2007,0,1529,209,364,0,0,0,Jonathan Clements,1681,0
@@ -1733,7 +1733,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1559361409,Theatre Communications Group,812/.54,PS3571.H7 L37 1997,The last night of Ballyhoo,99,New York,3,8.25,1997,0,646,270,142,0,729,0,Alfred Uhry,853,0
 067972477X,Vintage Books,823/.912,PR6013.R35 I2 1989,"I, Claudius",468,New York,0.5,12,1989,0,940,270,252,0,729,0,Robert Graves,1727,0
 014243728X,Penguin Books,813/.52,PS3511.A86 A6 2003,The portable Faulkner,650,New York,3,96.16666667,2003,0,397,270,69,1,729,0,William Faulkner,1249,0
-1841598976,Everyman's Library,,,In Search of Lost Time (Everyman's Library Classics),900,,12,7.52173913,2001,0,763,0,0,0,0,0,Marcel Proust,1609,0
+1841598976,Everyman's Library,,,In Search of Lost Time,900,,12,7.52173913,2001,0,763,0,0,0,0,0,Marcel Proust,1609,0
 1904341276,Haus Pub.,,,Dostoevsky,164,London,0,56,2003,0,1517,188,0,0,0,0,Richard Freeborn,16,0
 1400041910,Alfred A. Knopf,891.73/3,PG3326 .Z4 2004,Notes from underground,126,New York,1,61.72727273,2004,0,1344,270,454,35,729,0,Fyodor Dostoevsky,1876,0
 1593082509,Barnes & Noble Classics,,,The Possessed,768,,1,4.166666667,2004,0,1520,0,0,0,0,0,Fyodor Dostoevsky,1876,0
@@ -1745,8 +1745,8 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 015602778X,"Harcourt, Inc.",820/.9,PR99 .W77 1984,The common reader.,272,San Diego,0,93.83333333,1984,0,1108,363,427,0,0,0,Virginia Woolf,474,0
 1930464061,Paris Press,823/.912,PR6045.O72 O5 2002,On being ill,28,"Ashfield, Mass",0,0.166666667,2002,0,364,218,252,0,0,0,Virginia Woolf,474,0
 068986311X,Aladdin,,,The eagle,59,,0,57.6,2005,0,590,0,0,0,0,0,Cynthia Rylant,374,0
-068984882X,Aladdin,,,The Storm (The Lighthouse Family),80,,0,0,2003,0,590,0,0,0,0,0,Cynthia Rylant,374,0
-1585677280,Overlook TP,,,"The Warrior Prophet (The Prince of Nothing, Book 2)",624,,0,0,2005,0,1546,0,0,0,0,0,R. Scott Bakker,2273,0
+068984882X,Aladdin,,,The Storm,80,,0,0,2003,0,590,0,0,0,0,0,Cynthia Rylant,374,0
+1585677280,Overlook TP,,,The Warrior Prophet ,624,,0,0,2005,0,1546,0,0,0,0,0,R. Scott Bakker,2273,0
 141932506X,,,,The Mists of Avalon. Book 1,,,0,0,,0,0,0,0,0,0,0,,0,0
 1419324705,,,,The Mists of Avalon. Book 2,,,0,0,,0,0,0,0,0,0,0,,0,0
 1419324322,,,,The Mists of Avalon. Book 3,,,0,0,,0,0,0,0,0,0,0,,0,0
@@ -1760,8 +1760,8 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 033042694X,Picador,,,Valparaiso,112,,0,402,2004,0,1244,0,0,0,0,0,Don DeLillo,2159,0
 1400078121,Anchor Books,813/.54,PS3557.O35819,Wickett's Remedy,370,"New York, USA",11,32.69230769,2006,0,140,367,345,0,51,667,Myla Goldberg,1831,0
 3473352349,Ravensburger Buchverlag,,,Underdog.,,,0,0,2002,0,633,0,0,0,0,0,Markus Zusak,1469,0
-1400132746,Tantor Media,,,Madame Bovary (Unabridged Classics),,,12,4.073170732,2006,0,518,0,0,0,0,0,Gustave Flaubert,1070,0
-158663822X,SparkNotes,,,Aristotle's Ethics (SparkNotes Literature Guide) (SparkNotes Literature Guides),80,,0,0,2003,0,384,0,0,0,0,0,SparkNotes Editors,998,0
+1400132746,Tantor Media,,,Madame Bovary ,,,12,4.073170732,2006,0,518,0,0,0,0,0,Gustave Flaubert,1070,0
+158663822X,SparkNotes,,,Aristotle's Ethics,80,,0,0,2003,0,384,0,0,0,0,0,SparkNotes Editors,998,0
 1593080239,Barnes & Noble Classics,,,Middlemarch,810,New York,59,26.63157895,2003,0,1520,270,0,0,729,0,George Eliot,1897,0
 1857150066,Everyman's Library,,,Middlemarch (Everyman's Library Classics),743,,59,26.63157895,1991,0,763,0,0,0,0,0,George Eliot,1897,0
 1591940486,Townsend Press,,,Silas Marner,,,0,2.8,2006,0,844,0,0,0,0,0,George Elliot,777,0
@@ -1778,13 +1778,13 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 3446187499,Carl Hanser,,,Norden. Gedichte. Englisch - deutsch.,127,,0,0,1996,0,1326,0,0,0,0,0,Seamus Heaney,1861,0
 3608951563,Klett-Cotta,,,"Ausgewhlte Gedichte, 1965-1975 =",255,,0,0,1995,0,91,0,0,0,0,0,Seamus Heaney,1861,0
 8475173462,Hiperion,,,Norte,,,0,0,1996,0,625,0,0,0,0,0,Seamus Heaney,1861,0
-1857150945,Everyman's Library,,,The Odyssey (Everyman's Library Classics),528,,2,0.171875,1992,0,763,0,0,0,0,0,Homer,2248,0
+1857150945,Everyman's Library,,,The Odyssey,528,,2,0.171875,1992,0,763,0,0,0,0,0,Homer,2248,0
 057120113X,Faber,829.3,,Beowulf,106,London,0,1,1999,0,477,188,31,0,0,0,Seamus Heaney,1861,0
 014032609X,Puffin Books,[Fic],PZ7.L6585 Ce 1988,The children of Noisy Village,124,"New York, N.Y., U.S.A",4,70.16666667,1988,0,979,8,236,0,0,4,Astrid Lindgren,1766,0
 1930900244,Purple House Press,[Fic],PZ7.L6585 Bt 2004,The brothers Lionheart,231,"Cynthiana, Ky",0,65.85714286,2004,0,1197,47,236,0,0,4,Astrid Lindgren,1766,0
 1883937663,Bethlehem Books,,,Happy Times in Noisy Village,128,,0,167,2003,0,1122,0,0,0,0,0,Astrid Lindgren,1766,0
 8426131921,Editorial Juventud,,,Pippi Calzaslargas,137,"Barcelona, Spain",2,2.352941176,2001,0,1532,147,0,0,0,0,Astrid Lindgren,1766,0
-072324779X,Warne,,,The Tale of the Flopsy Bunnies (The World of Beatrix Potter),64,,0,0,2002,0,1558,0,0,0,0,0,Beatrix Potter,83,0
+072324779X,Warne,,,The Tale of the Flopsy Bunnies ,64,,0,0,2002,0,1558,0,0,0,0,0,Beatrix Potter,83,0
 1402713185,Sterling Pub. Co.,[Fic],PZ7.T1289 Tr 2005,Treasure Island,151,New York,0,1,2005,0,1345,270,236,0,729,4,Chris Tait,1142,0
 1402726007,Sterling Pub.,,MLCS 2006/45312,The Adventures of Huckleberry Finn,307,"New York, USA",1,0.770833333,2006,0,873,367,0,0,51,0,Mark Twain,1430,0
 014044257X,Penguin Books,,,Philosophical dictionary,400,Harmondsworth,0,0.4,1986,0,397,24,0,1,0,0,Voltaire,358,0
@@ -1816,10 +1816,10 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1561709336,Hay House,155.2/34,BF311 .H385 2002,Power vs. force,341,"Carlsbad, Calif",0,100.5,2002,0,1215,326,163,0,0,0,David R. Hawkins,588,0
 1904233074,ATOM,,,Winter Rose,272,,0,87.4,2002,0,769,0,0,0,0,0,Patricia A. McKillip,1919,0
 1864503823,Lonely Planet Publications,,,Lonely Planet Southwest France,400,,0,0,2002,0,1050,0,0,0,0,0,,0,0
-1565047087,White Wolf Games Studio,,,Changeling Storytellers Guide (Changeling),139,,0,0,1998,0,985,0,0,0,0,0,,0,0
+1565047087,White Wolf Games Studio,,,Changeling Storytellers Guide,139,,0,0,1998,0,985,0,0,0,0,0,,0,0
 1555603130,Fasa,,,"The Blood Wood (Earthdawn, 6113)",,,0,0,1997,0,1497,0,0,0,0,0,,0,0
 076113686X,Workman Pub.,618.2/4,RG525 .E3618 2002,Qué se puede esperar cuando se esta esperando,597,New York,0,38.70588235,2002,0,1080,270,465,0,729,0,Heidi Murkoff,977,0
-037376779X,Silhouette,,,Blackmailed Into Bed (Silhouette Desire),192,,0,17.33333333,2007,0,28,0,0,0,0,0,Heidi Betts,209,0
+037376779X,Silhouette,,,Blackmailed Into Bed,192,,0,17.33333333,2007,0,28,0,0,0,0,0,Heidi Betts,209,0
 193238622X,Archaia Studio Press,,,Artesia Volume 1,192,,0,0,2007,0,1385,0,0,0,0,0,Mark S. Smylie,725,0
 067100347X,Washington Square Press,813/.54,PS3566.E245 L38 1997,The law of enclosures,306,New York,0,102.5,1997,0,949,270,345,0,729,667,Dale Peck,820,0
 159990005X,Bloomsbury Children's Books,[Fic],PZ7.P3338 Dri 2006,Drift House,437,New York,0,0.666666667,2006,0,1523,270,236,0,729,4,Dale Peck,820,0
@@ -1844,7 +1844,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1903015073,"Barn Owl Books, London",,,The Spiral Stair,62,,0,0,2000,0,929,0,0,0,0,0,Joan Aiken,1668,0
 1567923232,David R Godine,,,A Near Thing for Captain Najork,32,,0,83.5,2006,0,809,0,0,0,0,0,Russell Hoban,1686,0
 2226085394,Albin Michel,,,Merveilles et processions,188,,0,0,1996,0,182,0,0,0,0,0,,0,0
-019283780X,"Oxford University Press, USA",,,Scenes of Clerical Life (Oxford World's Classics),338,,59,65,2001,0,1427,0,0,0,0,0,George Eliot,1897,0
+019283780X,"Oxford University Press, USA",,,Scenes of Clerical Life,338,,59,65,2001,0,1427,0,0,0,0,0,George Eliot,1897,0
 1555973035,Graywolf Press,811/.6,PS3556.L894 S66 2000,Some ether,85,"Saint Paul, Minn",0,167,2000,0,1585,322,154,0,0,0,Nick Flynn,2016,0
 1571103201,Stenhouse Pub,,,A Note Slipped Under the Door,241,,0,0,2000,0,19,0,0,0,0,0,,0,0
 081221112X,University of Pennsylvania Press,001.54/2,P95 .G58 1981,Forms of talk,335,Philadelphia,0,93.66666667,1981,0,1504,178,34,0,0,0,Erving Goffman,114,0
@@ -1860,7 +1860,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 006053916X,Ecco,326.0973/09033,E269.N3 S33 2006,Rough crossings,478,New York,18.8,35.07142857,2006,0,595,270,200,6,729,0,Simon Schama,385,0
 1584855282,Pleasant Co.,155.43/3,BF723.E6 M27 2002,The feelings book,104,"Middleton, Wis",0,63.44444444,2002,0,1035,357,172,0,0,0,Lynda Madison,1718,0
 1593691033,Pleasant Co.,332.024/008352,HG179 .H69 2006,A smart girl's guide to money,95,"Middleton, WI",0,51.875,2006,0,1035,124,265,0,0,0,Nancy Holyoke,363,0
-1584858745,American Girl,,,What Would You Do? (American Girl Library),63,,0,0,2004,0,1681,0,0,0,0,0,Patti Kelley Criswell,147,0
+1584858745,American Girl,,,What Would You Do? ,63,,0,0,2004,0,1681,0,0,0,0,0,Patti Kelley Criswell,147,0
 044920149X,Fawcett,,,The Capricorn Stone,,,0,64.85714286,1983,0,466,0,0,0,0,0,Madeleine Brent,988,0
 080650160X,Carol Publishing Group,,,The ethics of ambiguity,159,"Secaucus, N.Y",0,100.75,1994,0,1556,84,0,0,0,0,Simone de Beauvoir,2033,0
 039331443X,W. W. Norton & Company,,,The Coming of Age,585,,0,93.83333333,1996,0,783,0,0,0,0,0,Patrick O'Brian,2049,0
@@ -2041,7 +2041,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1844670538,Verso,,,The System of Objects (Radical Thinkers),224,,0,0,2006,0,1152,0,0,0,0,0,Jean Baudrillard,896,0
 1845203348,BERG,194,B2430.B33973 P3313 2005,The intelligence of evil or the lucidity pact,,Oxford,0,9,2005,0,82,16,410,0,0,0,Jean Baudrillard,896,0
 1840460873,Icon,194,HM22.F8 B3844 1999,Introducing Baudrillard,176,Trumpington,12,17,1999,0,223,310,410,0,0,0,Chris Horrocks,182,0
-014118549X,Penguin Classics,,,Nausea (Penguin Modern Classics),272,,12,80.4,2000,0,196,0,0,0,0,0,Jean-Paul Sartre,1700,0
+014118549X,Penguin Classics,,,Nausea,272,,12,80.4,2000,0,196,0,0,0,0,0,Jean-Paul Sartre,1700,0
 1886230358,Impact Publishers,,,"Feeling Better, Getting Better, Staying Better ",272,,0,167,2001,0,119,0,0,0,0,0,Albert Ellis,1352,0
 1562802348,Naiad Press,823,PR9619.3.O386 O84 1999,The other woman,217,"Tallahassee, Fla",0,101,1999,0,1262,142,247,0,0,1,Ann O'Leary,1622,0
 1591162025,Viz,,,Inuyasha Ani.manga,206,,0,167,2001,0,1219,0,0,0,0,0,Rumiko Takahashi,2196,0
@@ -2129,7 +2129,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1932796789,Devil's Due Publishing,,,Dragonlance - Chronicles Volume 2,192,,0,0,2007,0,1293,0,0,0,0,0,Margaret Weis,1828,1
 1400032385,Anchor Books,700/.23,BF411 .S58 2006,Letters to a young artist,,New York,0,67.16666667,2006,0,140,270,372,0,729,0,Anna Deavere Smith,360,0
 1583332057,Avery,613.2/5,RM235 .P67 2004,The hip chick's guide to macrobiotics,289,New York,0,0,2004,0,1258,270,68,0,729,0,Jessica Porter,293,0
-1931376344,Small Planet Communications,,,The House on Mango Street (Book Club Novel Guide),48,,0,0,2003,0,72,0,0,0,0,0,Raphael Taffy,1228,0
+1931376344,Small Planet Communications,,,The House on Mango Street,48,,0,0,2003,0,72,0,0,0,0,0,Raphael Taffy,1228,0
 1421507668,VIZ Media LLC,,,The Art of Fullmetal Alchemist,96,,0,33.4,2006,0,1354,0,0,0,0,0,Hiromu Arakawa,1423,0
 1421508389,Viz Media,,,Fullmetal Alchemist.,180,San Francisco,0,2.5,2007,0,448,201,0,0,1,0,Hiromu Arakawa,1423,0
 471265187,,,,"ASTRONOMY: A SELF-TEACHING GUIDE, 6TH ED [RC GS 107]",,,0,0,,0,0,0,0,0,0,0,DINAH MOCHE,601,0
@@ -2246,7 +2246,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1560252758,Thunder's Mouth Press,364.1/06/097471,HV6439.U7 N4 2001,The gangs of New York,366,New York,39,69,1998,0,777,270,348,0,729,0,Herbert Asbury,1166,0
 1560255218,Thunder's Mouth Press,,,All around the town,244,New York,38,126,2003,0,777,270,0,0,729,0,Herbert Asbury,1166,0
 1402714602,Sterling Pub.,[Fic],PZ7.C584 Ad 2004,The adventures of Tom Sawyer,224,New York,4.888888889,2.739130435,2004,0,873,270,236,0,729,4,Mark Twain,1430,0
-073854678X,Arcadia Publishing,,,Selections from the Oakland Tribune  Archives  (CA),128,,0,0,2006,0,1697,0,0,0,0,0,Annalee Allen,160,0
+073854678X,Arcadia Publishing,,,Selections from the Oakland Tribune  Archives ,128,,0,0,2006,0,1697,0,0,0,0,0,Annalee Allen,160,0
 1843910179,Hesperus,841.8,,On wine and hashish,88,London,0,0.285714286,2002,0,1551,188,45,0,0,0,Charles Baudelaire,1977,0
 2038717001,Larousse-Bordas,,,"Candide ou, L'optimisme",240,Paris,18.5,0.625,1998,0,95,182,0,0,0,0,Voltaire,358,0
 1897784317,Neil Wilson,941.106092,,Rob Roy MacGregor,192,Glasgow,0,0,1995,0,526,154,298,0,0,0,Nigel Tranter,1913,0
@@ -2313,7 +2313,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 006440336X,HarperTrophy,[Fic],,Child of the owl,217,New York,23.66666667,47.57142857,1990,0,1022,270,236,0,729,4,Laurence Yep,1673,0
 081673030X,Bridgewater Press,398.25,PZ8.1.Y37 Man 1993,The man who tricked a ghost,,"Mahwah, N.J",6,100.5,1993,0,1036,122,162,0,0,0,Laurence Yep,1673,0
 078693137X,Wizards of the Coast,,CPB Box no. 2280 vol. 1,The legend of Huma,379,"Renton, WA",0,56,2004,0,1265,149,0,8,4,0,Richard A. Knaak,2017,0
-1400096464,Anchor,,,Flashman on the March (Flashman Papers),352,,0,0,2006,0,582,0,0,0,0,0,George MacDonald Fraser,935,0
+1400096464,Anchor,,,Flashman on the March ,352,,0,0,2006,0,582,0,0,0,0,0,George MacDonald Fraser,935,0
 159582071X,DH Press,895.6/36,PL835.I84 J8613 2006,Ju-on,235,"Milwaukie, OR",0,69.33333333,2006,0,792,166,437,0,0,0,Kei Ōishi,130,0
 1572244259,New Harbinger Publications,,,Get out of your mind and into your life: The new acceptance & commitment therapy,206,"Oakland, CA",0,0,,0,118,260,0,0,0,0,Steven C. Hayes,791,0
 1598163183,Blu,,,Shout Out Loud! Volume 3,190,,0,0,2006,0,1438,0,0,0,0,0,Satosumi Takaguchi,2121,0
@@ -2321,7 +2321,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 2268042618,Editions Du Rocher,,,Disparitions,450,,0,0,2002,0,968,0,0,0,0,0,,0,0
 3442309174,Goldmann,,,Die Umarmung des Todes.,608,,0,0,2003,0,1367,0,0,0,0,0,Natsuo Kirino,1535,0
 2207249107,Denoël,,,"Mémoires de l'Enfer, Marilyn Manson et Neil Strauss",269,,0,0,2000,0,801,0,0,0,0,0,Marilyn Manson,1504,0
-1417499737,Vida,,,Una Vida Con Proposito {40 Weeks Of Purpose Vol 6 Book ,56,,0,0,2005,0,531,0,0,0,0,0,Rick Warren,471,0
+1417499737,Vida,,,Una Vida Con Proposito 40 Weeks Of Purpose Vol 6 Book ,56,,0,0,2005,0,531,0,0,0,0,0,Rick Warren,471,0
 3442448239,Goldmann,,,Der Pferdeflüsterer. Sonderausgabe.,,,0,0,2000,0,1367,0,0,0,0,0,Nicholas Evans,754,0
 3570003191,"Bertelsmann Verlag GmbH (Belletristik, Kinder- u. Jugendbuch) Sachbuch",,,Feuerspringer.,476,,0,0,2002,0,329,0,0,0,0,0,,0,0
 089281800X,Destiny Books,,,Psychonavigation,144,,0,0,1999,0,1307,0,0,0,0,0,John Perkins,9,0
@@ -2342,7 +2342,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1566477883,Mutual Pub Co,,,Robert Louis Stevenson in Samoa,60,,0,0,2006,0,242,0,0,0,0,0,Richard Bermann,1246,0
 8479019395,Alfaguara,,,Amarse Con Los Ojos Abiertos/to Love With Eyes Wide Open (Integral),237,,0,0,2003,0,1066,0,0,0,0,0,,0,0
 007146235X,McGraw-Hill,,,"McGraw-Hill's SAT I, Second edition (McGraw-Hill's SAT I)",880,,0,0,2005,0,1361,0,0,0,0,0,,0,0
-026257103X,The MIT Press,,,"An Odyssey in Learning and Perception (Learning, Development, and Conceptual Change)",656,,0,0,1994,0,1006,0,0,0,0,0,Eleanor J. Gibson,684,0
+026257103X,The MIT Press,,,An Odyssey in Learning and Perception,656,,0,0,1994,0,1006,0,0,0,0,0,Eleanor J. Gibson,684,0
 1853993581,Bristol Classical,,,"Annals, Book I",261,London,1,85,1992,0,1020,188,0,0,0,0,P. Cornelius Tacitus,1324,0
 1928832431,Sophia Institute Press,,,Aquinas's Shorter Summa,432,,0,167,2001,0,235,0,0,0,0,0,Thomas Aquinas,1691,0
 349175710X,Patmos,,,Der Golem.,80,,0,0,2001,0,185,0,0,0,0,0,Isaac Bashevis Singer,910,0
@@ -2408,7 +2408,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 014044520X,Penguin,186/.4,B693.E59 E5 1991,The enneads,558,"London, England",0,19.62068966,1991,0,1300,268,149,1,0,0,Plotinus,1923,0
 8483064650,Debate,,,La CIA Y La Guerra Fria Cultural/ Who Paid the Piper? the CIA and the Cultural Cold War (Temas De Debate / Debate Subjects),640,,0,0,2001,0,1633,0,0,0,0,0,Frances Stonor Saunders,1213,0
 1565846648,New Press,,,The Cultural Cold War,528,,35,21.40909091,2001,0,1349,0,0,0,0,0,Frances Stonor Saunders,1213,0
-063502389X,Gallopade International,,,"The Mystery in the Rocky Mountains (Real Kids, Real Places)",145,,0,167,2004,0,753,0,0,0,0,0,Carole Marsh,1606,0
+063502389X,Gallopade International,,,The Mystery in the Rocky Mountains,145,,0,167,2004,0,753,0,0,0,0,0,Carole Marsh,1606,0
 076155548X,Prima Games,793.93/2,GV1469.22 .O43 2006a,"The elder scrolls IV, Oblivion",430,"Roseville, CA",0,0,2006,0,950,164,241,0,0,0,Peter Olafson,1674,0
 1593979746,Audio Renaissance,,,The Power of Truth,,,0,0,2006,0,170,0,0,0,0,0,Warren Bennis,2189,0
 055380491X,Bantam,,,Emotional Intelligence,358,,0,0.285714286,2006,0,160,0,0,7,0,0,Daniel Goleman,1669,0
@@ -2425,7 +2425,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 015601209X,Harcourt,400,P107 .V47 2001,Verbatim,353,San Diego,0,0,2001,0,220,363,282,0,0,0,Erin McKean,1870,0
 2258036429,Distribooks,,,Calvin Et Hobbes,63,,0,0,2002,0,816,0,0,0,0,0,Bill Watterson,1754,0
 8440685416,Ediciones B,,,Calvin y Hobbes,,,0,0,2000,0,744,0,0,0,0,0,Bill Watterson,1754,0
-059509208X,Backinprint.com,,,Children of the Drake (Dragonrealm),292,,0,0,2000,0,282,0,0,0,0,0,Richard A. Knaak,2017,0
+059509208X,Backinprint.com,,,Children of the Drake ,292,,0,0,2000,0,282,0,0,0,0,0,Richard A. Knaak,2017,0
 1400091055,Imagination Studio,,,Magic Tree House #30,,,0,167,2004,0,547,0,0,0,0,0,Mary Pope Osborne,2064,0
 067989070X,Random House,,,Magic Tree House #24 Earthquake in the Early Morning,72,,0,0,2001,0,803,0,0,32,0,0,,0,0
 1423601742,"Gibbs Smith, Publisher",,,Kokopelli,199,,0,24.42857143,2007,0,555,0,0,0,0,0,Dennis Slifer,314,0
@@ -2434,7 +2434,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1595322353,TokyoPop,,,"President Dad, Vol. 2",192,,0,167,2005,0,934,0,0,0,0,0,Ju-yeon Rhim,265,0
 1592402682,Gotham,,,Game of Shadows,368,,0,0,2007,0,1110,0,0,0,0,0,,0,0
 1932234225,Vertical,895.635,PL861.U92716 H6613 2006,Dark water,282,"New York, NY",0,100.75,2006,0,647,53,160,0,19,0,Kōji Suzuki,375,0
-1587670135,Cemetery Dance Pubns,,,Cast in Dark Waters (Novella Number 11),,,0,0,2002,0,1661,0,0,0,0,0,Tom Piccirilli,1094,0
+1587670135,Cemetery Dance Pubns,,,Cast in Dark Waters ,,,0,0,2002,0,1661,0,0,0,0,0,Tom Piccirilli,1094,0
 1572930500,Discovery House,269/.2/092,BR1725.C43 M33 1998,Oswald Chambers,336,"Grand Rapids, MI",25,68.33333333,1998,0,305,110,397,0,0,0,Dave McCasland,173,0
 1598163175,Blu,,,Shout Out Loud! Vol. 2,194,,0,0,2006,0,1438,0,0,0,0,0,Satosumi Takaguchi,2121,0
 1598163205,Blu,,,Shout Out Loud! Volume 5,192,,0,0,2007,0,1438,0,0,0,0,0,Satosumi Takaguchi,2121,0
@@ -2472,7 +2472,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1593082908,Barnes & Noble Classics,,,Daniel Deronda (Barnes & Noble Classics),784,,59,6.666666667,2005,0,1520,0,0,0,0,0,George Eliot,1897,0
 038549517X,Anchor,,,The Mating Mind,528,,0,70,2001,0,582,0,0,0,0,0,Geoffrey Miller,849,0
 046500802X,Basic Books,,,The Evolution of Desire,320,,0,100.75,2003,0,911,0,0,0,0,0,David M. Buss,2254,0
-1416523715,Pocket,,,Leaves of Grass (Enriched Classics),624,,35,6.5,2006,0,696,0,0,1,0,0,Walt Whitman,1803,0
+1416523715,Pocket,,,Leaves of Grass,624,,35,6.5,2006,0,696,0,0,1,0,0,Walt Whitman,1803,0
 078622469X,Thorndike Press,813/.54,PS3562.A315 N53 2000,Nicolae,530,"Thorndike, Me",0,5.533333333,2000,0,373,185,345,0,0,667,Tim F. LaHaye,229,0
 1586481983,PublicAffairs,332.1/095492,HG3290.6.A6 Y86 2007,Banker to the poor,289,New York,0,54.22222222,2007,0,201,270,414,0,729,0,Muhammad Yunus,1445,0
 1591397642,Harvard Business School Press,658.15/12,HG4028.B2 B42 2005,The art of the financial statements,,"Boston, Mass",0,0.5,2005,0,577,129,101,0,1,0,Karen Berman,2061,0
@@ -2586,7 +2586,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 8482370537,Thassalia,,,Entre Bastidores,,,0,0,2000,0,565,0,0,0,0,0,Kate Atkinson,899,2
 087113960X,Atlantic Monthly Press,813/.54,PS3562.E534 S84 2007,Suffer the little children,,New York,4.333333333,26.3,2007,0,840,270,345,6,729,667,Donna Leon,753,5
 1570614598,Sasquatch Books,,,One Hundred Demons,224,,35,0.5,2005,0,266,0,0,0,0,0,Lynda Barry,1597,0
-068814392X,HarperTrophy,,,The Twelve Dancing Princesses (Mulberry Books),40,,0,0,1998,0,1022,0,0,0,0,0,Marianna Mayer,1959,0
+068814392X,HarperTrophy,,,The Twelve Dancing Princesses ,40,,0,0,1998,0,1022,0,0,0,0,0,Marianna Mayer,1959,0
 1418505579,Thomas Nelson,,,Twelve Extraordinary Women Workbook,256,,0,0,2006,0,755,0,0,1,0,0,John MacArthur,527,0
 1596913231,Bloomsbury USA,,,Paris,485,,7,83.83333333,2006,0,1398,0,0,0,0,0,Andrew Hussey,409,0
 1400031702,Vintage Books,813/.54,PS3570.A657 S4 1992,The secret history,557,New York,1,60.5,2004,0,940,270,345,0,729,667,Donna Tartt,2152,1
@@ -2661,8 +2661,8 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 155652482X,Lawrence Hill Books,,E,They dare to speak out,404,"Chicago, IL",0,0,2003,0,1595,61,0,0,0,0,Paul Findley,582,0
 057120905X,Faber and Faber,,,Famous Last Words,396,,25,73,2001,0,700,0,0,0,0,0,Timothy Findley,1318,0
 1560761547,Wizards of the Coast,,,Into the Void (Spelljammer Books),320,,0,0,1991,0,1265,0,0,8,0,0,Nigel Findley,924,0
-159308269X,Barnes & Noble Classics,,,Essential Dialogues of Plato (Barnes & Noble Classics Series) (Barnes & Noble Classics),624,,0,167,2005,0,1520,0,0,0,0,0,Plato,821,0
-1593080972,Barnes & Noble Classics,,,Republic (Barnes & Noble Classics Series) (Barnes & Noble Classics),496,,0,19.11764706,2005,0,1520,0,0,0,0,0,Plato,821,0
+159308269X,Barnes & Noble Classics,,,Essential Dialogues of Plato,624,,0,167,2005,0,1520,0,0,0,0,0,Plato,821,0
+1593080972,Barnes & Noble Classics,,,Republic,496,,0,19.11764706,2005,0,1520,0,0,0,0,0,Plato,821,0
 156280135X,Naiad Press,813/.54,PS3563.C3877 I56 1996,Inner circle,196,"Tallahassee, Fla",4,6.2,1996,0,1262,142,345,0,0,667,Claire McNab,1197,0
 034546141X,Ballantine Books,,,The rising tide,536,New York,2,6.5,2006,0,449,270,0,59,729,0,Jeff Shaara,1014,5
 1841580651,Birlinn,813.54,,Gods and generals,498,Edinburgh,12,19.6,2000,0,1060,243,452,0,0,6,Jeff Shaara,1014,5
@@ -2677,7 +2677,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1582404879,Image Comics,,,The Walking Dead Vol. 3,136,,0,0,2005,0,1161,0,0,0,0,0,,0,0
 1582406197,Image Comics,,,The Walking Dead Book 1 (Walking Dead),304,,0,10,2006,0,1161,0,0,0,0,0,Robert Kirkman,1838,4
 1400095956,Vintage Books,813/.6,PS3602.R63 B75 2007,The brief history of the dead,252,New York,2,72.25,2007,0,940,270,287,0,729,205,Kevin Brockmeier,44,0
-1930692471,Beckett Media,,,Beckett Football Card Price Guide 2006-2007 (Beckett Football Card Price Guide),830,,0,0,2006,0,153,0,0,0,0,0,,0,0
+1930692471,Beckett Media,,,Beckett Football Card Price Guide 2006-2007 ,830,,0,0,2006,0,153,0,0,0,0,0,,0,0
 1401917178,Hay House,,,The Power of Infinite Love & Gratitude,240,,0,167,2007,0,1215,0,0,0,0,0,Darren R. Weissman,1914,0
 1563895161,DC Comics,741.5/973,PN6728.M43 M66 1999,Michael Moorcock's multiverse,285,New York,0,0,1999,0,1613,270,262,0,729,0,Michael Moorcock,1292,0
 1565041917,White Wolf Games Studio,,,The Eternal Champion,484,,0,0,1996,0,985,0,0,0,0,0,Michael Moorcock,1292,0
@@ -2703,7 +2703,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 067179566X,Pocket Books,,PS3558.A4432 N53 1992x,Nightshade,276,New York,0,80.85714286,1992,0,1379,270,0,5,729,0,Laurell K. Hamilton,1528,10
 051513970X,Jove Books,,CPB Box no. 2378 vol. 3,Bite,297,New York,0,21.5,2005,0,43,270,0,0,729,0,Laurell K. Hamilton,1528,10
 3442358957,Goldmann,,,Nachtschwärmer.,586,,0,0,2003,0,1367,0,0,0,0,0,Laurell K. Hamilton,1528,10
-1841492019,Orbit,,,Cerulean Sins (Anita Blake Vampire Hunter),528,,0,167,2003,0,89,0,0,2,0,0,Laurell K. Hamilton,1528,10
+1841492019,Orbit,,,Cerulean Sins ,528,,0,167,2003,0,89,0,0,2,0,0,Laurell K. Hamilton,1528,10
 4835212053,Biblos,,,4 (Haru wo Daite Ita) (in Japanese),,,0,0,,0,289,0,0,0,0,0,Yuuka Nitta,1984,0
 4882719614,Biblos,,,1 (Haru wo Daite Ita [Super Beboy]) (in Japanese),190,,0,0,,0,289,0,0,0,0,0,Youka Nitta,1209,0
 1933440171,Be Beautiful,741.5/952,PN6790.J34 F5313 2007,Finder series,,New York,0,0,2007,0,629,270,222,0,729,0,Ayano Yamane,1816,0
@@ -2718,7 +2718,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 155166531X,Mira Books,,,Tiger Prince,298,Ontario,1,116.6666667,1985,0,1401,137,0,2,0,0,Sandra Brown,1009,7
 1551666014,Mira,PB,,Tomorrow's promise,296,Don Mills ON,20,60.3,1983,0,1057,267,10,5,0,0,Sandra Brown,1009,7
 044677698X,Warner Books,,,Another Dawn,,,14,119,1993,0,430,0,0,0,0,0,Sandra Brown,1009,7
-077832026X,Mira,,,"Above And Beyond (Brown, Sandra)",240,,0,0,2004,0,1057,0,0,5,0,0,Sandra Brown,1009,7
+077832026X,Mira,,,Above And Beyond,240,,0,0,2004,0,1057,0,0,5,0,0,Sandra Brown,1009,7
 1551667932,MIRA Books,,,The Devil's own,232,"Don Mills, Ont",0,87.33333333,1987,0,1428,278,0,1,8,0,Sandra Brown,1009,7
 1551660954,Mira,813/.54,PS3552.R718 S33 1983,A secret splendor,297,"Dons Mills, Ont",0,54.72727273,1983,0,1057,46,345,5,0,667,Sandra Brown,1009,7
 3764501359,Blanvalet Verlag GmbH,,,Betrogen.,512,,0,0,2003,0,237,0,0,0,0,0,Sandra Brown,1009,7
@@ -2788,7 +2788,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 8489846936,Alba,,,Shirley,,,10.16666667,62.45454545,2000,0,610,0,0,0,0,0,Charlotte Brontë,1887,0
 037575850X,Modern Library,823/.8,PR4167 .V5 2001,Villette,590,New York,19.66666667,12.1,2001,0,1343,270,138,0,729,0,Charlotte Brontë,1887,0
 1840220600,Wordsworth Editions Ltd,,,Selected Works of the Bronte Sisters,1376,,0,0,2005,0,48,0,0,0,0,0,Anne Brontë,844,0
-1551521911,Arsenal Pulp Press,,,Patience & Sarah (Little Sister's Classics),240,,0,0,2005,0,717,0,0,0,0,0,Isabel Miller,2186,0
+1551521911,Arsenal Pulp Press,,,Patience & Sarah ,240,,0,0,2005,0,717,0,0,0,0,0,Isabel Miller,2186,0
 1400034205,Vintage,,,The Razor's Edge,320,,6.333333333,4.153846154,2003,0,902,0,0,0,0,0,W. Somerset Maugham,1608,0
 1853260215,Wordsworth Editions,,,"The history ofTom Jones, a foundling",413,Ware,39.5,49.25,1992,0,617,94,0,0,0,0,Henry Fielding,1865,0
 193108209X,Library of America,810.8/0355,PS509.B37 B37 2002,Baseball,721,New York,0,0,2002,0,654,270,380,0,729,0,Nicholas Dawidoff,2021,0
@@ -2809,7 +2809,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 006109398X,HarperTorch,,,Treasure Box,384,,38,16.66666667,2005,0,226,0,0,0,0,0,Orson Scott Card,1266,4
 1573456632,Shadow Mountain,813/.54,,Stone tables,432,"Salt Lake City, Utah",1,80.42857143,2000,0,927,236,345,0,0,667,Orson Scott Card,1266,4
 023112189X,Columbia University Press,813/.52,PS3511.A86 S86 1999,William Faulkner,208,New York,20.5,0,1999,0,105,270,69,0,729,0,Nicolas Tredell,1527,0
-1841490237,Orbit,,,Prentice Alvin (The Tales of Alvin Maker),352,,0,0,1991,0,89,0,0,2,0,0,Orson Scott Card,1266,4
+1841490237,Orbit,,,Prentice Alvin,352,,0,0,1991,0,89,0,0,2,0,0,Orson Scott Card,1266,4
 158297103X,F & W Pubns Inc,808,,How to Write Science Fiction & Fantasy,,,0,68.66666667,,0,872,0,43,0,0,0,Orson Scott Card,1266,4
 1400065879,Random House,956.9405/4092,DS126.6.S42 H4413 2006,Ariel Sharon,490,New York,1,1.4,2006,0,803,270,301,32,729,0,Nir Hefez,302,0
 1400054877,Three Rivers Press,813/.6,PS3613.A57 A64 2004,"Angry black white boy, or, The miscegenation of Mason Detornay",335,New York,38,24,2004,0,1234,270,287,0,729,205,Adam Mansbach,337,0
@@ -2897,11 +2897,11 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 3453108159,Heyne,,,Chase.,175,,0,0,1996,0,1382,0,0,0,0,0,Dean Ray Koontz,1485,10
 140007598X,Anchor,,,Shakespeare,572,,0,0.25,2006,0,582,0,0,0,0,0,Peter Ackroyd,1215,0
 044661162X,Warner Vision Books,,CPB Box no. 2107 vol. 7,Chasing the dime,436,"New York, NY",0,17.22222222,2003,0,894,53,0,0,19,0,Michael Connelly,1264,10
-1853261408,Wordsworth Editions Ltd,,,Tales from Shakespeare (Wordsworth Children's Classics) (Wordsworth Children's Classics),224,,0,0.5,1999,0,48,0,0,0,0,0,Charles Lamb,566,0
+1853261408,Wordsworth Editions Ltd,,,Tales from Shakespeare,224,,0,0.5,1999,0,48,0,0,0,0,0,Charles Lamb,566,0
 032109333X,Pearson Longman,822.3/3,PR2755 .B4 2004,The complete works of Shakespeare,,New York,0,53.33333333,2004,0,1210,270,121,0,729,0,William Shakespeare,1811,0
 1593080646,Barnes & Noble Classics,,,Essential Tales and Poems of Edgar Allan Poe (Barnes & Noble Classics),688,,0,0,2004,0,1520,0,0,0,0,0,Edgar Allan Poe,1106,0
 1883011388,Library of America,818/.309,PS2602  1996,"Poetry, tales, and selected essays",1506,New York,0,83.5,1996,0,654,270,102,0,729,0,Edgar Allan Poe,1106,0
-1593081804,Barnes & Noble Classics,,,The Metamorphosis and Other Stories (Barnes & Noble Classics Series) (Barnes & Noble Classics),224,,0,8.428571429,2004,0,1520,0,0,0,0,0,Franz Kafka,1755,0
+1593081804,Barnes & Noble Classics,,,The Metamorphosis and Other Stories,224,,0,8.428571429,2004,0,1520,0,0,0,0,0,Franz Kafka,1755,0
 1557131775,Sun & Moon Press,839.8/236,PZ3.H1903 Vi 1994,Victoria,155,Los Angeles,3,19,1994,0,313,238,49,0,0,0,Knut Hamsun,746,0
 1931243190,Green Integer,,,"The Last Joy (Green Integer Books, 115)",279,,0,167,2003,0,1453,0,0,0,0,0,Knut Hamsun,746,0
 006093316X,HarperPerennial,,,The great and secret show,658,New York,0,1.5,1999,0,583,270,0,0,729,0,Clive Barker,1587,0
@@ -3020,7 +3020,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1572307021,Guilford Press,808,P301.5.P47 S75 2003,Persuasive communication,351,New York,0,93.66666667,2003,0,320,270,43,0,729,0,James B. Stiff,109,0
 1598163329,Tokyopop,741.5/952,PN6790.J34 L45 2006,Legend of Zipangu,,Hamburg,0,0,2006,0,1320,106,222,0,0,0,Aki Shimizu,773,0
 1400041279,Everyman's Library,,,The Origin of Species and the Voyage of the Beagle,972,,0,167,2003,0,763,0,0,0,0,0,Charles Darwin,611,0
-1857151992,Everyman's Library,,,Collected Stories (Everyman's Library Classics),911,,0,136,1994,0,763,0,0,0,0,0,Rudyard Kipling,250,0
+1857151992,Everyman's Library,,,Collected Stories ,911,,0,136,1994,0,763,0,0,0,0,0,Rudyard Kipling,250,0
 1853754153,Prion,,,Seven Men and Two Others (Prion Humour Classics),288,,0,0,2001,0,1356,0,0,0,0,0,Sir Max Beerbohm,745,0
 1931414165,Mikaya Press,,,The Brooklyn Bridge,48,,21.5,41.75,2006,0,1027,0,0,0,0,0,Elizabeth Mann,1170,0
 1932382607,IDW Pub.,,Comic Book 05806,Richard Matheson's Hell house,48,"San Diego, CA",0,0,2004,0,1142,70,0,0,0,0,Ian Edington,73,0
@@ -3034,7 +3034,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1902602684,New Island Books,,,The Builders (Open Door),71,,0,0,2002,0,1446,0,0,0,0,0,Maeve Binchy,1759,4
 3426621355,"Droemersche Verlagsanstalt Th. Knaur Nachf., GmbH & Co.",,,Cathys Traum.,731,,0,0,2002,0,740,0,0,0,0,0,Maeve Binchy,1759,4
 8484451143,GAIA,,,La Biblia de los Critales/ The Crystal Bible,400,,0,0,2003,0,244,0,0,0,0,0,Judy Hall,487,0
-034548357X,Modern Library,,,Inferno (Modern Library Classics),560,,0,402,2005,0,1343,0,0,0,0,0,Dante Alighieri,1121,0
+034548357X,Modern Library,,,Inferno,560,,0,402,2005,0,1343,0,0,0,0,0,Dante Alighieri,1121,0
 1582880956,Spellbinders,,,Watership Down,,,0,0,2004,0,481,0,0,0,0,0,,0,0
 1405308621,Dorling Kindersley Publishers Ltd,,,Caring for Your Dog,448,,0,2,2005,0,685,0,0,0,0,0,Bruce Fogle,1261,0
 1421500914,Viz Media,741.5/952,PN6790.J33 M,Howl's moving castle.,167,"San Francisco, CA",0,7,2005,0,448,325,222,0,0,0,Hayao Miyazaki,1358,0
@@ -3110,7 +3110,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1841491837,Orbit,,,Crossroads of Twilight (Wheel of Time),832,,0,0,2003,0,89,0,0,2,0,0,Robert Jordan,1790,2
 1857237501,Orbit,,,The Conan Chronicles I,512,,0,0,1999,0,89,0,0,2,0,0,Robert Jordan,1790,2
 1586633570,SparkNotes,,,Spark Notes Frankenstein,72,,0,0,2002,0,384,0,0,0,0,0,SparkNotes Editors,998,0
-074325578X,.,,,Frankenstein : a Kaplan SAT score=raising classic / by Mary Shelley.,,,0,0,,0,120,0,0,0,0,0,,0,0
+074325578X,0,,,Frankenstein : a Kaplan SAT score=raising classic / by Mary Shelley.,,,0,0,,0,120,0,0,0,0,0,,0,0
 1419542249,Kaplan Publishing,,,Frankenstein,456,,30,3.435897436,2006,0,1305,0,0,0,0,0,Mary Shelley,77,0
 076660828X,Modern Pub.,,PZ7.M373 Fr 2004,Frankenstein,182,"New York, N.Y",0,1.2,2004,0,1274,269,0,0,4,0,C. Louise March,1006,0
 1400052211,Harmony Books,791.4302/8092,PN2287.S68 E45 2006,Jimmy Stewart,463,New York,35,1.333333333,2006,0,124,270,459,0,729,0,Marc Eliot,768,0
@@ -3254,12 +3254,12 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 006052510X,Perennial,813/.54,PR9199.4.F47 G46 2003,Happiness,309,New York,0,100.75,2003,0,1503,270,345,0,729,667,Will Ferguson,1230,0
 1555424430,Jossey-Bass,658.4/063,HD58.8 .N33 1992,Organizational architecture,284,San Francisco,0,53.33333333,1992,0,1207,201,393,0,1,0,David Nadler,1678,0
 1400031184,Vintage Books,,,Adam And Eve And Pinch Me A Novel,,,0,0,2003,0,940,0,0,0,0,0,Ruth Rendell,1199,0
-159308336X,Barnes & Noble Classics,,,Sense and Sensibility (Barnes & Noble Classics),352,,59,7.931034483,2004,0,1520,0,0,0,0,0,Jane Austen,1451,0
+159308336X,Barnes & Noble Classics,,,Sense and sensibility,352,,59,7.931034483,2004,0,1520,0,0,0,0,0,Jane Austen,1451,0
 1593080492,Barnes & Noble Classics,823/.7,PR4034 .S4 2003b,Sense and sensibility,349,New York,59,7.931034483,2003,0,1520,270,106,0,729,0,Jane Austen,1451,0
 1586633791,Spark Pub.,813.54,PS3561.E667 O53 2002,"One flew over the cuckoo's nest, Ken Kesey",65,"New York, NY",0,187.3333333,2002,0,1028,53,452,0,19,6,Selena Ward,530,0
 3502509131,Distribooks Inc,,,Morderblumen/Listerdale Mystery (German Translation),157,,0,0,1994,0,443,0,0,0,0,0,Agatha Christie,1965,0
 084467012X,Peter Smith Pub Inc,,,The Buried Mirror,,,0.6,46.91666667,1999,0,958,0,0,0,0,0,Carlos Fuentes,1180,0
-1559277580,Audio Renaissance,,,They Do It With Mirrors (Agatha Christie Audio Mystery),,,0,0,2002,0,170,0,0,0,0,0,Agatha Christie,1965,0
+1559277580,Audio Renaissance,,,They Do It With Mirrors,,,0,0,2002,0,170,0,0,0,0,0,Agatha Christie,1965,0
 1400076501,Vintage Books,,,The Lemon Table Stories,,,0,0,2005,0,940,0,0,0,0,0,Julian Barnes,144,1
 8497939212,,,,Artemis Fowl Ii-encuentro En El Artico,320,,0,0,,0,0,0,0,0,0,0,Eoin Colfer,520,0
 033043313X,Picador,,,Chasing the Monsoon,273,,1.5,0.166666667,2005,0,1244,0,0,0,0,0,Alexander Frater,903,0
@@ -3289,7 +3289,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1568363567,Kodansha America,,,The Last Shogun,256,,0,0,2004,0,374,0,0,0,0,0,Ryotaro Shiba,1741,0
 1567430287,Amistad,813/.52,PS3515.U789 Z963 1993,Zora Neale Hurston,330,New York,0,134,1993,0,1201,270,69,0,729,0,Anthony Appiah,519,0
 1595325557,Tokyopop,741.5,,The Tarot Café,172,Hamburg,0,58.71428571,2002,0,1320,106,229,0,0,0,Sang-sŏn Pak,1558,0
-1861891849,Reaktion,,,'Photos of the Gods',239,London,3,7.666666667,2004,0,821,188,0,0,0,0,Christopher Pinney,34,0
+1861891849,Reaktion,,,Photos of the Gods',239,London,3,7.666666667,2004,0,821,188,0,0,0,0,Christopher Pinney,34,0
 1400034620,Anchor Books,364.1/524,E842.9 .P67 2003,Case closed,608,New York,0,33.2,2003,0,140,270,170,0,729,0,Gerald L. Posner,1153,0
 014044310X,Penguin Classics,,,"Orlando Furioso, Part Two",800,,0,0,1977,0,196,0,0,0,0,0,Ludovico Ariosto,300,0
 014024364X,Penguin Books,947.08/3,DK260 .F54 1998,A people's tragedy,923,"New York, N.Y",0.75,71.88888889,1998,0,397,269,425,1,4,0,Orlando Figes,458,0
@@ -3401,7 +3401,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 044651666X,Warner Books,641.5/638,RM237.7 .M435 1994,Chocolate and the art of low-fat desserts,192,"New York, NY",0,0,1994,0,430,53,7,0,19,0,Alice Medrich,349,0
 1580082688,Ten Speed Press,641.8/15,TX769 .R4147 2001,The bread baker's apprentice,304,Berkeley,0,0,2001,0,1484,42,137,0,0,0,"Reinhart, Peter.",76,0
 006000942X,Harper,,,How to Read Literature Like a Professor,,,0,9.666666667,2003,0,1146,0,0,31,0,0,Thomas C. Foster,581,0
-1599051125,"Saddleback Educational Publishing, Inc.",,,"Long Way from Chicago, a Reading Guide (Saddleback's Focus on Reading Study Guides)",42,,0,7.625,2006,0,411,0,0,0,0,0,Lisa French,1593,0
+1599051125,"Saddleback Educational Publishing, Inc.",,,"Long Way from Chicago, a Reading Guide",42,,0,7.625,2006,0,411,0,0,0,0,0,Lisa French,1593,0
 014044145X,Penguin Classics,,,"The History of Rome from Its Foundation, Books XXI-XXX",712,,0,0,1965,0,196,0,0,0,0,0,Titus Livius,829,0
 076076896X,Barnes & Noble,,,Hannibal,543,,0.777777778,18.84615385,2005,0,1470,0,0,0,0,0,Theodore Ayrault Dodge,2125,0
 080411918X,Ballantine Books,,,A Patchwork Planet,320,,10.75,13.90909091,2001,0,449,0,0,59,0,0,Anne Tyler,470,3
@@ -3449,7 +3449,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1562010352,Blue Moon Books,,CPB Box no. 1974 vol. 4,The story of O,203,New York,0,140.5,1993,0,862,270,0,0,729,0,Dominique Aury,683,0
 1400031311,Anchor Books,,,The O. Henry Prize stories 2003,,New York,0,5,,0,140,270,0,0,729,0,Laura Furman,623,0
 1841192163,Constable and Robinson,,,Lion in the Valley (Amelia Peabody Murder Mystery),360,,0,0,2001,0,1574,0,0,0,0,0,Elizabeth Peters,1620,2
-1592574009,Alpha,,,The Complete Idiot's Guide to Business Plans (The Complete Idiot's Guide),336,,0,0,2005,0,207,0,0,0,0,0,Gwen Moran,1575,0
+1592574009,Alpha,,,The Complete Idiot's Guide to Business Plans,336,,0,0,2005,0,207,0,0,0,0,0,Gwen Moran,1575,0
 1590595521,Apress,,,Beginning PHP and MySQL 5,913,,0,0,2006,0,791,0,0,0,0,0,W. Jason Gilmore,1797,0
 382284778X,Taschen,,,Graphic design now,349,Köln,0,0,2005,0,438,190,0,0,0,0,Charlotte Fiell,2040,0
 1932420347,New Tradition Books,,,"My Dirty Thirties, Romantic Hedonism",144,,0,0,2004,0,1410,0,0,0,0,0,Kelly Carr,928,0
@@ -3524,7 +3524,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1857989341,Gollancz,,,The Gods Themselves,288,,0,80.28571429,2000,0,790,0,0,0,0,0,Isaac Asimov,1972,0
 1598530011,Library of America,,F229 .S592 2007,Writings,1329,New York,2,22,2007,0,654,270,0,0,729,0,John Smith,897,0
 019286209X,"Oxford University Press, USA",,,The Origins of Life,192,Oxford,0,0.25,2000,0,1427,16,0,0,0,0,John Maynard Smith,1714,0
-1593081251,Barnes & Noble Classics,,,Sense and Sensibility (Barnes & Noble Classics),352,,59,7.931034483,2004,0,1520,0,0,0,0,0,Jane Austen,1451,0
+1593081251,Barnes & Noble Classics,,,Sense and Sensibility ,352,,59,7.931034483,2004,0,1520,0,0,0,0,0,Jane Austen,1451,0
 067121148X,Simon & Schuster,818/.5402,PN6162 .S525 1985,Uncle Shelby's ABZ book,80,New York,0,0.5,1985,0,470,270,161,62,729,0,Shel Silverstein,1618,0
 1843170175,Michael O'Mara Books,,,J.K. Rowling A Biography,248,,0,0,2003,0,17,0,0,0,0,0,Sean Smith,1413,0
 3442451531,Goldmann,,,Das Zauberer- Handbuch. Die magische Welt der Joanne K. Rowling von A bis Z.,303,,0,0,2001,0,1367,0,0,0,0,0,Allan Zola Kronzek,702,0
@@ -3769,7 +3769,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 184046027X,Icon Books,823/.912,PR6011.O58 P37175 1998,"E. M. Forster, A  passage to India",168,"Duxford, Cambridge [England]",3,0,1998,0,1115,352,252,0,0,0,Betty Jay,1821,0
 014144116X,Penguin Books Ltd,,,A Passage to India (Penguin Classics),416,,3,35.9375,2005,0,1543,0,0,0,0,0,E. M. Forster,102,0
 019283388X,Oxford University Press,823/.8,PR4494 .N6 1998,No name,748,Oxford,59,11.5,1998,0,152,16,138,0,0,0,Wilkie Collins,1795,0
-185715018X,Everyman's Library,,,The Woman in White (Everyman's Library Classics),569,,59,2.8,1991,0,763,0,0,0,0,0,Wilkie Collins,1795,0
+185715018X,Everyman's Library,,,The Woman in White,569,,59,2.8,1991,0,763,0,0,0,0,0,Wilkie Collins,1795,0
 067102082X,Washington Square Pr.,,PR6062.A8139 G8 1998,The gun seller,339,New York,0,41,1996,0,122,270,0,0,729,0,Hugh Laurie,1357,0
 1900826240,CARTAGO,779/.092,TR647 .D64 1995,Robert Doisneau,128,London,12,21.25,1995,0,513,188,375,0,0,0,Peter Hamilton,679,0
 8466616926,Ediciones B,,,Criptonomicon,496,,0,0,2005,0,744,0,0,0,0,0,Neal Stephenson,169,3
@@ -4200,7 +4200,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 316007021,"Little, Brown and Company",813/.54,PS3569.I47292 D76 2009,Drood,784,"New York, USA",5.166666667,164.6153846,2009,1,863,367,345,17,51,667,Dan Simmons,404,1
 030726579X,Alfred A. Knopf,823/.914,PR6052.I7728 H43 2009,Heart and soul,,New York,5,368.5,2009,1,1344,270,324,35,729,89,Maeve Binchy,1759,4
 1416585834,Atria Books,813/.6,PS3617.U584 D64 2008,Dog on it,,New York,0,247.3636364,2008,1,1169,270,287,30,729,205,Spencer Quinn,995,3
-805082166,Henry Holt and Co.,,,Among the Mad (Maisie Dobbs Novels),320,,31.25,299.1666667,2009,1,746,0,0,4,0,0,Jacqueline Winspear,687,7
+805082166,Henry Holt and Co.,,,Among the Mad,320,,31.25,299.1666667,2009,1,746,0,0,4,0,0,Jacqueline Winspear,687,7
 385524927,Doubleday,813/.54,PS3554.E4427 W48 2008,While my sister sleeps,,New York,0,242.9090909,2008,1,1337,270,345,38,729,667,Barbara Delinsky,1308,5
 385523998,Doubleday,813/.54,PS3556.A3654 L47 2008,Lethal legacy,,New York,38,312.5714286,2008,1,1337,270,345,38,729,667,Linda Fairstein,1190,4
 375414495,Alfred A. Knopf,813/.6,PS3622.E744 C87 2009,Cutting for Stone,,"New York, USA",7.428571429,196.8,2009,1,1344,367,287,35,51,205,Abraham Verghese,1625,1
@@ -4326,7 +4326,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 345509188,Ballantine Books,813/.54,PS3554.E5345 A65 2009,Abyss,332,New York,0,203.625,2009,1,449,270,345,59,729,667,Troy Denning,712,3
 399156046,G.P. Putnam's Sons,813/.54,PS3557.O5826 L39 2009,The law of nines,,New York,4.5,249.2,2009,1,885,270,345,74,729,667,Terry Goodkind,2173,3
 399155910,G.P. Putnam's Sons,823/.914,PR6056.R27 E84 2009b,Even money,,New York,59,280.3333333,2009,1,885,270,324,74,729,89,Dick Francis,1045,3
-451462904, Roc Hardcover,,,The Sword of the Lady: A Novel of the Change (Change Series),,,0,545,2009,1,688,0,0,1,0,0,S. M. Stirling,1679,5
+451462904, Roc Hardcover,,,The Sword of the Lady: A Novel of the Change,,,0,545,2009,1,688,0,0,1,0,0,S. M. Stirling,1679,5
 525950575,Dutton Adult,,,UntDickey2009,,,0,451.6666667,,1,1665,0,0,6,0,0,Eric Jerome Dickey,1160,2
 425229734,Berkley Books,813/.6,PS3606.E36 D3895 2009,Dark slayer,401,New York,0,396.1666667,2009,1,1425,270,287,6,729,205,Christine Feehan,1898,6
 399156429,,,,Spartan Gold,,,0,349.5,,1,0,0,0,0,0,0,Clive Cussler,1502,25
@@ -4351,7 +4351,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 399155988,G.P. Putnam's Sons,813/.6,PS3569.A516 R68 2009,Rough country,388,New York,9,427.75,2009,1,885,270,287,74,729,205,John Sandford,1262,15
 1439165394,Scribner,,,Her Fearful Symmetry,,,20,251.6363636,2009,1,505,0,0,31,0,0,Bill Niffenegger,447,1
 1594488878,Riverhead Books,823/.914,PR6058.O689 J85 2009,"Juliet, naked",406,New York,0,278.8888889,2009,1,1526,270,324,9,729,89,Nick Hornby,1343,2
-778326896,Mira,,,"Lakeshore Christmas (Lakeshore Chronicles, Book 6)",384,,0,339.5,2009,1,1057,0,0,5,0,0,Susan Wiggs,1886,3
+778326896,Mira,,,Lakeshore Christmas,384,,0,339.5,2009,1,1057,0,0,5,0,0,Susan Wiggs,1886,3
 758210248,Kensington Books,813/.6,PS3556.L685 P58 2009,Plum pudding murder,303,New York,17,239.3,2009,1,692,270,287,7,729,205,Joanne Fluke,66,7
 441017835,Ace Books,813/.54,PS3558.A6427 T68 2009,A touch of dead,,New York,0,269.8,2009,1,1204,270,345,14,729,667,Charlaine Harris,1188,11
 399155945,G.P. Putnam's Sons,813/.54,PS3566.A686 P75 2009,The professional,,New York,15.66666667,163.7272727,2009,1,885,270,345,74,729,667,Robert B. Parker,1817,10
@@ -4427,10 +4427,10 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 61147958,William Morrow,,,Horns,384,,0,496.4,2010,1,1614,0,0,65,0,0,Joe Hill,1989,2
 031258749X,St. Martin's Press,813/.54,PS3566.A539 L37 2010,The last surgeon,,New York,5,189,2010,1,1442,270,345,69,729,667,"Palmer, Michael",50,3
 399156240,G.P. Putnam's Sons,813/.54,PS3568.O243 F36 2010,Fantasy in death,356,New York,38,229.4545455,2010,1,885,270,345,74,729,667,J. D. Robb,526,12
-61138037,Eos,,,"Black Magic Sanction (Rachel Morgan, Book 8)",496,,0,538,2010,1,1089,0,0,3,0,0,Kim Harrison,946,6
+61138037,Eos,,,Black Magic Sanction,496,,0,538,2010,1,1089,0,0,3,0,0,Kim Harrison,946,6
 399156232,G.P. Putnam's Sons,813/.54,PS3566.A686 S67 2010,Split image,,New York,25,186,2010,1,885,270,345,74,729,667,Robert B. Parker,1817,10
 385343183,Delacorte Press,813/.54,PS3569.T33828 B54 2010,Big girl,323,New York,0,316.4285714,2010,1,930,270,345,42,729,667,Danielle Steel,1369,22
-758234899,Kensington,,,Apple Turnover Murder (Hannah Swensen Mysteries),304,,0,214.5454545,2010,1,829,0,0,2,0,0,Joanne Fluke,66,7
+758234899,Kensington,,,Apple Turnover Murder ,304,,0,214.5454545,2010,1,829,0,0,2,0,0,Joanne Fluke,66,7
 743296435,Atria Books,813/.54,PS3566.I372 H68 2010,House rules,532,New York,0,203.6363636,2010,1,1169,270,345,30,729,667,Jodi Picoult,185,6
 446563080,Grand Central Pub.,813/.6,PS3607.R348 A64 2010,Abraham Lincoln,,New York,0,370.5,2010,1,393,270,287,34,729,205,Seth Grahame-Smith,495,1
 451463153,Roc,813/.54,PS3552.I7594 S54 2010,Shalador's lady,476,New York,0,438.75,2010,1,1329,270,345,6,729,667,Anne Bishop,1549,3
@@ -4467,7 +4467,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 1439172269,,,,The Shadow of Your Smile,,,4,127.4210526,,1,0,0,0,0,0,0,Mary Higgins Clark,121,11
 1400065747,Random House,,,Every Last One,,,0,0,2010,1,803,0,0,32,0,0,,0,0
 1439170258,,813/.54,PS3553.L278 W74 2010b,Wrecked,261,,21.4,344.75,2010,1,0,0,345,0,0,667,Carol Higgins Clark,1545,4
-076531505X,Tor Books,,,A Mighty Fortress (Safehold Book 4),720,,0,226.3333333,2010,1,31,0,0,11,0,0,David Weber,635,13
+076531505X,Tor Books,,,A Mighty Fortress,720,,0,226.3333333,2010,1,31,0,0,11,0,0,David Weber,635,13
 1400069262,Spiegel & Grau,813/.54,PR9199.3.M3855 B43 2010,Beatrice and Virgil,,New York,0,183.3333333,2010,1,856,270,345,2,729,667,Yann Martel,1582,1
 1599951967,,,,The Bride Collector,,,0,0,,1,0,0,0,0,0,0,,0,0
 446564087,Grand Central Pub.,813/.54,PS3552.A446 D45 2010,Deliver us from evil,,New York,0,294.75,2010,1,393,270,345,34,729,667,David Baldacci,801,16
@@ -4490,7 +4490,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 385343663,Dial Press,813/.6,PR9199.4.R323 I57 2010,The imperfectionists,272,New York,0,363,2010,1,1286,270,287,5,729,205,Tom Rachman,1362,1
 345471016,Ballantine Books,813/.54,PS3566.I274 S34 2010,The scent of rain and lightning,,New York,1,277.8333333,2010,1,449,270,345,59,729,667,Nancy Pickard,1280,1
 312554168,St. Martin's Press,,,Heart of the Matter,,,0,205.625,2010,1,1442,0,0,69,0,0,Emily  Griffin,116,1
-446554960,Grand Central Publishing,,,Fever Dream (Special Agent Pendergast #10),,,0,309.6666667,2010,1,311,0,0,17,0,0,Douglas J. Preston,1108,9
+446554960,Grand Central Publishing,,,Fever Dream,,,0,309.6666667,2010,1,311,0,0,17,0,0,Douglas J. Preston,1108,9
 61560855,William Morrow,813/.54,PS3552.R68543 E98 2010,Executive intent,,New York,35,345.6666667,2010,1,1614,270,345,65,729,667,Dale Brown,2126,3
 385340583,Delacorte Press,813/.54,PS3553.H4838 A614 2010,61 hours,,New York,2,182,2010,1,930,270,345,42,729,667,Lee Child,662,8
 399156496,G. P. Putnam's Sons,813/.54,PS3569.A516 S76 2010,Storm prey,,New York,9,261,2010,1,1253,270,345,46,729,667,John Sandford,1262,15
@@ -4569,7 +4569,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 765326353,Tor,,,The Way of Kings,1008,,0,0,2010,1,1141,0,0,16,0,0,Brandon Sanderson,497,5
 399156747,Putnam,,,Body Work (V.I. Warshawski #14),,,0,233.5555556,2010,1,458,0,0,13,0,0,Sara Paretsky,1955,2
 312303785,St. Martin's,,,Maybe This Time,,,0,205.6666667,2010,1,1479,0,0,1,0,0,Jennifer Crusie,1574,1
-312546564,St. Martin's Press,,,No Mercy (Dark-Hunter Novels),448,,1,208.625,2010,1,1442,0,0,69,0,0,Sherrilyn Kenyon,1460,7
+312546564,St. Martin's Press,,,No Mercy,448,,1,208.625,2010,1,1442,0,0,69,0,0,Sherrilyn Kenyon,1460,7
 670022047,Viking,813/.54,PS3563.C3868 G48 2010,Getting to happy,,New York,1,338.1666667,2010,1,63,270,345,25,729,667,Terry McMillan,369,2
 385523211,Spiegel & Grau,813/.6,PS3607.R696 A86 2010,Ape house,,New York,0,268.6,2010,1,856,270,287,2,729,205,Sara Gruen,370,2
 399156828,Putnam,,,Zero History,,,0,267.3333333,2010,1,458,0,0,13,0,0,William F. Gibson,201,1
@@ -4709,9 +4709,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 031238078X,St. Martin's Press,,,Save Me,,,0,253.5,2011,1,1442,0,0,69,0,0,Lisa Scottoline,232,9
 307593916,Knopf,,,Please Look After Mom,,,1,158.2222222,2011,1,1147,0,0,13,0,0,Kyung-sook Shin,985,1
 1439165351,Atria Books,813/.54,PS3569.O7374 M55 2011,Midnight and the meaning of love,613,New York,0,543.75,2011,1,1169,270,345,30,729,667,Sister Souljah,425,2
-553807080,Bantam,,,"Hiss of Death
-            
-                Mrs Murphy Mysteries Hardcover",,,0,197.4285714,2011,1,160,0,0,7,0,0,Michael Gellatly,1934,1
+553807080,Bantam,,,Hiss of Death Mrs Murphy Mysteries Hardcover,,,0,197.4285714,2011,1,160,0,0,7,0,0,Michael Gellatly,1934,1
 446573108,Grand Central Publishing,,,The Sixth Man,,,0,218.4166667,2011,1,311,0,0,17,0,0,David Baldacci,801,16
 399157379,G.P. Putnam's Sons,813/.54,PS3561.R44 Q85 2011,Quicksilver,342,New York,39.5,209,2011,1,885,270,345,74,729,667,Amanda Quick,1421,5
 312651201,St. Martin's Press,,,Eve,,,0,240.4545455,2011,1,1442,0,0,69,0,0,Iris Johansen,2117,16
@@ -5080,9 +5078,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 385343205,Delacorte Press,813/.54,PS3569.T33828 S575 2012,The sins of the mother,,New York,0,447.3333333,2012,1,930,270,345,42,729,667,Danielle Steel,1369,22
 385344406,Delacorte Press,813/.6,PS3613.O527 I34 2012,Iced,495,"New York, USA",5.5,450.6666667,2012,1,930,367,287,42,51,205,Karen Marie Moning,2147,4
 525953604,Dutton,813/.54,PS3553.H473 G58 2012,The giving quilt,,New York,0,140.4615385,2012,1,793,270,345,34,729,667,Jennifer Chiaverini,1937,9
-399162925,Putnam Adult,,,"Poseidons Arrow
-            
-                Dirk Pitt Adventure",,,0,448.6666667,2012,1,406,0,0,25,0,0,Dirk Cussler,1896,1
+399162925,Putnam Adult,,,Poseidons Arrow Dirk Pitt Adventure,,,0,448.6666667,2012,1,406,0,0,25,0,0,Dirk Cussler,1896,1
 62124269,Harper,813/.54,PS3561.I496 F55 2012,Flight behavior,,New York,4,142.9,2012,1,1146,270,345,31,729,667,Barbara Kingsolver,1068,2
 1451638450,Baen Books,813/.54,PS3552.U397 C37 2012,Captain Vorpatril's alliance,,"Riverdale, NY",0,125.0714286,2012,1,785,25,345,6,5,667,Lois McMaster Bujold,827,3
 141659521X,Atria Books,,,The Last Man,433,"New York, USA",0,0,2012,1,1169,367,0,30,51,0,Vince Flynn,1232,5
@@ -5098,7 +5094,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 446554995,Grand Central Pub.,813/.54,PS3566.R3982 T96 2012,Two graves,480,New York,0,347.25,2012,1,393,270,345,34,729,667,Douglas J. Preston,1108,9
 399160663,Putnam Adult,,,Empire And Honor,,,0,238.4285714,2012,1,406,0,0,25,0,0,"William E., IV Butterworth",282,1
 345506936,,813/.54,PS3558.O88217 S56 2013b,Shadow woman,319,,0,456.3333333,2013,1,0,0,345,0,0,667,Linda Howard,1057,6
-765325950,Tor Books,,,A Memory of Light (Wheel of Time),912,United States,0,42.5,2013,1,31,239,0,11,1,0,,0,0
+765325950,Tor Books,,,A Memory of Light,912,United States,0,42.5,2013,1,31,239,0,11,1,0,,0,0
 812993802,Random House,813/.54,PS3569.A7897 T46 2013,Tenth of December,272,New York,1,4.5,2013,1,803,270,345,32,729,667,George Saunders,1277,1
 399163832,G.P. Putnam's Sons,813/.6,PS3557.R13 K56 2013,Kinsey and me,286,New York,0,344,2013,1,885,270,287,74,729,205,Sue Grafton,246,5
 039915986X,Putnam Adult,,,Collateral Damage A Stone Barrington Novel,,,0,328.6,2012,1,406,0,0,25,0,0,Stuart Woods,565,20
@@ -5131,18 +5127,12 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 316097519,,813/.54,PS3566.A822 A73 2013,"Alex Cross, run",407,,20,136.4666667,2013,1,0,0,345,0,0,667,James Patterson,1772,44
 61990639,William Morrow & Company,,,The Sound Of Broken Glass,,,0,217.3333333,2013,1,539,0,0,1,0,0,Deborah Crombie,2207,3
 307959961,Alfred A. Knopf,813/.6,PS3608.O24 G48 2013,Ghostman,,New York,5.5,446,2013,1,1344,270,287,35,729,205,Roger Hobbs,508,1
-399158820,Putnam Adult,,,"Calculated in Death
-            
-                In Death Hardcover",,,0,0,2013,1,406,0,0,25,0,0,J. D. Robb,526,12
+399158820,Putnam Adult,,,Calculated in Death In Death Hardcover,,,0,0,2013,1,406,0,0,25,0,0,J. D. Robb,526,12
 1439102767,Atria,,,The Storyteller,,,0,231.8333333,2013,1,992,0,0,4,0,0,Jodi Picoult,185,6
 758280343,Kensington Publishing Corporation,,,Red Velvet Cupcake Murder,,,0,259,2013,1,1276,0,0,1,0,0,Joanne Fluke,66,7
 312550650,Minotaur Books,,,Bad Blood,,,0,109,2013,1,1564,0,0,15,0,0,Dana Stabenow,1477,3
-441020011,Ace Books,,,"Frost Burned
-            
-                Mercy Thompson",,,0,262.8333333,2013,1,1204,0,0,14,0,0,Patricia Briggs,1651,6
-399161775,Putnam Adult,,,"The Striker
-            
-                Isaac Bell Adventure",,,0,178.5555556,2013,1,406,0,0,25,0,0,Clive Cussler,1502,25
+441020011,Ace Books,,,Frost Burned Mercy Thompson,,,0,262.8333333,2013,1,1204,0,0,14,0,0,Patricia Briggs,1651,6
+399161775,Putnam Adult,,,The Striker Isaac Bell Adventure,,,0,178.5555556,2013,1,406,0,0,25,0,0,Clive Cussler,1502,25
 1451647034,Howard Books,813/.54,PS3561.I4873 C47 2013,The chance,,"Nashville, Tenn",0,0,2013,1,233,290,345,2,2,667,Karen Kingsbury,734,5
 786963646,Wizards of the Coast,,,The Last Threshold,,,0,0,2013,1,1265,0,0,8,0,0,R. A. Salvatore,48,8
 1451638698,Baen Books,,,Shadow Of Freedom,,,0,167,2013,1,785,0,0,6,0,0,David Weber,635,13
@@ -5300,9 +5290,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 385343221,,813/.54,PS3569.T33828 W56 2013,Winners,334,,0,341,2013,1,0,0,345,0,0,667,Danielle Steel,1369,22
 1250027659,St. Martin's Press,,,Accused,,,0,169.25,2013,1,1442,0,0,69,0,0,Lisa Scottoline,232,9
 1451647050,,813/.54,PS3561.I4873 F54 2013,Fifteen minutes,353,,0,456,2013,1,0,0,345,0,0,667,Karen Kingsbury,734,5
-399158081,Putnam Adult,,,"Mirage
-            
-                Oregon Files Hardcover",,,0,202.125,,1,406,0,0,25,0,0,Clive Cussler,1502,25
+399158081,Putnam Adult,,,Mirage Oregon Files Hardcover,,,0,202.125,,1,406,0,0,25,0,0,Clive Cussler,1502,25
 62107313,Ecco,,,The valley of amazement,,,0,185.625,2013,1,595,0,0,6,0,0,Amy Tan,1555,1
 307378411,,823/.914,PR6063.C326 M56 2013,The Minor Adjustment Beauty Salon,242,,4,133.6666667,2013,1,0,0,324,0,0,89,Alexander McCall Smith,1629,9
 1400065941,,813/.54,PS3556.L26 A45 2013,The all-girl filling station's last reunion,347,,0,287,2013,1,0,0,345,0,0,667,Fannie Flagg,1076,2
@@ -5329,9 +5317,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 385344058,"Random House Publishing Group, bantam books paperback edition",,,The Dead in Their Vaulted Arches,336,New York,0,167,2014,1,510,270,0,2,729,0,Alan Bradley,1043,3
 62196243,,813/.54,PS3563.A878 D39 2014,The days of Anna Madrigal,270,,2,319.8,2014,1,0,0,345,0,0,667,Armistead Maupin,1738,1
 345516532,,813/.6,PS3608.O725 U53 2013,Under the wide and starry sky,474,,0,671.5,2013,1,0,0,287,0,0,205,Nancy Horan,392,1
-62237187,HarperCollins Publishers Inc,,,"Hunting Shadows
-            
-                Inspector Ian Rutledge Mysteries Hardcover",,,0,167,2014,1,326,0,0,1,0,0,Charles Todd,193,2
+62237187,HarperCollins Publishers Inc,,,Hunting Shadows Inspector Ian Rutledge Mysteries Hardcover,,,0,167,2014,1,326,0,0,1,0,0,Charles Todd,193,2
 1400065755,,813/.54,PS3567.U336 S75 2014,Still life with bread crumbs,252,,0,684.5,2014,1,0,0,345,0,0,667,Anna Quindlen,780,1
 62291408,Harper,,,Ripper,,,0,0,2014,1,1146,0,0,31,0,0,,0,0
 385351836,,813/.6,PS3614.O9255 A6 2014,One more thing,276,,0,0,2014,1,0,0,287,0,0,205,B. J. Novak,2038,1
@@ -5618,7 +5604,7 @@ ISBN,Publisher,Dewey,LC,Title,Number of Pages,Publish Place,Subject Place,Subjec
 765376474,A Tom Doherty Associates Book,,,A Gathering of Shadows,,,21,67.66666667,2016,1,1468,0,0,1,0,0,,0,0
 399176608,G.P. Putnam's Sons,,,Off the Grid,,,0,167,2016,1,885,0,0,74,0,0,C. J. Box,845,7
 1455536342,,813/.54,PS3554.E1755 S74 2016,The steel kiss,486,,20.25,108.6666667,2016,1,0,0,345,0,0,667,Jeffery Deaver,1270,10
-802124801,Atlantic Monthly Press,,,The Waters of Eternal Youth (Commissario Brunetti #25),,,0,167,2016,1,840,0,0,6,0,0,Donna Leon,753,5
+802124801,Atlantic Monthly Press,,,The Waters of Eternal Youth,,,0,167,2016,1,840,0,0,6,0,0,Donna Leon,753,5
 1501110721,Simon & Schuster,,,Clawback,,,0,125.4705882,2016,1,470,0,0,62,0,0,J. A. Jance,815,9
 034553106X,Delacorte Press,,,Property of a Noblewoman,,,0,232.1666667,2016,1,930,0,0,42,0,0,Danielle Steel,1369,22
 525953000,Viking,,,At the Edge of the Orchard,,,0,167,2016,1,63,0,0,25,0,0,Tracy Chevalier,1971,1
