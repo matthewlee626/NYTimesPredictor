@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 from scipy import stats
 import csv
 import numpy as np
+import os.path
 
 fiction = pd.read_csv("fiction.csv", delimiter=",")
 nonfiction = pd.read_csv("nonfiction.csv", delimiter=",")
@@ -44,7 +45,7 @@ def predict(given_csv, k, colorstart):
     # purely for graphing
     key_counter = 0
     keys = []
-    keyindex = [73]
+    keyindex = [0]
 
     n = 3
 
@@ -63,14 +64,23 @@ def predict(given_csv, k, colorstart):
     classifier = LinearRegression()
 
     # count = 0
+
+    isbnsY = []
+
+
     for n in range(3, k):
         parameters = []
         degree = 2
 
         nList.append(n)
-        nY.clear()
-        for j in clean.keys():
-            nY.append(clean[j][n])
+        #nY.clear()
+        badEntriesIndex = []
+
+        if n == 3:
+            nY.clear()
+
+            for j in clean.keys():
+                nY.append(clean[j][n])
 
         for item in range(len(nX)):
 
@@ -104,8 +114,72 @@ def predict(given_csv, k, colorstart):
             gcoefsFinal = list(gcoefs)[:len(gcoefs) - 1]
             gcoefsFinal.append(last)
 
+            # searches
+            curISBNnoZero = curISBN[1:]
+            if os.path.isfile(
+                    "C:\\Users\\matth\\Desktop\\NYTimesPredictor\\datadump\\" + curISBN + ".csv"):  # for now, until we get all the data
+                curSearchesDirty = pd.read_csv(
+                    "C:\\Users\\matth\\Desktop\\NYTimesPredictor\\datadump\\" + curISBN + ".csv",
+                    delimiter=",")  # cuz not clean
+            elif os.path.isfile("C:\\Users\\matth\\Desktop\\NYTimesPredictor\\datadump\\" + curISBNnoZero + ".csv"):
+                curSearchesDirty = pd.read_csv(
+                    "C:\\Users\\matth\\Desktop\\NYTimesPredictor\\datadump\\" + curISBNnoZero + ".csv", delimiter=",")
+            else:
+                badEntriesIndex.append(item)
+                continue
+            curSearchesBusty = curSearchesDirty[['GT_SearchIndex']].values.tolist()  # busty cuz not flat
+            curSearches = [item for sublist in curSearchesBusty for item in sublist]  # flatten
+            if len(curSearches) == 0:  # if file empty
+                # print(curSearches)
+                badEntriesIndex.append(item)
+                continue
 
-            parameters.append(coefsFinal + gcoefsFinal)
+            isbnsY.append(curISBN)
+            count = 0
+            for j in curSearches:
+                if j == 0:  # if searches that day is 0
+                    count += 1
+
+            if count / len(curSearches) > 0.25:  # if more than 25% of the searches is 0, change to weekly
+                curSearchesWeekly = []
+                count = 0
+                accumalativeSearches = 0
+                totalIterations = 0
+                for j in curSearches:
+                    # for j in curSearches[4:]:
+
+                    totalIterations += 1
+                    count += 1
+                    accumalativeSearches += j
+                    if count == 7:  # every 7 days (1 week), we record the sales that week
+                        if totalIterations < 7 * (k + 4):
+                            curSearchesWeekly.append(accumalativeSearches)
+                            accumalativeSearches = 0
+                            count = 0
+                    # if totalIterations == 7*(k+4):  # cuz start data starts from 1 month before
+                    #     break
+
+            elif count / len(curSearches) <= 0.25:
+                curSearchesWeekly = []
+                totalIterations = 0
+
+                for j in curSearches:
+                    # for j in curSearches[4:]:
+                    if totalIterations < 7 * (k + 4):
+                        totalIterations += 1
+                        curSearchesWeekly.append(j)  # well its rly daily searches but too lazy to make another var
+
+                        # break
+
+
+            scoefs = np.polyfit(list(range(len(curSearchesWeekly))), curSearchesWeekly, 2)
+            scoefsFinal = list(scoefs)[:len(scoefs) - 1]
+
+            parameters.append(coefsFinal + gcoefsFinal + scoefsFinal)
+
+        for i in reversed(badEntriesIndex):
+            del nX[i]
+            del nY[i]
 
         for params in parameters:
             for e in range(2, degree+1):
@@ -143,13 +217,14 @@ def predict(given_csv, k, colorstart):
     colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#00ffff', '#ff00ff', '#ffff99']
     for key in range(len(keys)):
         color = colors[key+colorstart]
-        plt.plot(nList, clean[keys[key]][0:k], label='Actual: ' + titles[key], color=color)
-        plt.plot(nList, nX[keyindex[key]][0:k], label='Predicted: ' + titles[key], linestyle=':', color=color)
+        #plt.plot(nList, clean[isbns[0]][0:k], label='Actual: ' + titles[key], color=color)
+        #plt.plot(nList, nX[0][0:k], label='Predicted: ' + titles[key], linestyle=':', color=color)
+        plt.plt()
         #print(keys)
         #print(clean[keys[key]][0:k])
         #print(nX[keyindex[key]][0:k])
     plt.title("First Model: Building NYTimes Best Seller Path by predicting the n+1th ranking from the first n rankings")
-    #print(maeList)
+    print(maeList)
     #plt.plot(nList, maeList)
 
     #print(count)

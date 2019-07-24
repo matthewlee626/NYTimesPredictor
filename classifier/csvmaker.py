@@ -71,9 +71,12 @@ with open(yesorno + ".json", mode='r') as inputs:
             placewriter.writerow([k, v])
         # writing the csv
         '''
+        subject_count = 0
 
         for row in subjectreader:
-            subjects[row[0]] = int(row[1])
+            if subject_count > 1:
+                subjects[row[0]] = int(row[1])
+            subject_count += 1
 
         print(subjects)
 
