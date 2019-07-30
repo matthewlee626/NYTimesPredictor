@@ -42,7 +42,7 @@ def predict(given_csv, k):
 
     isbns = list(clean.keys())
 
-    print(clean)
+    #print(clean)
 
     # add first 3
     nX = []
@@ -52,16 +52,24 @@ def predict(given_csv, k):
     goodISBNs = []
     badEntriesIndex = []
 
+    masternX = []
+
     for i in clean.keys():
         nX.append(clean[i][0:3])
+        masternX.append(clean[i][0:k])
 
-    print('nx length = ', len(nX))
+
+    #print('nx length = ', len(nX))
 
     # graphing a specific book
     wannaCheckIsbn = '0525952926'
     wannaCheckIsbnIndex = 0
     wannaCheckIsbnPredictions = []
     wannaCheckIsbnActual = clean[wannaCheckIsbn][0:k]
+
+
+    mastergenre =[]
+    mastersearch = []
 
     # model
     for n in range(3, k):
@@ -78,7 +86,11 @@ def predict(given_csv, k):
 
             #ranking
             # slope, intercept, r_value, p_value, std_err = stats.linregress(list(range(len(nX[i]))), nX[i])
-            model = np.polyfit(list(range(len(nX[i]))), nX[i], 2)
+            #if n == k-1:
+                #masternX.append(nX[i])
+                #print('adding')
+
+            model = np.polyfit(list(range(len(nX[i]))), nX[i], 1)
             last = nX[i][len(nX[i]) - 1]
             slope = model[0]
             slope1 = model[1]
@@ -98,11 +110,22 @@ def predict(given_csv, k):
             flattened = [item for sublist in listG for item in sublist]
             curWeek = flattened.index(weeks[curISBN][0])
 
+            #for j in range(curWeek-2, curWeek+1):
+            #this the correct for, we messed up
+
             for j in range(curWeek-3, curWeek):
                 prevGenrePercent.append(genreData[[curGenre]].iloc[j][0])
 
             # gSlope, gIntercept, gR_value, gP_value, gStd_err = stats.linregress(list(range(len(prevGenrePercent))), prevGenrePercent)
-            model = np.polyfit(list(range(len(prevGenrePercent))), prevGenrePercent, 2)
+            if n == 9:
+                genreadd = []
+
+                for k in range(curWeek-n, curWeek+1):
+                    genreadd.append(genreData[[curGenre]].iloc[k][0])
+                mastergenre.append(genreadd)
+                print('adding2')
+
+            model = np.polyfit(list(range(len(prevGenrePercent))), prevGenrePercent, 1)
             gSlope0 = model[0]
             gSlope1 = model[1]
 
@@ -117,11 +140,13 @@ def predict(given_csv, k):
                 if n > 3:
                     print('suprise!')
                 badEntriesIndex.append(i)
+                print("ok")
                 continue
             curSearchesBusty = curSearchesDirty[['GT_SearchIndex']].values.tolist()  # busty cuz not flat
             curSearches = [item for sublist in curSearchesBusty for item in sublist]  # flatten
             if len(curSearches) == 0:  # if file empty
                 badEntriesIndex.append(i)
+                print("ok")
                 continue
 
             count = 0
@@ -129,41 +154,46 @@ def predict(given_csv, k):
                 if j == 0:  # if searches that day is 0
                     count += 1
 
-            if count/len(curSearches) > 0.25:  # if more than 25% of the searches is 0, change to weekly
-                curSearchesWeekly = []
-                count = 0
-                accumalativeSearches = 0
-                totalIterations = 0
-                for j in curSearches:
+            #if count/len(curSearches) > 0.25:  # if more than 25% of the searches is 0, change to weekly
+            curSearchesWeekly = []
+            count = 0
+            accumalativeSearches = 0
+            totalIterations = 0
+            for j in curSearches:
+            # for j in curSearches[4:]:
+
+                totalIterations += 1
+                count += 1
+                accumalativeSearches += j
+                if count == 7:  # every 7 days (1 week), we record the sales that week
+                    if totalIterations < 7 * (k + 4):  # cuz start data starts from 1 month before
+                        curSearchesWeekly.append(accumalativeSearches)
+                        accumalativeSearches = 0
+                        count = 0
+
+            #elif count/len(curSearches) <= 0.25:
+                #curSearchesWeekly = []
+                #totalIterations = 0
+
+                #for j in curSearches:
                 # for j in curSearches[4:]:
-
-                    totalIterations += 1
-                    count += 1
-                    accumalativeSearches += j
-                    if count == 7:  # every 7 days (1 week), we record the sales that week
-                        if totalIterations < 7 * (k + 4):  # cuz start data starts from 1 month before
-                            curSearchesWeekly.append(accumalativeSearches)
-                            accumalativeSearches = 0
-                            count = 0
-
-            elif count/len(curSearches) <= 0.25:
-                curSearchesWeekly = []
-                totalIterations = 0
-
-                for j in curSearches:
-                # for j in curSearches[4:]:
-                    if totalIterations < 7 * (k + 4):
-                        totalIterations += 1
-                        curSearchesWeekly.append(j)  # well its rly daily searches but too lazy to make another var
+                    #if totalIterations < 7 * (k + 4):
+                        #totalIterations += 1
+                       #curSearchesWeekly.append(j)  # well its rly daily searches but too lazy to make another var
 
             # sSlope, sIntercept, sR_value, sP_value, sStd_err = stats.linregress(list(range(len(curSearchesWeekly))), curSearchesWeekly)
-            model = np.polyfit(list(range(len(curSearchesWeekly))), curSearchesWeekly, 2)
+            if n == 9:
+                mastersearch.append(curSearchesWeekly)
+                print('adding3')
+
+            model = np.polyfit(list(range(len(curSearchesWeekly))), curSearchesWeekly, 1)
             sSlope0 = model[0]
             sSlope1 = model[1]
             # sSlope2 = model[2]
 
             #append params
             params.append([slope, slope1, last, gSlope0, gSlope1, sSlope0, sSlope1])
+            #params.append([slope, last, gSlope0, sSlope0])
             # params.append([slope, last, gSlope0, gSlope1])
 
             if n == k-1:
@@ -172,9 +202,10 @@ def predict(given_csv, k):
                     print('index = ', i)
                     print('curISBN = ', curISBN)
 
+
         # remove bad entries
         if n == 3:
-            print('lenght of nX = ', len(nX))
+            print('length of nX = ', len(nX))
             print('number of bad books = ', len(badEntriesIndex))
 
         if n == 3:
@@ -183,15 +214,15 @@ def predict(given_csv, k):
                 del nY[i]
                 del isbns[i]
 
+                del masternX[i]
                 if n == k-1:
                     if i < wannaCheckIsbnIndex:
                         wannaCheckIsbnIndex = wannaCheckIsbnIndex - 1
 
         if n > 3:
-            print(len(nY), max(badEntriesIndex))
+            #print(len(nY), max(badEntriesIndex))
             for i in reversed(badEntriesIndex):
                 del nY[i]
-
         # to make ridge cv degree 2
         degree = 2
         for param in params:
@@ -206,7 +237,7 @@ def predict(given_csv, k):
         #classifier = LinearRegression()
         classifier.fit(params, nY)
         future = classifier.predict(params).tolist()
-        print(future)
+        #print(future)
         maeList.append((mae(nY, future)))
 
         for j in range(len(future)):
@@ -217,9 +248,15 @@ def predict(given_csv, k):
 
         if n == k-1:
             wannaCheckIsbnPredictions = nX[wannaCheckIsbnIndex]
+    print(masternX)
+    print(len(masternX))
+    print(mastergenre)
+    print(len(mastergenre))
+    print(mastersearch)
+    print(len(mastersearch))
 
-    print('coef', classifier.coef_)
-    print('errors', maeList)
+    #print('coef', classifier.coef_)
+    #print('errors', maeList)
     #plt.subplot(2, 1, 1)
     #plt.plot(nList, maeList)
 
@@ -228,17 +265,19 @@ def predict(given_csv, k):
     # print('predictions', wannaCheckIsbnPredictions)
 
     #plt.subplot(2, 1, 2)
+    '''
     plt.title(wannaCheckIsbn)
     plt.plot(range(k), wannaCheckIsbnPredictions, label='predicted', color='red', linestyle=':')
     plt.plot(range(k), wannaCheckIsbnActual, label='actual', color='green')
-    plt.gca().set_ylim([1, 20])
+    plt.gca().set_ylim([0, 20])
     plt.gca().invert_yaxis()
     print(maeList)
     print(wannaCheckIsbnActual)
     print(wannaCheckIsbnPredictions)
     print(nX)
+    '''
 
-    plt.show()
+    #plt.show()
 
 
 predict(fiction, 10)
