@@ -1,5 +1,7 @@
 const XLSX = require('xlsx')
 const googleTrends = require('google-trends-api');
+const fs = require('fs') 
+
 
 function to_json(workbook) {
     var result = {};
@@ -50,11 +52,11 @@ function write(json_raw, isbn) {
 	file_location = path.concat(file_name)
 	XLSX.writeFile(wb, file_location);
 
-	console.log(file_name + ' has been written.')
+	console.log(file_name + ' has been written.\n\n\n')
 }
 
 async function execute() {
-	var wb = XLSX.readFile('titleISBNbothdates.csv')
+	var wb = XLSX.readFile('titleISBNdateFiction.csv')
 	//var wb = XLSX.readFile('book_info.csv')
 
 	var sheetJSON = to_json(wb)
@@ -62,16 +64,35 @@ async function execute() {
 
 	//console.log(wsJSON)
 
+	var count = 0
+
 	for (i in wsJSON) {
 		//initial variables
 		var book = wsJSON[i]
 		var title = book['Title'].toString()
 		var isbn = (book['ISBN']).toString()
 
+		if (fs.existsSync('C:\\Users\\Siddhant\\Desktop\\sera\\nytimes_books\\js\\datadump\\' + isbn + '.csv')) { // or fs.existsSync
+    		count++;
+    		console.log(count)
+    		continue;
+		}
+
+		//if (book['LastDate'].toString().trim() !== 'Not Found') {
+		//	continue;
+		//}
+
 		var first_date_raw = new Date(1900, 0, book['FirstDate'] - 1)
-		var last_date_raw = new Date(1900, 0, book['LastDate'] - 1)
+		//console.log(book['LastDate'] !== 'Not Found')
+		if (book['LastDate'].toString().trim() !== 'Not Found') {
+			var last_date_raw = new Date(1900, 0, book['LastDate'] - 1)
+		} else {
+			var last_date_raw = new Date(1900, 0, book['FirstDate'] + 30 - 1)
+		}
+		//console.log(last_date_raw)
 		var first_date_yyyymmdd = first_date_raw.toISOString().slice(0,10)
 		var last_date_yyyymmdd = last_date_raw.toISOString().slice(0,10)
+		//console.log(last_date_yyyymmdd)
 
 		console.log(title)
 		console.log(isbn)
@@ -84,13 +105,18 @@ async function execute() {
 
 		//these dates correspond to the beginning and ending lookup dates
 		var start_date_raw = new Date(1900, 0, (book['FirstDate'] - days_before) - 1)
-		var end_date_raw = new Date(1900, 0, (book['LastDate'] + days_after) - 1)
+		if (book['LastDate'].toString().trim() !== 'Not Found') {
+			var end_date_raw = new Date(1900, 0, book['LastDate'] + days_after - 1)
+		} else {
+			var end_date_raw = new Date(1900, 0, book['FirstDate'] + 30 + days_after - 1)
+		}
+		//var end_date_raw = new Date(1900, 0, (book['LastDate'] + days_after) - 1)
 
 		var start_date_yyyymmdd = start_date_raw.toISOString().slice(0,10)
 		var end_date_yyyymmdd = end_date_raw.toISOString().slice(0,10)
 
 		console.log('Searching start date: ' + start_date_yyyymmdd)
-		console.log('Searching end date: ' + end_date_yyyymmdd + '\n\n')
+		console.log('Searching end date: ' + end_date_yyyymmdd + '\n')
 
 		var u_keyword = (title.toLowerCase()).concat(' book') 
 		var u_startTime = new Date(start_date_yyyymmdd)
@@ -120,7 +146,7 @@ async function execute() {
 		  console.error(err);
 		});
 
-		await sleep(1000);
+		await sleep(750);
 	}
 }
 
@@ -144,7 +170,7 @@ async function research(u_keyword, u_startTime, u_endTime, u_geo, isbn) {
 		  console.error(err);
 		});
 
-		await sleep(1000);
+		await sleep(750);
 }
 
 execute()
